@@ -51,6 +51,7 @@ class EnhancementResourceTest {
         @JvmStatic
         @BeforeAll
         fun beforeAll() {
+            println(System.getProperty("java.class.path"))
             snapshotVerifier = SnapshotVerifier(PropertyResolvingSnapshotConfig(), EnhancementResourceTest::class.java)
         }
 
