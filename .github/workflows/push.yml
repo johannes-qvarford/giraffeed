@@ -57,11 +57,11 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.m2/repository
-          key: maven-${{ runner.os }}-${{ hashFiles('**/pom.xml') }}
+          key: maven-${{ runner.os }}-${{ env.CANDIDATE }}-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             maven-${{ runner.os }}
       - name: Test
-        run: ./mvnw test
+        run: ./mvnw clean test
       - name: Build
         run: ./mvnw package -Pnative -DskipTests=true
 
