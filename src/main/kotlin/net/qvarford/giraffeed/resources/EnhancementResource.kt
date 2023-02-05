@@ -11,7 +11,7 @@ import javax.ws.rs.PathParam
 import javax.ws.rs.Produces
 
 @Path("/enhancement")
-class EnhancementResource(val service: EnhancementService, val converter: FeedConverter) {
+class EnhancementResource(private val service: EnhancementService, private val converter: FeedConverter) {
 
     @GET
     @Path("{name}/{resource}")

@@ -26,7 +26,7 @@ class EnhancementResourceTest {
             return this.javaClass.classLoader.getResourceAsStream(s)!!
         }
 
-        val map = mapOf("https://reddit.com/r/AceAttorneyCirclejerk/hot.rss" to resource("libreddit_success.xml"))
+        val map = mapOf("https://www.reddit.com/r/AceAttorneyCirclejerk/hot.rss" to resource("libreddit_success.xml"))
 
         InMemoryHttpClient.create(httpClient, map)
     }

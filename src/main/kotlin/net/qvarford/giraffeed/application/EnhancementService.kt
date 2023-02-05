@@ -11,7 +11,7 @@ interface EnhancementService {
 class FeedDownloaderDelegatingEnhancementService(
     private val downloader: FeedDownloader) : EnhancementService {
     override fun enhance(type: FeedType, resource: FeedResource): Feed {
-        val url = type.urlForResource(resource)
+        val url = FeedUrl(type = type, resource = resource)
         val feed = downloader.download(url)
         return type.enhance(feed)
     }
