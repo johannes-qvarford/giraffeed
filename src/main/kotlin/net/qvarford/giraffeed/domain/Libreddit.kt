@@ -7,7 +7,7 @@ import org.jsoup.nodes.Element
 import org.jsoup.nodes.TextNode
 import org.jsoup.nodes.Node
 
-private val sourceUrlRegex: Regex = Regex("^(?:https://)?(?:libreddit\\.privacy.qvarford\\.net|(?:www\\.)?reddit\\.com)/r/([^/]+).*$");
+private val sourceUrlRegex: Regex = Regex("^(?:https://)?(?:libreddit\\.privacy.qvarford\\.net|(?:www\\.)?reddit\\.com)/r/([^/]+).*$")
 
 object LibredditFeedType : FeedType {
     override val name: String
@@ -56,6 +56,7 @@ object LibredditFeedType : FeedType {
     private fun replaceRedditLinksInText(text: String): String {
         return text.replaceLink("www.reddit.com", "")
             .replaceLink("i.redd.it", "/img")
+            .replaceLink("external-preview.redd.it", "/preview/external-pre")
             .replaceLink("preview.redd.it", "/preview/pre")
     }
 }
