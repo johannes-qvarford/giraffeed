@@ -9,8 +9,8 @@ defaults:
     shell: bash -ieo pipefail {0}
 
 env:
-  CANDIDATE: 19.0.1-amzn
-  SDKMAN_CANDIDATE: 19.0.1-amzn
+  CANDIDATE: 17.0.5-amzn
+  SDKMAN_CANDIDATE: 17.0.5-amzn
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
@@ -28,7 +28,7 @@ jobs:
         id: sdkman
         with:
           candidate: java
-          version: 19.0.1-amzn
+          version: ${{ env.SDKMAN_CANDIDATE }}
 
       - name: Restore Sdkman Cache
         id: cache-sdkman
