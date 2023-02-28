@@ -13,6 +13,7 @@ env:
   SDKMAN_CANDIDATE: 17.0.5-amzn
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  SDKMAN_INIT: source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 jobs:
   publish:
@@ -41,11 +42,12 @@ jobs:
           curl -s "https://get.sdkman.io" | bash
       - name: Source Sdkman
         run: |
-          source "$HOME/.sdkman/bin/sdkman-init.sh"
+          ${{ env.SDKMAN_INIT }}
           sdkman_auto_answer=false
           sdkman_selfupdate_enable=false
       - name: Setup Java
         run: |
+          ${{ env.SDKMAN_INIT }}
           sdk install java ${{ env.CANDIDATE }}
           sdk default java ${{ env.CANDIDATE }}
       - name: Restore Maven Cache
@@ -55,10 +57,12 @@ jobs:
           key: maven-${{ runner.os }}-${{ env.CANDIDATE }}-${{ hashFiles('**/pom.xml') }}
       - name: Test
         run: |
+          ${{ env.SDKMAN_INIT }}
           sdk env
           ./mvnw clean test
       - name: Build
         run: |
+          ${{ env.SDKMAN_INIT }}
           sdk env
           ./mvnw package -Pnative -DskipTests=true
       - name: Log in to the Container registry
