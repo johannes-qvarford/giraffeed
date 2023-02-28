@@ -36,10 +36,12 @@ jobs:
         with:
           path: ~/.sdkman
           key: sdkman-${{ runner.os }}-${{ env.SDKMAN_CANDIDATE }}-${{ env.CANDIDATE }}
-      - name: Setup Sdkman
+      - name: Download Sdkman
         if: steps.cache-sdkman.outputs.cache-hit != 'true'
         run: |
           curl -s "https://get.sdkman.io" | bash
+      - name: Source Sdkman
+        run: |
           source "$HOME/.sdkman/bin/sdkman-init.sh"
           sdkman_auto_answer=false
           sdkman_selfupdate_enable=false
@@ -48,7 +50,6 @@ jobs:
         run: |
           sdk install java ${{ env.CANDIDATE }}
           sdk default java ${{ env.CANDIDATE }}
-
       - name: Restore Maven Cache
         uses: actions/cache@v1
         with:
