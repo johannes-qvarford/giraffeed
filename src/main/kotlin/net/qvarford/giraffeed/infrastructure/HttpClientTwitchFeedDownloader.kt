@@ -29,13 +29,6 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
                 .toList()
         }).get()
 
-        /*
-            val published: OffsetDateTime,
-    val title: String,
-    val content: String,
-    val contentType: String
-         */
-
         return Feed(
             updated = OffsetDateTime.now(),
             title = "Latest videos from the channels I follow",
@@ -59,26 +52,9 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
     }
 
     private fun todaysVideos(token: TwitchUserAccessToken, userId: UserId): List<Video> {
-        /*
-        <rss version="2.0">
-    <channel>
-        <title>360Chrism's Twitch video RSS</title>
-        <link>https://twitchrss.appspot.com/</link>
-        <description>The RSS Feed of 360Chrism's videos on Twitch</description>
-        <ttl>10</ttl>
-        <item>
-            <title>New Paradox Pokemon Raids!</title>
-            <link>https://www.twitch.tv/videos/1751715781</link>
-            <description>&lt;a href="https://www.twitch.tv/videos/1751715781"&gt;&lt;img
-                src="https://vod-secure.twitch.tv/_404/404_processing_512x288.png" /&gt;&lt;/a&gt;</description>
-            <guid isPermaLink="false">1751715781</guid>
-            <pubDate>Tue, 28 Feb 2023 17:07:05 UT</pubDate>
-            <category>archive</category>
-        </item>
-         */
         val request = HttpRequest.newBuilder()
             .GET()
-            .uri(URI.create("https://api.twitch.tv/helix/videos?user_id=${userId.value}&period=day&type=archive"))
+            .uri(URI.create("https://api.twitch.tv/helix/videos?user_id=${userId.value}&period=day&type=archive&first=3"))
             .header("Authorization", "Bearer ${token.value}")
             .header("Client-Id", "933nb4cfbbv6rws5wo0yr2w7mjdn4g")
             .build()
