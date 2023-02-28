@@ -37,7 +37,6 @@ jobs:
           path: ~/.sdkman
           key: sdkman-${{ runner.os }}-${{ env.SDKMAN_CANDIDATE }}-${{ env.CANDIDATE }}
       - name: Download Sdkman
-        if: steps.cache-sdkman.outputs.cache-hit != 'true'
         run: |
           curl -s "https://get.sdkman.io" | bash
       - name: Source Sdkman
