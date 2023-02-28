@@ -17,7 +17,7 @@ import javax.enterprise.context.ApplicationScoped
 @ApplicationScoped
 class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private val objectMapper: ObjectMapper, private val executorService: ExecutorService) : TwitchFeedDownloader {
     override fun downloadLatestVideosFeed(token: TwitchUserAccessToken): Feed {
-        val users = followedBy(token, UserId("29943195"));
+        val users = followedBy(token, UserId("29943195"))
 
         val videos = executorService.submit(Callable {
             users
@@ -80,7 +80,7 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
             .uri(URI.create("https://api.twitch.tv/helix/videos?user_id=${userId.value}&period=day&type=archive"))
             .header("Authorization", "Bearer ${token.value}")
             .header("Client-Id", "933nb4cfbbv6rws5wo0yr2w7mjdn4g")
-            .build();
+            .build()
 
         // query: user_id, period=day, type=archive
         data class VideosResponseData(val thumbnailUrl: String, val id: String, val url: String, val title: String, val publishedAt: String)
@@ -92,7 +92,7 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
             .map {
                 Video(
                     id = VideoId(it.id),
-                    imageUrl = URI.create(it.thumbnailUrl),
+                    imageUrl = URI.create(it.thumbnailUrl.replace("%{width}", "512").replace("%{height}", "288")),
                     link = URI.create(it.url),
                     publicationDate = OffsetDateTime.parse(it.publishedAt),
                     title = it.title)
@@ -106,7 +106,7 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
             .uri(URI.create("https://api.twitch.tv/helix/channels/followed?user_id=${userId.value}"))
             .header("Authorization", "Bearer ${token.value}")
             .header("Client-Id", "933nb4cfbbv6rws5wo0yr2w7mjdn4g")
-            .build();
+            .build()
 
         data class FollowedResponseData(val broadcasterId: String)
         data class FollowedResponse(val data: List<FollowedResponseData>)
