@@ -46,7 +46,6 @@ jobs:
           sdkman_auto_answer=false
           sdkman_selfupdate_enable=false
       - name: Setup Java
-        if: steps.cache-sdkman.outputs.cache-hit != 'true'
         run: |
           sdk install java ${{ env.CANDIDATE }}
           sdk default java ${{ env.CANDIDATE }}
