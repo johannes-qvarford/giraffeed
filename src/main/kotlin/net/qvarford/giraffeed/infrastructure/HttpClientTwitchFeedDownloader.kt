@@ -1,6 +1,7 @@
 package net.qvarford.giraffeed.infrastructure
 
 import com.fasterxml.jackson.databind.ObjectMapper
+import io.quarkus.runtime.annotations.RegisterForReflection
 import net.qvarford.giraffeed.domain.Feed
 import net.qvarford.giraffeed.domain.FeedEntry
 import net.qvarford.giraffeed.domain.TwitchFeedDownloader
@@ -82,8 +83,9 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
             .header("Client-Id", "933nb4cfbbv6rws5wo0yr2w7mjdn4g")
             .build()
 
-        // query: user_id, period=day, type=archive
+        @RegisterForReflection
         data class VideosResponseData(val thumbnailUrl: String, val id: String, val url: String, val title: String, val publishedAt: String)
+        @RegisterForReflection
         data class VideosResponse(val data: List<VideosResponseData>)
         val response = httpClient.send(request, HttpResponse.BodyHandlers.ofInputStream())
         val videosResponse = objectMapper.readValue(response.body(), VideosResponse::class.java)
@@ -108,7 +110,9 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
             .header("Client-Id", "933nb4cfbbv6rws5wo0yr2w7mjdn4g")
             .build()
 
+        @RegisterForReflection
         data class FollowedResponseData(val broadcasterId: String)
+        @RegisterForReflection
         data class FollowedResponse(val data: List<FollowedResponseData>)
         val response = httpClient.send(request, HttpResponse.BodyHandlers.ofInputStream())
         val followedResponse = objectMapper.readValue(response.body(), FollowedResponse::class.java)
