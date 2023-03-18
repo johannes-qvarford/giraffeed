@@ -1,42 +1,32 @@
 package net.qvarford.giraffeed.it
 
-import au.com.origin.snapshots.Expect
-import au.com.origin.snapshots.SnapshotVerifier
-import au.com.origin.snapshots.config.PropertyResolvingSnapshotConfig
-import au.com.origin.snapshots.serializers.ToStringSnapshotSerializer
 import io.quarkus.test.junit.QuarkusTest
 import io.quarkus.test.junit.mockito.InjectMock
 import io.restassured.RestAssured
 import net.qvarford.giraffeed.fake.InMemoryHttpClient
-import org.junit.jupiter.api.AfterAll
-import org.junit.jupiter.api.BeforeAll
-import org.junit.jupiter.api.BeforeEach
-import org.junit.jupiter.api.Test
-import java.io.InputStream
+import net.qvarford.giraffeed.it.util.Resources
+import net.qvarford.giraffeed.it.util.Verifier
+import org.junit.jupiter.api.*
 import java.net.http.HttpClient
 
 @QuarkusTest
 class EnhancementResourceTest {
+    val map = mapOf(
+        "https://www.reddit.com/r/AceAttorneyCirclejerk/hot.rss" to "libreddit_success.xml",
+        "https://nitter.privacy.qvarford.net/slowbeef/rss" to "nitter_success.xml"
+    )
+
     @InjectMock
     lateinit var httpClient: HttpClient
 
     @BeforeEach
     fun setupHttpClient() {
-        val resource = fun (s: String): InputStream {
-            return this.javaClass.classLoader.getResourceAsStream(s)!!
-        }
-
-        val map = mapOf(
-            "https://www.reddit.com/r/AceAttorneyCirclejerk/hot.rss" to resource("libreddit_success.xml"),
-            "https://nitter.privacy.qvarford.net/slowbeef/rss" to resource("nitter_success.xml")
-        )
-
-        InMemoryHttpClient.create(httpClient, map)
+        InMemoryHttpClient.create(httpClient, Resources.toResourceMap(map))
     }
 
     @Test
-    fun libredditFeedsAreFetchedFromReddit() {
-        val expect = Expect.of(snapshotVerifier, EnhancementResourceTest::class.java.getMethod("libredditFeedsAreFetchedFromReddit"))
+    fun libredditFeedsAreFetchedFromReddit(testInfo: TestInfo) {
+        val expect = verifier.expect(testInfo)
         val content = RestAssured.given()
             .`when`().get("/enhancement/libreddit/AceAttorneyCirclejerk")
             .then()
@@ -45,12 +35,12 @@ class EnhancementResourceTest {
             .body()
             .asString()
 
-        expect.serializer(ToStringSnapshotSerializer::class.java).toMatchSnapshot(content)
+        expect.toMatchSnapshot(content)
     }
 
     @Test
-    fun nitterFeedsAreFetchedFromNitter() {
-        val expect = Expect.of(snapshotVerifier, EnhancementResourceTest::class.java.getMethod("nitterFeedsAreFetchedFromNitter"))
+    fun nitterFeedsAreFetchedFromNitter(testInfo: TestInfo) {
+        val expect = verifier.expect(testInfo)
         val content = RestAssured.given()
             .`when`().get("/enhancement/nitter/slowbeef")
             .then()
@@ -59,23 +49,16 @@ class EnhancementResourceTest {
             .body()
             .asString()
 
-        expect.serializer(ToStringSnapshotSerializer::class.java).toMatchSnapshot(content)
+        expect.toMatchSnapshot(content)
     }
 
     companion object {
-        private var snapshotVerifier: SnapshotVerifier? = null
-
-        @JvmStatic
-        @BeforeAll
-        fun beforeAll() {
-            println(System.getProperty("java.class.path"))
-            snapshotVerifier = SnapshotVerifier(PropertyResolvingSnapshotConfig(), EnhancementResourceTest::class.java)
-        }
+        private val verifier = Verifier(EnhancementResourceTest::class.java)
 
         @JvmStatic
         @AfterAll
         fun afterAll() {
-            snapshotVerifier!!.validateSnapshots()
+            verifier.afterAll()
         }
     }
 }
