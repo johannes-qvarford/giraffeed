@@ -15,7 +15,7 @@ class InMemoryHttpClient {
                 .thenAnswer {
                     val request = it.arguments[0] as HttpRequest
                     val responseContent = urlToContent[request.uri().toString()] as InputStream
-                    val response = Mockito.mock(HttpResponse::class.java) as HttpResponse<InputStream>
+                    val response = Mockito.mock(HttpResponse::class.java) as HttpResponse<*>
 
                     Mockito.`when`(response.statusCode())
                         .thenReturn(200)

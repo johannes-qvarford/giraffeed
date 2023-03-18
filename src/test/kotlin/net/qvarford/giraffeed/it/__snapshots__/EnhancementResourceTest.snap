@@ -5,6 +5,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
     <atom:icon>https://www.redditstatic.com/icon.png/</atom:icon>
     <atom:title>Ace Attorney Circlejerk</atom:title>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/Shymain</atom:name>
+        </atom:author>
         <atom:id>t3_bb8vaf</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/bb8vaf/yall_fuckers_better_jerk_it_good/"/>
         <atom:published>2019-04-09T14:52:59Z</atom:published>
@@ -24,6 +27,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/Spudskii</atom:name>
+        </atom:author>
         <atom:id>t3_10036qp</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10036qp/haapynewyear/"/>
         <atom:published>2022-12-31T20:42:27Z</atom:published>
@@ -43,6 +49,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/Oh_Hey_Its_Big_Zam</atom:name>
+        </atom:author>
         <atom:id>t3_10bu04x</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10bu04x/what_a_cool_guy_hope_he_beats_the_nickel_samurai/"/>
         <atom:published>2023-01-14T17:27:11Z</atom:published>
@@ -63,6 +72,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/Maple_Siraf</atom:name>
+        </atom:author>
         <atom:id>t3_10bivnz</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10bivnz/the_ratings_rajah/"/>
         <atom:published>2023-01-14T07:49:06Z</atom:published>
@@ -82,6 +94,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/Fravash1</atom:name>
+        </atom:author>
         <atom:id>t3_10az16h</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10az16h/so_hot/"/>
         <atom:published>2023-01-13T16:41:46Z</atom:published>
@@ -101,6 +116,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/ancientrobot19</atom:name>
+        </atom:author>
         <atom:id>t3_10b0l3e</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10b0l3e/wow_what_a_nicelooking_man_surely_he_will_not/"/>
         <atom:published>2023-01-13T17:45:08Z</atom:published>
@@ -125,6 +143,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/burakalp34</atom:name>
+        </atom:author>
         <atom:id>t3_10arx3g</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10arx3g/someone_poisoned_kristophs_pissklavier_finds_this/"/>
         <atom:published>2023-01-13T11:09:11Z</atom:published>
@@ -145,6 +166,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/burakalp34</atom:name>
+        </atom:author>
         <atom:id>t3_10b2qdw</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10b2qdw/guys_how_do_i_pass_this_case_i_know_its_something/"/>
         <atom:published>2023-01-13T19:11:55Z</atom:published>
@@ -168,6 +192,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/serniczek2</atom:name>
+        </atom:author>
         <atom:id>t3_10atxnv</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10atxnv/carcinisation_or_carcinization_is_an_example_of/"/>
         <atom:published>2023-01-13T12:58:54Z</atom:published>
@@ -192,6 +219,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/class378best2</atom:name>
+        </atom:author>
         <atom:id>t3_10ayn48</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10ayn48/guys_i_fixed_it/"/>
         <atom:published>2023-01-13T16:25:44Z</atom:published>
@@ -211,6 +241,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/cosmideity</atom:name>
+        </atom:author>
         <atom:id>t3_10azbeg</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10azbeg/damn_girl/"/>
         <atom:published>2023-01-13T16:53:36Z</atom:published>
@@ -230,6 +263,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/alibigoodoperator</atom:name>
+        </atom:author>
         <atom:id>t3_10ac0mi</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10ac0mi/your_honor_his_eyebrow_hair_shifted_36_nanometres/"/>
         <atom:published>2023-01-12T21:56:35Z</atom:published>
@@ -253,6 +289,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/Key-Address-4550</atom:name>
+        </atom:author>
         <atom:id>t3_10awkti</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10awkti/apoollo_juice_test_shimeji/"/>
         <atom:published>2023-01-13T14:59:25Z</atom:published>
@@ -272,6 +311,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/ShrimpingSomething</atom:name>
+        </atom:author>
         <atom:id>t3_10a4xrf</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10a4xrf/_/"/>
         <atom:published>2023-01-12T17:14:58Z</atom:published>
@@ -291,6 +333,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/burakalp34</atom:name>
+        </atom:author>
         <atom:id>t3_10a04iz</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10a04iz/the_worst_meme_i_have_ever_made/"/>
         <atom:published>2023-01-12T13:51:02Z</atom:published>
@@ -310,6 +355,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/burakalp34</atom:name>
+        </atom:author>
         <atom:id>t3_109urvd</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109urvd/the_judge_be_like/"/>
         <atom:published>2023-01-12T08:43:43Z</atom:published>
@@ -329,6 +377,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/ArtemSapog</atom:name>
+        </atom:author>
         <atom:id>t3_10a7b7o</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10a7b7o/real/"/>
         <atom:published>2023-01-12T18:51:13Z</atom:published>
@@ -348,6 +399,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/Grouchy-While9151</atom:name>
+        </atom:author>
         <atom:id>t3_10a64nd</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10a64nd/describe_a_character_in_your_favorite_case_as_a/"/>
         <atom:published>2023-01-12T18:03:28Z</atom:published>
@@ -364,6 +418,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/poripato</atom:name>
+        </atom:author>
         <atom:id>t3_109wjss</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109wjss/major_aai2_spoilers_but_moozilla_tho/"/>
         <atom:published>2023-01-12T10:34:39Z</atom:published>
@@ -376,6 +433,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/burakalp34</atom:name>
+        </atom:author>
         <atom:id>t3_109uyob</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109uyob/whos_gonna_win/"/>
         <atom:published>2023-01-12T08:56:22Z</atom:published>
@@ -395,6 +455,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/NoThatsWright</atom:name>
+        </atom:author>
         <atom:id>t3_109dml2</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109dml2/ties_are_the_danganronpa_hair_of_ace_attorney/"/>
         <atom:published>2023-01-11T19:34:14Z</atom:published>
@@ -415,6 +478,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/JazzyPringle</atom:name>
+        </atom:author>
         <atom:id>t3_109q8dx</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109q8dx/both_have_been_in_a_murder_trial_too/"/>
         <atom:published>2023-01-12T04:29:01Z</atom:published>
@@ -434,6 +500,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/AffectionateBee8206</atom:name>
+        </atom:author>
         <atom:id>t3_109s77o</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109s77o/spoilers_for_the_wrong_trowsers/"/>
         <atom:published>2023-01-12T06:11:32Z</atom:published>
@@ -446,6 +515,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/sumboionline</atom:name>
+        </atom:author>
         <atom:id>t3_109gv8j</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109gv8j/and_we_thought_pisstoph_was_bad_enough/"/>
         <atom:published>2023-01-11T21:41:04Z</atom:published>
@@ -465,6 +537,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/Key-Address-4550</atom:name>
+        </atom:author>
         <atom:id>t3_1092zix</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/1092zix/valentines_be_like/"/>
         <atom:published>2023-01-11T11:59:05Z</atom:published>
@@ -484,6 +559,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/CommercialKey4144</atom:name>
+        </atom:author>
         <atom:id>t3_1099cdu</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/1099cdu/ok_then_he_likes_to_be_stepped_on_apparently/"/>
         <atom:published>2023-01-11T16:47:56Z</atom:published>
@@ -504,6 +582,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>/u/Difficult-echo-53862</atom:name>
+        </atom:author>
         <atom:id>t3_109eo96</atom:id>
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109eo96/okay_something_thats_been_bothering_me_for_a/"/>
         <atom:published>2023-01-11T20:14:57Z</atom:published>
@@ -528,6 +609,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
     <atom:icon>https://nitter.privacy.qvarford.net/pic/pbs.twimg.com%2Fprofile_images%2F1611832494382276608%2F337e3FQZ_400x400.jpg</atom:icon>
     <atom:title>slowbeef / @slowbeef</atom:title>
     <atom:entry>
+        <atom:author>
+            <atom:name>@WobblyPython</atom:name>
+        </atom:author>
         <atom:id>https://nitter.privacy.qvarford.net/WobblyPython/status/1636872484904652801#m</atom:id>
         <atom:link href="https://nitter.privacy.qvarford.net/WobblyPython/status/1636872484904652801#m"/>
         <atom:published>2023-03-17T23:29:46Z</atom:published>
@@ -540,6 +624,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>@InternetHippo</atom:name>
+        </atom:author>
         <atom:id>https://nitter.privacy.qvarford.net/InternetHippo/status/1635996454983548931#m</atom:id>
         <atom:link href="https://nitter.privacy.qvarford.net/InternetHippo/status/1635996454983548931#m"/>
         <atom:published>2023-03-15T13:28:44Z</atom:published>
@@ -552,6 +639,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>@teamzutsuu</atom:name>
+        </atom:author>
         <atom:id>https://nitter.privacy.qvarford.net/teamzutsuu/status/1636413497256067072#m</atom:id>
         <atom:link href="https://nitter.privacy.qvarford.net/teamzutsuu/status/1636413497256067072#m"/>
         <atom:published>2023-03-16T17:05:55Z</atom:published>
@@ -566,6 +656,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>@teamzutsuu</atom:name>
+        </atom:author>
         <atom:id>https://nitter.privacy.qvarford.net/teamzutsuu/status/1636413240774385665#m</atom:id>
         <atom:link href="https://nitter.privacy.qvarford.net/teamzutsuu/status/1636413240774385665#m"/>
         <atom:published>2023-03-16T17:04:54Z</atom:published>
@@ -580,6 +673,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>@slowbeef</atom:name>
+        </atom:author>
         <atom:id>https://nitter.privacy.qvarford.net/slowbeef/status/1636515715606884353#m</atom:id>
         <atom:link href="https://nitter.privacy.qvarford.net/slowbeef/status/1636515715606884353#m"/>
         <atom:published>2023-03-16T23:52:06Z</atom:published>
@@ -592,6 +688,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>@CaseyExplosion</atom:name>
+        </atom:author>
         <atom:id>https://nitter.privacy.qvarford.net/CaseyExplosion/status/1636414157171093505#m</atom:id>
         <atom:link href="https://nitter.privacy.qvarford.net/CaseyExplosion/status/1636414157171093505#m"/>
         <atom:published>2023-03-16T17:08:32Z</atom:published>
@@ -606,6 +705,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>@Wario64</atom:name>
+        </atom:author>
         <atom:id>https://nitter.privacy.qvarford.net/Wario64/status/1636347494140628992#m</atom:id>
         <atom:link href="https://nitter.privacy.qvarford.net/Wario64/status/1636347494140628992#m"/>
         <atom:published>2023-03-16T12:43:39Z</atom:published>
@@ -618,6 +720,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>@deadstaticdrive</atom:name>
+        </atom:author>
         <atom:id>https://nitter.privacy.qvarford.net/deadstaticdrive/status/1506389570224488451#m</atom:id>
         <atom:link href="https://nitter.privacy.qvarford.net/deadstaticdrive/status/1506389570224488451#m"/>
         <atom:published>2022-03-22T21:57:15Z</atom:published>
@@ -639,6 +744,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>@slowbeef</atom:name>
+        </atom:author>
         <atom:id>https://nitter.privacy.qvarford.net/slowbeef/status/1636150034143084546#m</atom:id>
         <atom:link href="https://nitter.privacy.qvarford.net/slowbeef/status/1636150034143084546#m"/>
         <atom:published>2023-03-15T23:39:00Z</atom:published>
@@ -651,6 +759,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>@slowbeef</atom:name>
+        </atom:author>
         <atom:id>https://nitter.privacy.qvarford.net/slowbeef/status/1636149683629223939#m</atom:id>
         <atom:link href="https://nitter.privacy.qvarford.net/slowbeef/status/1636149683629223939#m"/>
         <atom:published>2023-03-15T23:37:37Z</atom:published>
@@ -663,6 +774,9 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
 &lt;/html&gt;</atom:content>
     </atom:entry>
     <atom:entry>
+        <atom:author>
+            <atom:name>@chetfaliszek</atom:name>
+        </atom:author>
         <atom:id>https://nitter.privacy.qvarford.net/chetfaliszek/status/1635743397767176193#m</atom:id>
         <atom:link href="https://nitter.privacy.qvarford.net/chetfaliszek/status/1635743397767176193#m"/>
         <atom:published>2023-03-14T20:43:11Z</atom:published>

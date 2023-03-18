@@ -37,6 +37,7 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
                 .map {
                     FeedEntry(
                         id = it.id.value,
+                        author = it.userName,
                         link = it.link,
                         published = it.publicationDate,
                         title =  it.title,
@@ -60,7 +61,7 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
             .build()
 
         @RegisterForReflection
-        data class VideosResponseData(val thumbnailUrl: String, val id: String, val url: String, val title: String, val publishedAt: String)
+        data class VideosResponseData(val thumbnailUrl: String, val id: String, val userName: String, val url: String, val title: String, val publishedAt: String)
         @RegisterForReflection
         data class VideosResponse(val data: List<VideosResponseData>)
         val response = httpClient.send(request, HttpResponse.BodyHandlers.ofInputStream())
@@ -70,6 +71,7 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
             .map {
                 Video(
                     id = VideoId(it.id),
+                    userName = it.userName,
                     imageUrl = URI.create(it.thumbnailUrl.replace("%{width}", "512").replace("%{height}", "288")),
                     link = URI.create(it.url),
                     publicationDate = OffsetDateTime.parse(it.publishedAt),
@@ -103,4 +105,4 @@ data class UserId(val value: String)
 
 data class VideoId(val value: String)
 
-data class Video(val imageUrl: URI, val id: VideoId, val publicationDate: OffsetDateTime, val link: URI, val title: String)
+data class Video(val imageUrl: URI, val id: VideoId, val userName: String, val publicationDate: OffsetDateTime, val link: URI, val title: String)

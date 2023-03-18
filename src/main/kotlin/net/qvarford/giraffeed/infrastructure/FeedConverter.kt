@@ -1,5 +1,6 @@
 package net.qvarford.giraffeed.infrastructure
 
+import com.google.common.collect.ImmutableBiMap
 import net.qvarford.giraffeed.domain.Feed
 import net.qvarford.giraffeed.domain.FeedEntry
 import org.w3c.dom.Document
@@ -23,6 +24,11 @@ import javax.xml.xpath.XPath
 import javax.xml.xpath.XPathConstants
 import javax.xml.xpath.XPathFactory
 
+private const val ATOM_NS = "http://www.w3.org/2005/Atom"
+private const val DC_NS = "http://purl.org/dc/elements/1.1/"
+
+private val PREFIX_TO_NAMESPACE = ImmutableBiMap.of("atom", ATOM_NS, "dc", DC_NS)
+private val NAMESPACE_TO_PREFIX = PREFIX_TO_NAMESPACE.inverse();
 
 // I could use jaxb, but I don't want to get stuck in a situation where 2 feeds have slightly
 // different but incompatible representations.
@@ -31,11 +37,11 @@ class FeedConverter(private val builder: DocumentBuilder) {
     init {
         xPath.namespaceContext = object : NamespaceContext {
             override fun getNamespaceURI(prefix: String?): String? {
-                return if (prefix == "atom") { ATOM_NS } else { null }
+                return if (!prefix.isNullOrEmpty()) PREFIX_TO_NAMESPACE[prefix] else null
             }
 
             override fun getPrefix(namespaceURI: String?): String? {
-                return if (namespaceURI == ATOM_NS) { return "atom" } else { null }
+                return if (!namespaceURI.isNullOrEmpty()) NAMESPACE_TO_PREFIX[namespaceURI] else null
             }
 
             override fun getPrefixes(namespaceURI: String?): MutableIterator<String>? {
@@ -58,6 +64,7 @@ class FeedConverter(private val builder: DocumentBuilder) {
                     .map { child ->
                         FeedEntry(
                             id = child.rssText("guid"),
+                            author = child.rssAuthor(),
                             link = child.rssText("link").uri(),
                             published = child.rssText("pubDate").offsetDateTimeFromAmerican(),
                             title = child.rssText("title"),
@@ -75,6 +82,7 @@ class FeedConverter(private val builder: DocumentBuilder) {
                     .map { child ->
                         FeedEntry(
                             id = child.atomText("id"),
+                            author = child.atomChild("author").atomText("name"),
                             link = child.atomLink(null),
                             published = child.atomText("published").offsetDateTime(),
                             title = child.atomText("title"),
@@ -102,6 +110,8 @@ class FeedConverter(private val builder: DocumentBuilder) {
 
         for (entry in feed.entries) {
             val child = root.addAtomElement("entry")
+            val author = child.addAtomElement("author")
+            author.addAtomText("name", entry.author)
             child.addAtomText("id", entry.id)
             child.addAtomLink(entry.link.toString())
             child.addAtomText("published", entry.published.format(DateTimeFormatter.ISO_DATE_TIME))
@@ -129,6 +139,14 @@ private fun Element.atomText(tagName: String): String = this.atomChildren(tagNam
 
 private fun Element.rssText(tagName: String): String = this.rssChildren(tagName).single().textContent
 
+private fun Element.rssAuthor(): String {
+    // this.namespaceChildren("creator", "dc").singleOrNull() doesn't work for some reason, while atom does work.
+    // Maybe because the prefix is actually used in the source XML instead of being the default namespace?
+    val authors = this.getElementsByTagNameNS(DC_NS, "creator")
+    return authors.item(0).textContent
+}
+
+
 private fun Element.atomAttribute(tagName: String, attribute: String): String =
     this.atomChildren(tagName)
         .map { it.attributes.getNamedItem(attribute).nodeValue }
@@ -141,27 +159,30 @@ private fun Element.atomLink(rel: String?): URI {
 }
 
 private fun Element.atomChildren(tagName: String): Sequence<Element> {
-    val expression = "./atom:$tagName"
-    val list = xPath.compile(expression).evaluate(this, XPathConstants.NODESET) as NodeList
-    return sequence {
-        for (i in 0 until list.length) {
-            yield(list.item(i) as Element)
-        }
-    }.filter { it.tagName == tagName }
+    return this.namespaceChildren(tagName, "atom");
+}
+
+private fun Element.atomChild(tagName: String): Element {
+    return this.atomChildren(tagName).first();
 }
 
 private fun Element.rssChildren(tagName: String): Sequence<Element> {
-    val expression = "./$tagName"
-    val list = xPath.compile(expression).evaluate(this, XPathConstants.NODESET) as NodeList
-    return sequence {
-        for (i in 0 until list.length) {
-            yield(list.item(i) as Element)
-        }
-    }.filter { it.tagName == tagName }
+    return this.namespaceChildren(tagName);
 }
 
 private fun Element.rssChild(tagName: String): Element {
     return this.rssChildren(tagName).first()
+}
+
+private fun Element.namespaceChildren(tagName: String, namespace: String? = null): Sequence<Element> {
+    val prefix = if (namespace != null) "$namespace:" else ""
+    val expression = "./$prefix$tagName"
+    val list = xPath.compile(expression).evaluate(this, XPathConstants.NODESET) as NodeList
+    return sequence {
+        for (i in 0 until list.length) {
+            yield(list.item(i) as Element)
+        }
+    }.filter { it.tagName == tagName }
 }
 
 private data class DocumentElement(val document: Document, val element: Element) {
@@ -196,5 +217,3 @@ private fun String.offsetDateTime(): OffsetDateTime = OffsetDateTime.parse(this)
 private fun String.offsetDateTimeFromAmerican(): OffsetDateTime = OffsetDateTime.parse(this, DateTimeFormatter.RFC_1123_DATE_TIME)
 
 private fun String.uri(): URI = URI.create(this)
-
-private val ATOM_NS: String = "http://www.w3.org/2005/Atom"

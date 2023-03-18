@@ -1,11 +1,5 @@
 package net.qvarford.giraffeed.domain
 
-/**
- * Only download images, since we might as well use the normal nitter feed otherwise.
- * Consider if we should strip the text from the mixed content items or include both. I see no reason to add the context currently.
- * Maybe split multi-image items into multiple images? Probably not - sometimes the images only make sense as a set. Would be fun to fuse multiple images into one.
- */
-
 import java.net.URI
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document

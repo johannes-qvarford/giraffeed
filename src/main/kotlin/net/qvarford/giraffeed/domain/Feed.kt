@@ -11,8 +11,8 @@ data class Feed(
 )
 
 data class FeedEntry(
-    // TODO: Add author
     val id: String,
+    val author: String,
     val link: URI,
     val published: OffsetDateTime,
     val title: String,
