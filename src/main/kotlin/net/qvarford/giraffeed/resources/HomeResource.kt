@@ -8,7 +8,7 @@ import javax.ws.rs.Produces
 import javax.ws.rs.core.MediaType
 
 @Path("/")
-class ProxyResource {
+class HomeResource {
     @CheckedTemplate
     object Templates {
         @JvmStatic
