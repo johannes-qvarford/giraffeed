@@ -29,7 +29,7 @@ class FollowedVideosResource(private val twitchService: TwitchService, private v
 
     @GET
     @Path("rss.xml")
-    @Produces(MediaType.TEXT_XML)
+    @Produces("application/atom+xml; charset=UTF-8")
     fun rss(@HeaderParam("Authorization") authorization: String): InputStream {
         val base64 = authorization.replace(Regex("Basic (.*)"), "$1")
         val username = String(Base64.getDecoder().decode(base64)).replace(Regex("(.*):.*"), "$1")

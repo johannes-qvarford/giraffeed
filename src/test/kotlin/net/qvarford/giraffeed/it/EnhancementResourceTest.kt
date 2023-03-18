@@ -26,7 +26,10 @@ class EnhancementResourceTest {
             return this.javaClass.classLoader.getResourceAsStream(s)!!
         }
 
-        val map = mapOf("https://www.reddit.com/r/AceAttorneyCirclejerk/hot.rss" to resource("libreddit_success.xml"))
+        val map = mapOf(
+            "https://www.reddit.com/r/AceAttorneyCirclejerk/hot.rss" to resource("libreddit_success.xml"),
+            "https://nitter.privacy.qvarford.net/slowbeef/rss" to resource("nitter_success.xml")
+        )
 
         InMemoryHttpClient.create(httpClient, map)
     }
@@ -36,6 +39,20 @@ class EnhancementResourceTest {
         val expect = Expect.of(snapshotVerifier, EnhancementResourceTest::class.java.getMethod("libredditFeedsAreFetchedFromReddit"))
         val content = RestAssured.given()
             .`when`().get("/enhancement/libreddit/AceAttorneyCirclejerk")
+            .then()
+            .statusCode(200)
+            .extract()
+            .body()
+            .asString()
+
+        expect.serializer(ToStringSnapshotSerializer::class.java).toMatchSnapshot(content)
+    }
+
+    @Test
+    fun nitterFeedsAreFetchedFromNitter() {
+        val expect = Expect.of(snapshotVerifier, EnhancementResourceTest::class.java.getMethod("nitterFeedsAreFetchedFromNitter"))
+        val content = RestAssured.given()
+            .`when`().get("/enhancement/nitter/slowbeef")
             .then()
             .statusCode(200)
             .extract()

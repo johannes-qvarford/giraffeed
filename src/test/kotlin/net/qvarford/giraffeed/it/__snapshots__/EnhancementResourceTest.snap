@@ -520,3 +520,160 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 </atom:feed>
 
 ]
+
+
+net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitter=[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
+    <atom:icon>https://nitter.privacy.qvarford.net/pic/pbs.twimg.com%2Fprofile_images%2F1611832494382276608%2F337e3FQZ_400x400.jpg</atom:icon>
+    <atom:title>slowbeef / @slowbeef</atom:title>
+    <atom:entry>
+        <atom:id>https://nitter.privacy.qvarford.net/WobblyPython/status/1636872484904652801#m</atom:id>
+        <atom:link href="https://nitter.privacy.qvarford.net/WobblyPython/status/1636872484904652801#m"/>
+        <atom:published>2023-03-17T23:29:46Z</atom:published>
+        <atom:title>RT by @slowbeef: At one point this was 1: A warmup sketch that was gonna' take two minutes, and 2: Gonna' have text. But I feel like it's both done enough and better without it.</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/media%2FFrdWuMoaIAAAqtU.png" style="max-width:250px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:id>https://nitter.privacy.qvarford.net/InternetHippo/status/1635996454983548931#m</atom:id>
+        <atom:link href="https://nitter.privacy.qvarford.net/InternetHippo/status/1635996454983548931#m"/>
+        <atom:published>2023-03-15T13:28:44Z</atom:published>
+        <atom:title>RT by @slowbeef: Thanks to a 3D reconstruction of his vocal chords, for the first time we can hear Julius Caesar's last words as they sounded during his assassination by the Senate</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/ext_tw_video_thumb%2F1635996145804537856%2Fpu%2Fimg%2FcE-J0yNDquaaogx-.jpg" style="max-width:250px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:id>https://nitter.privacy.qvarford.net/teamzutsuu/status/1636413497256067072#m</atom:id>
+        <atom:link href="https://nitter.privacy.qvarford.net/teamzutsuu/status/1636413497256067072#m"/>
+        <atom:published>2023-03-16T17:05:55Z</atom:published>
+        <atom:title>RT by @slowbeef: If you prefer a phsyical copy that comes with a Steam Key, we also have those available on etsy!
+
+                https://www.etsy.com/shop/teamzutsuu/?etsrc=sdt</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href="https://www.etsy.com/shop/teamzutsuu/?etsrc=sdt"&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/card_img%2F1636643820459655168%2F_50W6U40%3Fformat%3Djpg%26name%3D800x320_1" style="max-width:250px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:id>https://nitter.privacy.qvarford.net/teamzutsuu/status/1636413240774385665#m</atom:id>
+        <atom:link href="https://nitter.privacy.qvarford.net/teamzutsuu/status/1636413240774385665#m"/>
+        <atom:published>2023-03-16T17:04:54Z</atom:published>
+        <atom:title>RT by @slowbeef: Some of the most heavily afflicted villagers have been moved to the Servants' Quarters in the Manor. Use your psychic powers to see through their eyes and the sliding doors to make your way through.
+
+                Atama is 50% off on the Steam Spring Sale!</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/ext_tw_video_thumb%2F1636412193691295745%2Fpu%2Fimg%2Fcg1_M85wlE9SEX3Y.jpg" style="max-width:250px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:id>https://nitter.privacy.qvarford.net/slowbeef/status/1636515715606884353#m</atom:id>
+        <atom:link href="https://nitter.privacy.qvarford.net/slowbeef/status/1636515715606884353#m"/>
+        <atom:published>2023-03-16T23:52:06Z</atom:published>
+        <atom:title>Fight Palace with @Madithen in about an hour and change! We're gonna start filling this bad boy out!</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;&lt;a href="https://nitter.privacy.qvarford.net/Madithen" title="Madithen"&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/media%2FFrYSPJSWAAUrbzC.png" style="max-width:250px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:id>https://nitter.privacy.qvarford.net/CaseyExplosion/status/1636414157171093505#m</atom:id>
+        <atom:link href="https://nitter.privacy.qvarford.net/CaseyExplosion/status/1636414157171093505#m"/>
+        <atom:published>2023-03-16T17:08:32Z</atom:published>
+        <atom:title>RT by @slowbeef: Huh, Steam is having a sale, and they're giving a discount on the Steam Deck - 10% off. If anyone's been interested in one, I'd highly recommend it. I'm using mine constantly.
+
+                https://store.steampowered.com/sale/decktop100</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href="https://store.steampowered.com/sale/decktop100"&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/card_img%2F1636412185076441090%2FmvsBVJlq%3Fformat%3Djpg%26name%3D800x320_1" style="max-width:250px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:id>https://nitter.privacy.qvarford.net/Wario64/status/1636347494140628992#m</atom:id>
+        <atom:link href="https://nitter.privacy.qvarford.net/Wario64/status/1636347494140628992#m"/>
+        <atom:published>2023-03-16T12:43:39Z</atom:published>
+        <atom:title>RT by @slowbeef: Stranger of Paradise Final Fantasy Origin is coming to Steam on April 6th https://www.youtube.com/watch?v=HYr9uqtCz3c&amp;ab_channel=FINALFANTASY</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;&lt;a href="https://invidious.privacy.qvarford.net/watch?v=HYr9uqtCz3c&amp;amp;ab_channel=FINALFANTASY"&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/media%2FFrV5SBCakAAEnR5.jpg" style="max-width:250px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:id>https://nitter.privacy.qvarford.net/deadstaticdrive/status/1506389570224488451#m</atom:id>
+        <atom:link href="https://nitter.privacy.qvarford.net/deadstaticdrive/status/1506389570224488451#m"/>
+        <atom:published>2022-03-22T21:57:15Z</atom:published>
+        <atom:title>RT by @slowbeef: Dead Static Drive is Grand Theft Cthulhu
+
+                &#128140; Mailing list - http://bit.ly/2SBJUx3
+                &#127918; Steam wishlist - http://bit.ly/3w0mxzZ
+                &#128227; Discord - http://discord.gg/juxf2vn2JK
+                &#127797;Trailer - https://youtu.be/eTfZzwydEWQ
+
+                ✏️ Press - http://deadstaticdrive.com | press@reuben.games</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href="http://bit.ly/2SBJUx3"&gt;&lt;/a&gt;&lt;br&gt;&lt;a href="http://bit.ly/3w0mxzZ"&gt;&lt;/a&gt;&lt;br&gt;&lt;a href="http://discord.gg/juxf2vn2JK"&gt;&lt;/a&gt;&lt;br&gt;&lt;a href="https://invidious.privacy.qvarford.net/eTfZzwydEWQ"&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;a href="http://deadstaticdrive.com"&gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;video poster="https://nitter.privacy.qvarford.net/pic/tweet_video_thumb%2FFOfFCEOVUAAEk6x.jpg" autoplay muted loop style="max-width:250px;"&gt;&lt;source src="https://nitter.privacy.qvarford.net/pic/video.twimg.com%2Ftweet_video%2FFOfFCEOVUAAEk6x.mp4" type="video/mp4"&gt;
+  &lt;/video&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:id>https://nitter.privacy.qvarford.net/slowbeef/status/1636150034143084546#m</atom:id>
+        <atom:link href="https://nitter.privacy.qvarford.net/slowbeef/status/1636150034143084546#m"/>
+        <atom:published>2023-03-15T23:39:00Z</atom:published>
+        <atom:title>R to @slowbeef: Oh glad I saved this one for last</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/media%2FFrTFyJMX0AI9EOj.jpg" style="max-width:250px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:id>https://nitter.privacy.qvarford.net/slowbeef/status/1636149683629223939#m</atom:id>
+        <atom:link href="https://nitter.privacy.qvarford.net/slowbeef/status/1636149683629223939#m"/>
+        <atom:published>2023-03-15T23:37:37Z</atom:published>
+        <atom:title>My daughter wrote 3 books I am unironically excited to read</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/media%2FFrTFdrDWAAACWDx.jpg" style="max-width:250px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:id>https://nitter.privacy.qvarford.net/chetfaliszek/status/1635743397767176193#m</atom:id>
+        <atom:link href="https://nitter.privacy.qvarford.net/chetfaliszek/status/1635743397767176193#m"/>
+        <atom:published>2023-03-14T20:43:11Z</atom:published>
+        <atom:title>RT by @slowbeef: Or maybe... after 31 updates, @anacrusisgame is going to hell... in a good way - join us thursday for the big update.</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;&lt;a href="https://nitter.privacy.qvarford.net/anacrusisgame" title="The Anacrusis"&gt;&lt;/a&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/media%2FFrNT294aQAAqprf.jpg" style="max-width:250px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+</atom:feed>
+
+]

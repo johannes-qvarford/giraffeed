@@ -2,6 +2,8 @@ package net.qvarford.giraffeed.domain
 
 import java.net.URI
 
+val feedTypes = arrayListOf(LibredditFeedType, NitterFeedType)
+
 sealed interface FeedType {
     val name: String
     fun understandsSourceUrl(url: SourceUrl): Boolean;
@@ -15,14 +17,22 @@ sealed interface FeedType {
 
     companion object {
         fun ofName(name: String): FeedType {
-            return when (name) {
-                LibredditFeedType.name -> LibredditFeedType
-                else -> throw IllegalArgumentException("name")
+            for (type in feedTypes) {
+                if (type.name == name) {
+                    return type
+                }
             }
+            throw IllegalArgumentException("name")
         }
 
         fun ofSourceUrl(url: SourceUrl): FeedType {
-            return LibredditFeedType
+
+            for (type in feedTypes) {
+                if (type.understandsSourceUrl(url)) {
+                    return type
+                }
+            }
+            throw IllegalArgumentException("url")
         }
     }
 }

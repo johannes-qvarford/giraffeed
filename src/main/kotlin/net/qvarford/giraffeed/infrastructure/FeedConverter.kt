@@ -59,7 +59,7 @@ class FeedConverter(private val builder: DocumentBuilder) {
                         FeedEntry(
                             id = child.rssText("guid"),
                             link = child.rssText("link").uri(),
-                            published = child.rssText("pubDate").offsetDateTime(),
+                            published = child.rssText("pubDate").offsetDateTimeFromAmerican(),
                             title = child.rssText("title"),
                             content = child.rssText("description"),
                             contentType = "html" // TODO: Make this depend on the content
@@ -192,6 +192,8 @@ private data class DocumentElement(val document: Document, val element: Element)
 
 
 private fun String.offsetDateTime(): OffsetDateTime = OffsetDateTime.parse(this)
+
+private fun String.offsetDateTimeFromAmerican(): OffsetDateTime = OffsetDateTime.parse(this, DateTimeFormatter.RFC_1123_DATE_TIME)
 
 private fun String.uri(): URI = URI.create(this)
 
