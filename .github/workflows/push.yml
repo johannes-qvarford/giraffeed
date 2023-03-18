@@ -30,12 +30,15 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.sdkman
-          key: sdkman-${{ runner.os }}-${{ env.SDKMAN_CANDIDATE }}-${{ env.CANDIDATE }}-2
-      - uses: sdkman/sdkman-action@master
-        id: sdkman
-        with:
-          candidate: java
-          version: ${{ env.SDKMAN_CANDIDATE }}
+          key: sdkman-${{ runner.os }}-2023-03-18-${{ env.CANDIDATE }}
+      - name: Download Sdkman
+        run: |
+          curl -s "https://get.sdkman.io" | bash
+      - name: Source Sdkman
+        run: |
+          ${{ env.SDKMAN_INIT }}
+          sdkman_auto_answer=false
+          sdkman_selfupdate_enable=false
       - name: Setup Java
         run: |
           ${{ env.SDKMAN_INIT }}
