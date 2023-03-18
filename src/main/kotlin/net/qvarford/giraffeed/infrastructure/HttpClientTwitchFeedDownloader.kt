@@ -30,7 +30,7 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
         }).get()
 
         return Feed(
-            updated = OffsetDateTime.now(),
+            updated = null,
             title = "Latest videos from the channels I follow",
             icon = URI.create("https://www.twitch.tv/favicon.ico"),
             entries = videos

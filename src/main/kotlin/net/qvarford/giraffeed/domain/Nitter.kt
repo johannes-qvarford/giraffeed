@@ -50,24 +50,4 @@ object NitterFeedType : FeedType {
 
         return document.outerHtml()
     }
-
-    // TODO: Replace preview.redd.it with equivalent i.reddit.com links with no query params.
-    //  Don't want to have to click on the post just to download the high-quality image.
-    //  DOES NOT WORK WITH EXTERNAL-PREVIEW
-    private fun replaceRedditLinksInText(text: String): String {
-        return text.replaceLink("www.reddit.com", "")
-            .replaceLink("i.redd.it", "/img")
-            .replaceLink("external-preview.redd.it", "/preview/external-pre")
-            .replaceLink("preview.redd.it", "/preview/pre")
-            // Don't want to have to go to reddit to view the high-quality image.
-            .replace(Regex("/preview/pre/(.*)\\?.*"), "/img/$1")
-    }
-}
-
-private fun String.replaceLink(regex: String, pathPrefix: String): String {
-    val r = this.replace(Regex("${regex}([^\"]*)")) {
-        val capture = it.groupValues[1]
-        "libreddit.privacy.qvarford.net${pathPrefix}${capture}"
-    }
-    return r
 }
