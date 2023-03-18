@@ -4,8 +4,8 @@ import java.net.URI
 import java.time.OffsetDateTime
 
 data class Feed(
-    val updated: OffsetDateTime,
-    val icon: URI,
+    val updated: OffsetDateTime?,
+    val icon: URI?,
     val title: String,
     val entries: List<FeedEntry>
 )

@@ -45,26 +45,45 @@ class FeedConverter(private val builder: DocumentBuilder) {
     }
 
     fun xmlStreamToFeed(stream: InputStream): Feed {
-        //val str = String(stream.readAllBytes(), Charsets.UTF_8)
-        //val stream = str.byteInputStream()
         val document = builder.parse(stream)
         val root = document.documentElement;
-        return Feed(
-            updated = root.atomText("updated").offsetDateTime(),
-            icon = root.atomText("icon").uri(),
-            title = root.atomText("title"),
-            entries = root.children("atom", "entry")
-                .map { child ->
-                     FeedEntry(
-                         id = child.atomText("id"),
-                         link = child.atomLink(null),
-                         published = child.atomText("published").offsetDateTime(),
-                         title = child.atomText("title"),
-                         content = child.atomText("content"),
-                         contentType = child.atomAttribute("content", "type")
-                     )
-                }.toList()
-        )
+
+        if (root.tagName == "rss") {
+            val channel = root.rssChild("channel");
+            return Feed(
+                updated = null,
+                icon = channel.rssChild("image").rssText("url").uri(),
+                title = channel.rssText("title"),
+                entries = channel.rssChildren("item")
+                    .map { child ->
+                        FeedEntry(
+                            id = child.rssText("guid"),
+                            link = child.rssText("link").uri(),
+                            published = child.rssText("pubDate").offsetDateTime(),
+                            title = child.rssText("title"),
+                            content = child.rssText("description"),
+                            contentType = "html" // TODO: Make this depend on the content
+                        )
+                    }.toList()
+            )
+        } else {
+            return Feed(
+                updated = root.atomText("updated").offsetDateTime(),
+                icon = root.atomText("icon").uri(),
+                title = root.atomText("title"),
+                entries = root.atomChildren("entry")
+                    .map { child ->
+                        FeedEntry(
+                            id = child.atomText("id"),
+                            link = child.atomLink(null),
+                            published = child.atomText("published").offsetDateTime(),
+                            title = child.atomText("title"),
+                            content = child.atomText("content"),
+                            contentType = child.atomAttribute("content", "type")
+                        )
+                    }.toList()
+            )
+        }
     }
 
     fun feedToXmlStream(feed: Feed): InputStream {
@@ -75,7 +94,9 @@ class FeedConverter(private val builder: DocumentBuilder) {
 
         val root = DocumentElement(document = document, element = rootElement)
 
-        root.addAtomText("updated", feed.updated.format(DateTimeFormatter.ISO_DATE_TIME))
+        if (feed.updated != null) {
+            root.addAtomText("updated", feed.updated.format(DateTimeFormatter.ISO_DATE_TIME))
+        }
         root.addAtomText("icon", feed.icon.toString())
         root.addAtomText("title", feed.title)
 
@@ -104,21 +125,23 @@ private fun documentToString(document: Document): String {
 
 val xPath: XPath = XPathFactory.newInstance().newXPath()
 
-private fun Element.atomText(tagName: String): String = this.children("atom", tagName).single().textContent
+private fun Element.atomText(tagName: String): String = this.atomChildren(tagName).single().textContent
+
+private fun Element.rssText(tagName: String): String = this.rssChildren(tagName).single().textContent
 
 private fun Element.atomAttribute(tagName: String, attribute: String): String =
-    this.children("atom", tagName)
+    this.atomChildren(tagName)
         .map { it.attributes.getNamedItem(attribute).nodeValue }
         .single()
 
 private fun Element.atomLink(rel: String?): URI {
-    return this.children("atom", "link").filter { it.attributes.getNamedItem("rel")?.nodeValue == rel }
+    return this.atomChildren("link").filter { it.attributes.getNamedItem("rel")?.nodeValue == rel }
         .map { it.attributes.getNamedItem("href").nodeValue.uri() }
         .single()
 }
 
-private fun Element.children(namespace: String?, tagName: String): Sequence<Element> {
-    val expression = if (namespace != null) { "./$namespace:$tagName" } else { "./$tagName" }
+private fun Element.atomChildren(tagName: String): Sequence<Element> {
+    val expression = "./atom:$tagName"
     val list = xPath.compile(expression).evaluate(this, XPathConstants.NODESET) as NodeList
     return sequence {
         for (i in 0 until list.length) {
@@ -127,11 +150,25 @@ private fun Element.children(namespace: String?, tagName: String): Sequence<Elem
     }.filter { it.tagName == tagName }
 }
 
+private fun Element.rssChildren(tagName: String): Sequence<Element> {
+    val expression = "./$tagName"
+    val list = xPath.compile(expression).evaluate(this, XPathConstants.NODESET) as NodeList
+    return sequence {
+        for (i in 0 until list.length) {
+            yield(list.item(i) as Element)
+        }
+    }.filter { it.tagName == tagName }
+}
+
+private fun Element.rssChild(tagName: String): Element {
+    return this.rssChildren(tagName).first()
+}
+
 private data class DocumentElement(val document: Document, val element: Element) {
     fun addAtomText(name: String, value: String, attributes: Map<String, String> = mapOf()): DocumentElement {
         val child = document.createElement("atom:$name");
         for (entry in attributes.entries) {
-            child.setAttribute("${entry.key}", entry.value)
+            child.setAttribute(entry.key, entry.value)
         }
         child.textContent = value
         element.appendChild(child)
