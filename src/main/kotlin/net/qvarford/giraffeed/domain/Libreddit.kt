@@ -9,6 +9,16 @@ import org.jsoup.nodes.Node
 
 private val sourceUrlRegex: Regex = Regex("^(?:https://)?(?:libreddit\\.privacy.qvarford\\.net|(?:www\\.)?reddit\\.com)/r/([^/]+).*$")
 
+// TODO: Pick up metadata for galleries: https://www.reddit.com/r/linuxhardware/comments/idarg1/mutantc_modular_and_open_source_handheld_pc_more.json
+//  data.children[0].data.url includes /gallery if it is a gallery
+//  detect gallery by <img src="https://b.thumbs.redditmedia.com/...> in the feed
+//  data.children[0].data.media_metadata.[image_id] for the images
+//  external-preview links are dereferenced, e.g. to imgur in the url property
+//  run gallery fetches in parallel, replace single thumbnail with .
+
+// TODO: Before replacing all links, change bare <a href="i.reddit.com/...>...</a> to <img src="i.reddit.com/...>...</img>, since it's a link for some bad reason.
+//  Does this happen to all image links that were originally i.reddit.com?
+
 object LibredditFeedType : FeedType {
     override val name: String
         get() = "libreddit"
