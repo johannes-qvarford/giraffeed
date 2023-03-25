@@ -17,7 +17,7 @@ private val sourceUrlRegex: Regex = Regex("^(?:https://)?(?:nitter\\.privacy.qva
 //  WE CAN'T store the generated file temporarily when the feed gets pulled - some feeds aren't checked for days - it has to be durable, or generated when GET:ing the mp4 link, but generating it will take too much time probably.
 //  https://stackoverflow.com/questions/32528595/ffmpeg-mp4-from-http-live-streaming-m3u8-file
 //  First try to include a video element that points to an online mp4, and see if it gets played in miniflux
-object NitterFeedType : FeedType {
+class NitterFeedType(private val videoUrlFactory: NitterVideoUrlFactory) : FeedType {
     override val name: String
         get() = "nitter"
 
@@ -36,15 +36,22 @@ object NitterFeedType : FeedType {
                 .filter { entry -> entry.content.contains("<video") || entry.content.contains("<img") }
                 .map { entry ->
                     entry.copy(
-                        content = replaceNonMedia(entry.content)
+                        content = replaceContent(id = entry.id, content = entry.content)
                 )}
                 .toList()
         )
     }
 
-    private fun replaceNonMedia(content: String): String {
+    private fun replaceContent(id: String, content: String): String {
         val document: Document = Jsoup.parse(content)
 
+        replaceNonMedia(document)
+        replaceVideoThumbnailWithVideo(id = id, document = document)
+
+        return document.outerHtml()
+    }
+
+    private fun replaceNonMedia(document: Document) {
         fun recurse(node: Node) {
             if (node is TextNode) {
                 node.text("")
@@ -55,7 +62,41 @@ object NitterFeedType : FeedType {
             }
         }
         recurse(document)
-
-        return document.outerHtml()
     }
+
+    private fun replaceVideoThumbnailWithVideo(id: String, document: Document) {
+        fun recurse(node: Node) {
+            if (node is Element) {
+                if (node.tagName() == "img" && node.attr("src").contains("video_thumb")) {
+                    val parent = node.parent()!!
+
+                    val video = document.createElement("video")
+                    parent.appendChild(video)
+                    video.attr("controls", "")
+                    video.attr("width", "740")
+                    val source = document.createElement("source")
+                    video.appendChild(source)
+                    source.attr("src", fetchVideoUrl(id))
+
+                    node.remove()
+
+                    return
+                }
+                for (child in node.childNodes()) {
+                    recurse(child)
+                }
+            }
+        }
+        recurse(document)
+    }
+
+    private fun fetchVideoUrl(id: String): String {
+        return videoUrlFactory.lookup(NitterEntryUrl(URI.create(id))).mp4Url.value.toString()
+    }
+}
+
+data class NitterEntryUrl(val value: URI)
+
+interface NitterVideoUrlFactory {
+    fun lookup(id: NitterEntryUrl): HlsUrl
 }

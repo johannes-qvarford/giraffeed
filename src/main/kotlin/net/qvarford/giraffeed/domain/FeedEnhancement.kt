@@ -2,11 +2,9 @@ package net.qvarford.giraffeed.domain
 
 import java.net.URI
 
-val feedTypes = arrayListOf(LibredditFeedType, NitterFeedType)
-
 sealed interface FeedType {
     val name: String
-    fun understandsSourceUrl(url: SourceUrl): Boolean;
+    fun understandsSourceUrl(url: SourceUrl): Boolean
     fun enhance(feed: Feed): Feed
     fun extractResource(url: SourceUrl): FeedResource
     fun feedUriForResource(resource: FeedResource): URI
@@ -14,41 +12,19 @@ sealed interface FeedType {
     fun proxyUrlForResource(resource: FeedResource): ProxyUrl {
         return ProxyUrl(URI.create("https://giraffeed.privacy.qvarford.net/enhancement/${name}/${resource.value}"))
     }
+}
 
-    companion object {
-        fun ofName(name: String): FeedType {
-            for (type in feedTypes) {
-                if (type.name == name) {
-                    return type
-                }
-            }
-            throw IllegalArgumentException("name")
-        }
+interface FeedTypeFactory {
+    fun ofName(name: String): FeedType
 
-        fun ofSourceUrl(url: SourceUrl): FeedType {
-
-            for (type in feedTypes) {
-                if (type.understandsSourceUrl(url)) {
-                    return type
-                }
-            }
-            throw IllegalArgumentException("url")
-        }
-    }
+    fun ofSourceUrl(url: SourceUrl): FeedType
 }
 
 interface FeedDownloader {
     fun download(url: FeedUrl): Feed
 }
 
-data class SourceUrl(val value: URI) {
-    val feedUrl: FeedUrl
-        get() {
-            val type = FeedType.ofSourceUrl(this)
-            val resource = type.extractResource(this)
-            return FeedUrl(type, resource)
-        }
-}
+data class SourceUrl(val value: URI)
 
 data class FeedUrl(val type: FeedType, val resource: FeedResource) {
 
@@ -59,7 +35,7 @@ data class FeedUrl(val type: FeedType, val resource: FeedResource) {
 
     val proxied: ProxyUrl =
         type.proxyUrlForResource(resource)
-};
+}
 
 data class FeedResource(val value: String)
 

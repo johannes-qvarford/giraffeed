@@ -634,7 +634,10 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;p&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/ext_tw_video_thumb%2F1635996145804537856%2Fpu%2Fimg%2FcE-J0yNDquaaogx-.jpg" style="max-width:250px;"&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;video controls="" width="740"&gt;
+   &lt;source src="https://giraffeed.privacy.qvarford.net/hls-to-mp4/aHR0cHM6Ly9uaXR0ZXIucHJpdmFjeS5xdmFyZm9yZC5uZXQvdmlkZW8vMEYwQThBRUYyNDZBQy9odHRwcyUzQSUyRiUyRnZpZGVvLnR3aW1nLmNvbSUyRmV4dF90d192aWRlbyUyRjE2MzU5OTYxNDU4MDQ1Mzc4NTYlMkZwdSUyRnBsJTJGWVVTa1AwQjlEM2ltbm5SYy5tM3U4JTNGdGFnJTNEMTIlMjZjb250YWluZXIlM0RmbXA0.mp4"&gt;
+  &lt;/video&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -668,7 +671,7 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/ext_tw_video_thumb%2F1636412193691295745%2Fpu%2Fimg%2Fcg1_M85wlE9SEX3Y.jpg" style="max-width:250px;"&gt;
+  &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;img src="https://nitter.privacy.qvarford.net/pic/ext_tw_video_NOPE_thumb%2F1636412193691295745%2Fpu%2Fimg%2Fcg1_M85wlE9SEX3Y.jpg" style="max-width:250px;"&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -738,7 +741,7 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
   &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;a href="http://bit.ly/2SBJUx3"&gt;&lt;/a&gt;&lt;br&gt;&lt;a href="http://bit.ly/3w0mxzZ"&gt;&lt;/a&gt;&lt;br&gt;&lt;a href="http://discord.gg/juxf2vn2JK"&gt;&lt;/a&gt;&lt;br&gt;&lt;a href="https://invidious.privacy.qvarford.net/eTfZzwydEWQ"&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;a href="http://deadstaticdrive.com"&gt;&lt;/a&gt;&lt;/p&gt;
-  &lt;video poster="https://nitter.privacy.qvarford.net/pic/tweet_video_thumb%2FFOfFCEOVUAAEk6x.jpg" autoplay muted loop style="max-width:250px;"&gt;&lt;source src="https://nitter.privacy.qvarford.net/pic/video.twimg.com%2Ftweet_video%2FFOfFCEOVUAAEk6x.mp4" type="video/mp4"&gt;
+  &lt;video poster="https://nitter.privacy.qvarford.net/pic/tweet_video_NOPE_thumb%2FFOfFCEOVUAAEk6x.jpg" autoplay muted loop style="max-width:250px;"&gt;&lt;source src="https://nitter.privacy.qvarford.net/pic/video.twimg.com%2Ftweet_video%2FFOfFCEOVUAAEk6x.mp4" type="video/mp4"&gt;
   &lt;/video&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>

@@ -13,7 +13,8 @@ import java.net.http.HttpClient
 class EnhancementResourceTest {
     val map = mapOf(
         "https://www.reddit.com/r/AceAttorneyCirclejerk/hot.rss" to "libreddit_success.xml",
-        "https://nitter.privacy.qvarford.net/slowbeef/rss" to "nitter_success.xml"
+        "https://nitter.privacy.qvarford.net/slowbeef/rss" to "nitter_success.xml",
+        "https://nitter.privacy.qvarford.net/InternetHippo/status/1635996454983548931#m" to "nitter_page_with_hls_video.html"
     )
 
     @InjectMock
