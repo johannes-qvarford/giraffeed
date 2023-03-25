@@ -11,6 +11,10 @@ import java.util.concurrent.locks.ReentrantLock
 import javax.enterprise.context.ApplicationScoped
 import kotlin.concurrent.withLock
 
+// TODO: Add File root argument to constructor
+//  record temporary files downloaded by ffmpeg and host them with mockserver or wiremock. Check NOTES.md
+//  Maybe this isn't worth it if we need to install ffmpeg on the runner
+//  Also, all internal links need to rewritten to the mockserver base url
 @ApplicationScoped
 class FfmpegVideoConverter : VideoConverter {
     val locks = ConcurrentHashMap<HlsUrl, ReentrantLock>()
@@ -24,11 +28,10 @@ class FfmpegVideoConverter : VideoConverter {
                 return Mp4(path)
             }
 
-            Files.createDirectories(Path.of("generated"))
-
             val process = ProcessBuilder()
                 .command("ffmpeg", "-i", url.value.toString(), "-c", "copy", "-movflags", "faststart", path.toString())
-                .redirectErrorStream(true)
+                .redirectOutput(ProcessBuilder.Redirect.INHERIT)
+                .redirectError(ProcessBuilder.Redirect.INHERIT)
                 .start()
 
             process.waitFor(30, TimeUnit.SECONDS)

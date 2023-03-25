@@ -14,6 +14,8 @@ class HlsToMp4Resource(private val service: VideoConversionService) {
     @Path("{hlsUrlBase64UrlSafeWithMp4Suffix}")
     @GET
     fun index(@PathParam("hlsUrlBase64UrlSafeWithMp4Suffix") segment: String, @HeaderParam("Range") range: String?): Response {
+
+        // use https://github.com/heruan/jaxrs-range-filter for range handling.
         if (range != null) {
             throw NotSupportedException("Don't support range queries yet")
         }
