@@ -428,7 +428,8 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  submitted by &lt;a href="https://libreddit.privacy.qvarford.net/user/poripato"&gt; /u/poripato &lt;/a&gt; &lt;br&gt;&lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/img/rpd0vs49blba1.png"&gt;[link]&lt;/a&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109wjss/major_aai2_spoilers_but_moozilla_tho/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/rpd0vs49blba1.png"&gt;&lt;br&gt;
+   submitted by &lt;a href="https://libreddit.privacy.qvarford.net/user/poripato"&gt; /u/poripato &lt;/a&gt; &lt;br&gt;&lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/img/rpd0vs49blba1.png"&gt;[link]&lt;/a&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109wjss/major_aai2_spoilers_but_moozilla_tho/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -510,7 +511,8 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  submitted by &lt;a href="https://libreddit.privacy.qvarford.net/user/AffectionateBee8206"&gt; /u/AffectionateBee8206 &lt;/a&gt; &lt;br&gt;&lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/img/bhk2805r0kba1.jpg"&gt;[link]&lt;/a&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109s77o/spoilers_for_the_wrong_trowsers/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/bhk2805r0kba1.jpg"&gt;&lt;br&gt;
+   submitted by &lt;a href="https://libreddit.privacy.qvarford.net/user/AffectionateBee8206"&gt; /u/AffectionateBee8206 &lt;/a&gt; &lt;br&gt;&lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/img/bhk2805r0kba1.jpg"&gt;[link]&lt;/a&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109s77o/spoilers_for_the_wrong_trowsers/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>

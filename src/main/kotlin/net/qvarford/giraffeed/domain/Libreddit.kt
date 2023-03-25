@@ -16,9 +16,6 @@ private val sourceUrlRegex: Regex = Regex("^(?:https://)?(?:libreddit\\.privacy.
 //  external-preview links are dereferenced, e.g. to imgur in the url property
 //  run gallery fetches in parallel, replace single thumbnail with .
 
-// TODO: Before replacing all links, change bare <a href="i.reddit.com/...>...</a> to <img src="i.reddit.com/...>...</img>, since it's a link for some bad reason.
-//  Does this happen to all image links that were originally i.reddit.com?
-
 object LibredditFeedType : FeedType {
     override val name: String
         get() = "libreddit"
@@ -37,15 +34,56 @@ object LibredditFeedType : FeedType {
             entries = feed.entries.map { entry ->
                 entry.copy(
                     link = URI.create("https://libreddit.privacy.qvarford.net").resolve(entry.link.path),
-                    content = replaceRedditLinks(entry.content)
+                    content = replaceContent(entry.content)
                 )
             }.toList()
         )
     }
 
-    private fun replaceRedditLinks(content: String): String {
+    private fun replaceContent(content: String): String {
         val document: Document = Jsoup.parse(content)
 
+        addMissingImageIfContainsImageLink(document)
+        replaceRedditLinks(document)
+
+        return document.outerHtml()
+    }
+
+    private fun addMissingImageIfContainsImageLink(document: Document) {
+        var imageUrl: String? = null
+        var hasImage = false
+
+        fun recurse(node: Node) {
+            if (node is Element) {
+                if (node.tagName() == "img") {
+                    hasImage = true
+                }
+
+                if (node.tagName() == "a" && node.attr("href").startsWith("https://i.redd.it")) {
+                    imageUrl = node.attr("href")
+                }
+
+                for (attribute in node.attributes()) {
+                    node.attr(attribute.key, replaceRedditLinksInText(attribute.value))
+                }
+                for (child in node.childNodes()) {
+                    recurse(child)
+                }
+            }
+        }
+        recurse(document)
+
+        if (!hasImage && imageUrl != null) {
+            val img = document.createElement("img")
+            img.attr("src", imageUrl!!)
+            val br = document.createElement("br")
+            val body = document.body()
+            body.prependChild(br)
+            body.prependChild(img)
+        }
+    }
+
+    private fun replaceRedditLinks(document: Document) {
         fun recurse(node: Node) {
             if (node is TextNode) {
                 node.text(replaceRedditLinksInText(node.text()))
@@ -59,8 +97,6 @@ object LibredditFeedType : FeedType {
             }
         }
         recurse(document)
-
-        return document.outerHtml()
     }
 
     private fun replaceRedditLinksInText(text: String): String {
