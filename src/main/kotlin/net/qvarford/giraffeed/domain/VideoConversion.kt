@@ -1,7 +1,8 @@
 package net.qvarford.giraffeed.domain
 
-import java.io.File
+import java.io.FileInputStream
 import java.net.URI
+import java.nio.file.Files
 import java.nio.file.Path
 import java.util.*
 
@@ -10,17 +11,12 @@ interface VideoConverter {
 }
 
 data class Mp4(private val path: Path) {
-    fun allBytes(): ByteArray {
-        File(path.toString()).inputStream().use {
-            return it.readAllBytes()
-        }
+    fun stream(): FileInputStream {
+        return FileInputStream(path.toString())
     }
-    fun byteRange(offset: Int, length: Int): ByteArray {
-        File(path.toString()).inputStream().use {
-            val bytes = ByteArray(length)
-            it.read(bytes, offset, length)
-            return bytes
-        }
+
+    fun fileSize(): Long {
+        return Files.size(path)
     }
 }
 
