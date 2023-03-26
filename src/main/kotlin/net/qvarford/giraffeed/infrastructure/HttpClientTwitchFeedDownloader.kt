@@ -72,6 +72,7 @@ class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private
                 Video(
                     id = VideoId(it.id),
                     userName = it.userName,
+                    // TODO: It seems like the image gets broken sometimes. Wonder if this is a data race, or if there are some valid dimensions that can be used in those cases.
                     imageUrl = URI.create(it.thumbnailUrl.replace("%{width}", "512").replace("%{height}", "288")),
                     link = URI.create(it.url),
                     publicationDate = OffsetDateTime.parse(it.publishedAt),

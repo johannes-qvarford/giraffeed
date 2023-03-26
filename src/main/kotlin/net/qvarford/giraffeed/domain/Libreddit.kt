@@ -16,6 +16,15 @@ private val sourceUrlRegex: Regex = Regex("^(?:https://)?(?:libreddit\\.privacy.
 //  external-preview links are dereferenced, e.g. to imgur in the url property
 //  run gallery fetches in parallel, replace single thumbnail with .
 
+// TODO: Serve underlying videos instead of gifs
+//  Sometimes Libreddit serves gifs like https://libreddit.privacy.qvarford.net/preview/external-pre/abc.gif?width=640&crop=smart&s=6dab0fdd15cc8912cfaf64fd40eae080fec3a441
+//  When you can find the underlying video on the libreddit page like /vid/XYZ/1080.mp4.
+//  Need to investigate if it's always this way with gifs, and whether or not it just happens on /preview/external-pre/
+//  Also need to verify if an mp4 is always an available source, or if we need to be able handle /hls/XYZ/HLSPlaylist.m3u8 as a fallback.
+//  ALSO: The [image] gif seems to retain the quality, so maybe just replace the preview img src?
+//   This may not be the case for non-imgur links
+//   0.data.children.0.data.url can probably be queried
+
 object LibredditFeedType : FeedType {
     override val name: String
         get() = "libreddit"
@@ -45,6 +54,7 @@ object LibredditFeedType : FeedType {
 
         addMissingImageIfContainsImageLink(document)
         replaceRedditLinks(document)
+        unwrapPotentialImageInTable(document)
 
         return document.outerHtml()
     }
@@ -106,6 +116,42 @@ object LibredditFeedType : FeedType {
             .replaceLink("preview.redd.it", "/preview/pre")
             // Don't want to have to go to reddit to view the high-quality image.
             .replace(Regex("/preview/pre/(.*)\\?.*"), "/img/$1")
+    }
+
+    private fun unwrapPotentialImageInTable(document: Document) {
+        fun findImg(node: Node): Element? {
+            if (node is Element) {
+                if (node.tagName() == "img") {
+                    return node
+                }
+                for (child in node.childNodes()) {
+                    val img = findImg(child)
+                    if (img != null) {
+                        return img
+                    }
+                }
+            }
+            return null
+        }
+
+        fun findTable(node: Node) {
+            if (node is Element) {
+                if (node.tagName() == "table") {
+                    val img = findImg(node)
+                    if (img != null) {
+                        img.attr("style", "width: 740px;")
+                        node.parent()!!.prependChild(img)
+                        node.remove()
+                    }
+                    return
+                }
+
+                for (child in node.childNodes()) {
+                    findTable(child)
+                }
+            }
+        }
+        findTable(document)
     }
 }
 
