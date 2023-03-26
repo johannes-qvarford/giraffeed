@@ -28,7 +28,7 @@ private const val ATOM_NS = "http://www.w3.org/2005/Atom"
 private const val DC_NS = "http://purl.org/dc/elements/1.1/"
 
 private val PREFIX_TO_NAMESPACE = ImmutableBiMap.of("atom", ATOM_NS, "dc", DC_NS)
-private val NAMESPACE_TO_PREFIX = PREFIX_TO_NAMESPACE.inverse();
+private val NAMESPACE_TO_PREFIX = PREFIX_TO_NAMESPACE.inverse()
 
 // I could use jaxb, but I don't want to get stuck in a situation where 2 feeds have slightly
 // different but incompatible representations.
@@ -45,81 +45,90 @@ class FeedConverter(private val builder: DocumentBuilder) {
             }
 
             override fun getPrefixes(namespaceURI: String?): MutableIterator<String>? {
-                return null;
+                return null
             }
         }
     }
 
     fun xmlStreamToFeed(stream: InputStream): Feed {
         val document = builder.parse(stream)
-        val root = document.documentElement;
+        val root = document.documentElement
 
         if (root.tagName == "rss") {
-            val channel = root.rssChild("channel");
-            return Feed(
-                updated = null,
-                icon = channel.rssChild("image").rssText("url").uri(),
-                title = channel.rssText("title"),
-                entries = channel.rssChildren("item")
-                    .map { child ->
-                        FeedEntry(
-                            id = child.rssText("guid"),
-                            author = child.rssAuthor(),
-                            link = child.rssText("link").uri(),
-                            published = child.rssText("pubDate").offsetDateTimeFromAmerican(),
-                            title = child.rssText("title"),
-                            content = child.rssText("description"),
-                            contentType = "html" // TODO: Make this depend on the content
-                        )
-                    }.toList()
-            )
+            root.rssChild("channel").run {
+                return Feed(
+                    updated = null,
+                    icon = rssChild("image").rssText("url").uri(),
+                    title = rssText("title"),
+                    entries = rssChildren("item")
+                        .map { child ->
+                            FeedEntry(
+                                id = child.rssText("guid"),
+                                author = child.rssAuthor(),
+                                link = child.rssText("link").uri(),
+                                published = child.rssText("pubDate").offsetDateTimeFromAmerican(),
+                                title = child.rssText("title"),
+                                content = child.rssText("description"),
+                                contentType = "html" // TODO: Make this depend on the content
+                            )
+                        }.toList())
+            }
+
         } else {
-            return Feed(
-                updated = root.atomText("updated").offsetDateTime(),
-                icon = root.atomText("icon").uri(),
-                title = root.atomText("title"),
-                entries = root.atomChildren("entry")
-                    .map { child ->
-                        FeedEntry(
-                            id = child.atomText("id"),
-                            author = child.atomChild("author").atomText("name"),
-                            link = child.atomLink(null),
-                            published = child.atomText("published").offsetDateTime(),
-                            title = child.atomText("title"),
-                            content = child.atomText("content"),
-                            contentType = child.atomAttribute("content", "type")
-                        )
-                    }.toList()
-            )
+            root.run {
+                return Feed(
+                    updated = atomText("updated").offsetDateTime(),
+                    icon = atomText("icon").uri(),
+                    title = atomText("title"),
+                    entries = atomChildren("entry")
+                        .map { child ->
+                            FeedEntry(
+                                id = child.atomText("id"),
+                                author = child.atomChild("author").atomText("name"),
+                                link = child.atomLink(null),
+                                published = child.atomText("published").offsetDateTime(),
+                                title = child.atomText("title"),
+                                content = child.atomText("content"),
+                                contentType = child.atomAttribute("content", "type")
+                            )
+                        }.toList()
+                )
+            }
         }
     }
 
     fun feedToXmlStream(feed: Feed): InputStream {
-        val document = builder.newDocument()
-
-        val rootElement = document.createElementNS(ATOM_NS, "atom:feed")
-        document.appendChild(rootElement)
-
-        val root = DocumentElement(document = document, element = rootElement)
-
-        if (feed.updated != null) {
-            root.addAtomText("updated", feed.updated.format(DateTimeFormatter.ISO_DATE_TIME))
-        }
-        root.addAtomText("icon", feed.icon.toString())
-        root.addAtomText("title", feed.title)
-
-        for (entry in feed.entries) {
-            val child = root.addAtomElement("entry")
-            val author = child.addAtomElement("author")
-            author.addAtomText("name", entry.author)
-            child.addAtomText("id", entry.id)
-            child.addAtomLink(entry.link.toString())
-            child.addAtomText("published", entry.published.format(DateTimeFormatter.ISO_DATE_TIME))
-            child.addAtomText("title", entry.title)
-            child.addAtomText("content", entry.content, mapOf("type" to entry.contentType))
+        val root = builder.newDocument().run {
+            val rootElement = createElementNS(ATOM_NS, "atom:feed")
+            appendChild(rootElement)
+            DocumentElement(document = this, element = rootElement)
         }
 
-        val str = documentToString(document)
+        val str = root.run {
+            feed.updated?.let {
+                addAtomText("updated", it.format(DateTimeFormatter.ISO_DATE_TIME))
+            }
+
+            addAtomText("icon", feed.icon.toString())
+            addAtomText("title", feed.title)
+
+            for (entry in feed.entries) {
+                val child = root.addAtomElement("entry").apply {
+                    val author = addAtomElement("author")
+                    author.addAtomText("name", entry.author)
+                }
+
+                child.run {
+                    addAtomText("id", entry.id)
+                    addAtomLink(entry.link.toString())
+                    addAtomText("published", entry.published.format(DateTimeFormatter.ISO_DATE_TIME))
+                    addAtomText("title", entry.title)
+                    addAtomText("content", entry.content, mapOf("type" to entry.contentType))
+                }
+            }
+            documentToString(root.document)
+        }
+
         return str.byteInputStream(Charset.forName("UTF-8"))
     }
 }
@@ -135,44 +144,36 @@ private fun documentToString(document: Document): String {
 
 val xPath: XPath = XPathFactory.newInstance().newXPath()
 
-private fun Element.atomText(tagName: String): String = this.atomChildren(tagName).single().textContent
+private fun Element.atomText(tagName: String): String = atomChildren(tagName).single().textContent
 
-private fun Element.rssText(tagName: String): String = this.rssChildren(tagName).single().textContent
+private fun Element.rssText(tagName: String): String = rssChildren(tagName).single().textContent
 
 private fun Element.rssAuthor(): String {
     // this.namespaceChildren("creator", "dc").singleOrNull() doesn't work for some reason, while atom does work.
     // Maybe because the prefix is actually used in the source XML instead of being the default namespace?
-    val authors = this.getElementsByTagNameNS(DC_NS, "creator")
+    val authors = getElementsByTagNameNS(DC_NS, "creator")
     return authors.item(0).textContent
 }
 
 
 private fun Element.atomAttribute(tagName: String, attribute: String): String =
-    this.atomChildren(tagName)
+   atomChildren(tagName)
         .map { it.attributes.getNamedItem(attribute).nodeValue }
         .single()
 
 private fun Element.atomLink(rel: String?): URI {
-    return this.atomChildren("link").filter { it.attributes.getNamedItem("rel")?.nodeValue == rel }
+    return atomChildren("link").filter { it.attributes.getNamedItem("rel")?.nodeValue == rel }
         .map { it.attributes.getNamedItem("href").nodeValue.uri() }
         .single()
 }
 
-private fun Element.atomChildren(tagName: String): Sequence<Element> {
-    return this.namespaceChildren(tagName, "atom");
-}
+private fun Element.atomChildren(tagName: String): Sequence<Element> = namespaceChildren(tagName, "atom")
 
-private fun Element.atomChild(tagName: String): Element {
-    return this.atomChildren(tagName).first();
-}
+private fun Element.atomChild(tagName: String): Element = atomChildren(tagName).first()
 
-private fun Element.rssChildren(tagName: String): Sequence<Element> {
-    return this.namespaceChildren(tagName);
-}
+private fun Element.rssChildren(tagName: String): Sequence<Element> = namespaceChildren(tagName)
 
-private fun Element.rssChild(tagName: String): Element {
-    return this.rssChildren(tagName).first()
-}
+private fun Element.rssChild(tagName: String): Element = rssChildren(tagName).first()
 
 private fun Element.namespaceChildren(tagName: String, namespace: String? = null): Sequence<Element> {
     val prefix = if (namespace != null) "$namespace:" else ""
@@ -187,7 +188,7 @@ private fun Element.namespaceChildren(tagName: String, namespace: String? = null
 
 private data class DocumentElement(val document: Document, val element: Element) {
     fun addAtomText(name: String, value: String, attributes: Map<String, String> = mapOf()): DocumentElement {
-        val child = document.createElement("atom:$name");
+        val child = document.createElement("atom:$name")
         for (entry in attributes.entries) {
             child.setAttribute(entry.key, entry.value)
         }
@@ -197,14 +198,14 @@ private data class DocumentElement(val document: Document, val element: Element)
     }
 
     fun addAtomLink(href: String): DocumentElement {
-        val child = document.createElement("atom:link");
+        val child = document.createElement("atom:link")
         child.setAttribute("href", href)
         element.appendChild(child)
         return this
     }
 
     fun addAtomElement(name: String): DocumentElement {
-        val child = document.createElement("atom:$name");
+        val child = document.createElement("atom:$name")
         element.appendChild(child)
         return DocumentElement(document, child)
     }

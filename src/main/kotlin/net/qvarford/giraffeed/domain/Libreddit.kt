@@ -83,9 +83,10 @@ object LibredditFeedType : FeedType {
         }
         recurse(document)
 
-        if (!hasImage && imageUrl != null) {
+        imageUrl?.let {
+            if (hasImage) return
             val img = document.createElement("img")
-            img.attr("src", imageUrl!!)
+            img.attr("src", it)
             val br = document.createElement("br")
             val body = document.body()
             body.prependChild(br)
@@ -138,9 +139,9 @@ object LibredditFeedType : FeedType {
             if (node is Element) {
                 if (node.tagName() == "table") {
                     val img = findImg(node)
-                    if (img != null) {
-                        img.attr("style", "width: 740px;")
-                        node.parent()!!.prependChild(img)
+                    img?.let {
+                        it.attr("style", "width: 740px;")
+                        node.parent()!!.prependChild(it)
                         node.remove()
                     }
                     return
