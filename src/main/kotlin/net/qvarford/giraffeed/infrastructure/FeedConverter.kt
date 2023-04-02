@@ -84,7 +84,7 @@ class FeedConverter(private val builder: DocumentBuilder) {
                         .map { child ->
                             FeedEntry(
                                 id = child.atomText("id"),
-                                author = child.atomChild("author").atomText("name"),
+                                author = child.maybeAtomChild("author")?.atomText("name") ?: "/u/[deleted]",
                                 link = child.atomLink(null),
                                 published = child.atomText("published").offsetDateTime(),
                                 title = child.atomText("title"),
@@ -170,6 +170,8 @@ private fun Element.atomLink(rel: String?): URI {
 private fun Element.atomChildren(tagName: String): Sequence<Element> = namespaceChildren(tagName, "atom")
 
 private fun Element.atomChild(tagName: String): Element = atomChildren(tagName).first()
+
+private fun Element.maybeAtomChild(tagName: String): Element? = atomChildren(tagName).firstOrNull()
 
 private fun Element.rssChildren(tagName: String): Sequence<Element> = namespaceChildren(tagName)
 
