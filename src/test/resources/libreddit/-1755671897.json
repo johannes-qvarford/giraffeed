@@ -1,0 +1,624 @@
+[
+  {
+    "kind": "Listing",
+    "data": {
+      "after": null,
+      "dist": 1,
+      "modhash": "",
+      "geo_filter": "",
+      "children": [
+        {
+          "kind": "t3",
+          "data": {
+            "approved_at_utc": null,
+            "subreddit": "AceAttorneyCirclejerk",
+            "selftext": "",
+            "user_reports": [],
+            "saved": false,
+            "mod_reason_title": null,
+            "gilded": 0,
+            "clicked": false,
+            "title": "What a cool guy, hope he beats the Nickel Samurai this time \ud83d\ude4f\ud83d\ude4f",
+            "link_flair_richtext": [
+              {
+                "e": "text",
+                "t": "Idiot-Approved"
+              }
+            ],
+            "subreddit_name_prefixed": "r/AceAttorneyCirclejerk",
+            "hidden": false,
+            "pwls": 7,
+            "link_flair_css_class": "",
+            "downs": 0,
+            "thumbnail_height": 84,
+            "top_awarded_type": null,
+            "parent_whitelist_status": "some_ads",
+            "hide_score": false,
+            "name": "t3_10bu04x",
+            "quarantine": false,
+            "link_flair_text_color": "dark",
+            "upvote_ratio": 1.0,
+            "author_flair_background_color": null,
+            "ups": 236,
+            "domain": "i.redd.it",
+            "media_embed": {},
+            "thumbnail_width": 140,
+            "author_flair_template_id": null,
+            "is_original_content": false,
+            "author_fullname": "t2_16imgb",
+            "secure_media": null,
+            "is_reddit_media_domain": true,
+            "is_meta": false,
+            "category": null,
+            "secure_media_embed": {},
+            "link_flair_text": "Idiot-Approved",
+            "can_mod_post": false,
+            "score": 236,
+            "approved_by": null,
+            "is_created_from_ads_ui": false,
+            "author_premium": false,
+            "thumbnail": "https://a.thumbs.redditmedia.com/QmXfabeh7KRmq1deiO6Pk5bPZrLC220hUiyrSaRqGq4.jpg",
+            "edited": false,
+            "author_flair_css_class": null,
+            "author_flair_richtext": [],
+            "gildings": {},
+            "post_hint": "image",
+            "content_categories": null,
+            "is_self": false,
+            "subreddit_type": "public",
+            "created": 1673717231.0,
+            "link_flair_type": "richtext",
+            "wls": 7,
+            "removed_by_category": null,
+            "banned_by": null,
+            "author_flair_type": "text",
+            "total_awards_received": 0,
+            "allow_live_comments": false,
+            "selftext_html": null,
+            "likes": null,
+            "suggested_sort": null,
+            "banned_at_utc": null,
+            "url_overridden_by_dest": "https://i.redd.it/99v8qy1n43ca1.jpg",
+            "view_count": null,
+            "archived": false,
+            "no_follow": false,
+            "is_crosspostable": false,
+            "pinned": false,
+            "over_18": false,
+            "preview": {
+              "images": [
+                {
+                  "source": {
+                    "url": "https://preview.redd.it/99v8qy1n43ca1.jpg?auto=webp&amp;v=enabled&amp;s=531c9943e2132e539d24ae097d3a2b3b19bdb750",
+                    "width": 4096,
+                    "height": 2458
+                  },
+                  "resolutions": [
+                    {
+                      "url": "https://preview.redd.it/99v8qy1n43ca1.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=d4f8fe6bd66d3c0faba3d4def57a8e43c037d806",
+                      "width": 108,
+                      "height": 64
+                    },
+                    {
+                      "url": "https://preview.redd.it/99v8qy1n43ca1.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=471160cadfa58317090f0431396b3b9afb12908b",
+                      "width": 216,
+                      "height": 129
+                    },
+                    {
+                      "url": "https://preview.redd.it/99v8qy1n43ca1.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=3fa95898a1502b6f2b17abab1add2054fdb3d786",
+                      "width": 320,
+                      "height": 192
+                    },
+                    {
+                      "url": "https://preview.redd.it/99v8qy1n43ca1.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=2d25f619410fd5e54f40be9b2018ddd68b7df55c",
+                      "width": 640,
+                      "height": 384
+                    },
+                    {
+                      "url": "https://preview.redd.it/99v8qy1n43ca1.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=ddae38435c844e640322551d9ce6283a86526699",
+                      "width": 960,
+                      "height": 576
+                    },
+                    {
+                      "url": "https://preview.redd.it/99v8qy1n43ca1.jpg?width=1080&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=06f305b3edc853d445abd0eccd1067d016cfb74b",
+                      "width": 1080,
+                      "height": 648
+                    }
+                  ],
+                  "variants": {},
+                  "id": "zDZxmTChGWyH3mn_n3z9Uj6IjWp62vh-qju8jabmn2o"
+                }
+              ],
+              "enabled": true
+            },
+            "all_awardings": [],
+            "awarders": [],
+            "media_only": false,
+            "link_flair_template_id": "99bc13e6-d3bb-11ec-acd5-7eaaac37f94a",
+            "can_gild": false,
+            "spoiler": false,
+            "locked": false,
+            "author_flair_text": null,
+            "treatment_tags": [],
+            "visited": false,
+            "removed_by": null,
+            "mod_note": null,
+            "distinguished": null,
+            "subreddit_id": "t5_39d8y",
+            "author_is_blocked": false,
+            "mod_reason_by": null,
+            "num_reports": null,
+            "removal_reason": null,
+            "link_flair_background_color": "#46d160",
+            "id": "10bu04x",
+            "is_robot_indexable": true,
+            "num_duplicates": 0,
+            "report_reasons": null,
+            "author": "Oh_Hey_Its_Big_Zam",
+            "discussion_type": null,
+            "num_comments": 6,
+            "send_replies": true,
+            "media": null,
+            "contest_mode": false,
+            "author_patreon_flair": false,
+            "author_flair_text_color": null,
+            "permalink": "/r/AceAttorneyCirclejerk/comments/10bu04x/what_a_cool_guy_hope_he_beats_the_nickel_samurai/",
+            "whitelist_status": "some_ads",
+            "stickied": false,
+            "url": "https://i.redd.it/99v8qy1n43ca1.jpg",
+            "subreddit_subscribers": 19926,
+            "created_utc": 1673717231.0,
+            "num_crossposts": 0,
+            "mod_reports": [],
+            "is_video": false
+          }
+        }
+      ],
+      "before": null
+    }
+  },
+  {
+    "kind": "Listing",
+    "data": {
+      "after": null,
+      "dist": null,
+      "modhash": "",
+      "geo_filter": "",
+      "children": [
+        {
+          "kind": "t1",
+          "data": {
+            "subreddit_id": "t5_39d8y",
+            "approved_at_utc": null,
+            "author_is_blocked": false,
+            "comment_type": null,
+            "awarders": [],
+            "mod_reason_by": null,
+            "banned_by": null,
+            "author_flair_type": "text",
+            "total_awards_received": 0,
+            "subreddit": "AceAttorneyCirclejerk",
+            "author_flair_template_id": null,
+            "likes": null,
+            "replies": {
+              "kind": "Listing",
+              "data": {
+                "after": null,
+                "dist": null,
+                "modhash": "",
+                "geo_filter": "",
+                "children": [
+                  {
+                    "kind": "more",
+                    "data": {
+                      "count": 2,
+                      "name": "t1_j4gxhl6",
+                      "id": "j4gxhl6",
+                      "parent_id": "t1_j4c2bdm",
+                      "depth": 1,
+                      "children": [
+                        "j4gxhl6",
+                        "j4d0438"
+                      ]
+                    }
+                  }
+                ],
+                "before": null
+              }
+            },
+            "user_reports": [],
+            "saved": false,
+            "id": "j4c2bdm",
+            "banned_at_utc": null,
+            "mod_reason_title": null,
+            "gilded": 0,
+            "archived": false,
+            "collapsed_reason_code": null,
+            "no_follow": true,
+            "author": "AutoModerator",
+            "can_mod_post": false,
+            "created_utc": 1673717231.0,
+            "send_replies": false,
+            "parent_id": "t3_10bu04x",
+            "score": 1,
+            "author_fullname": "t2_6l4z3",
+            "approved_by": null,
+            "mod_note": null,
+            "all_awardings": [],
+            "collapsed": false,
+            "body": "Join the [discord server](https://discord.gg/wp4YhVK3y8) or I'll delete the subreddit, nerds. Maybe I'll delete the subreddit anyways. You can't stop me! I am mad with power and dumb as fuck! Also, **read the [TGAAC spoiler rules](https://reddit.com/r/AceAttorneyCirclejerk/comments/oxvgxp/the_great_image_revival_and_dgs_spoiler_rules/) now.**\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AceAttorneyCirclejerk) if you have any questions or concerns.*",
+            "edited": false,
+            "top_awarded_type": null,
+            "author_flair_css_class": null,
+            "name": "t1_j4c2bdm",
+            "is_submitter": false,
+            "downs": 0,
+            "author_flair_richtext": [],
+            "author_patreon_flair": false,
+            "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Join the &lt;a href=\"https://discord.gg/wp4YhVK3y8\"&gt;discord server&lt;/a&gt; or I&amp;#39;ll delete the subreddit, nerds. Maybe I&amp;#39;ll delete the subreddit anyways. You can&amp;#39;t stop me! I am mad with power and dumb as fuck! Also, &lt;strong&gt;read the &lt;a href=\"https://reddit.com/r/AceAttorneyCirclejerk/comments/oxvgxp/the_great_image_revival_and_dgs_spoiler_rules/\"&gt;TGAAC spoiler rules&lt;/a&gt; now.&lt;/strong&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;em&gt;I am a bot, and this action was performed automatically. Please &lt;a href=\"/message/compose/?to=/r/AceAttorneyCirclejerk\"&gt;contact the moderators of this subreddit&lt;/a&gt; if you have any questions or concerns.&lt;/em&gt;&lt;/p&gt;\n&lt;/div&gt;",
+            "removal_reason": null,
+            "collapsed_reason": null,
+            "distinguished": "moderator",
+            "associated_award": null,
+            "stickied": true,
+            "author_premium": true,
+            "can_gild": true,
+            "gildings": {},
+            "unrepliable_reason": null,
+            "author_flair_text_color": null,
+            "score_hidden": true,
+            "permalink": "/r/AceAttorneyCirclejerk/comments/10bu04x/what_a_cool_guy_hope_he_beats_the_nickel_samurai/j4c2bdm/",
+            "subreddit_type": "public",
+            "locked": false,
+            "report_reasons": null,
+            "created": 1673717231.0,
+            "author_flair_text": null,
+            "treatment_tags": [],
+            "link_id": "t3_10bu04x",
+            "subreddit_name_prefixed": "r/AceAttorneyCirclejerk",
+            "controversiality": 0,
+            "depth": 0,
+            "author_flair_background_color": null,
+            "collapsed_because_crowd_control": null,
+            "mod_reports": [],
+            "num_reports": null,
+            "ups": 1
+          }
+        },
+        {
+          "kind": "t1",
+          "data": {
+            "subreddit_id": "t5_39d8y",
+            "approved_at_utc": null,
+            "author_is_blocked": false,
+            "comment_type": null,
+            "awarders": [],
+            "mod_reason_by": null,
+            "banned_by": null,
+            "author_flair_type": "richtext",
+            "total_awards_received": 0,
+            "subreddit": "AceAttorneyCirclejerk",
+            "author_flair_template_id": "f4a8b078-fe1a-11ec-bb4b-a677b5b8ca2b",
+            "likes": null,
+            "replies": {
+              "kind": "Listing",
+              "data": {
+                "after": null,
+                "dist": null,
+                "modhash": "",
+                "geo_filter": "",
+                "children": [
+                  {
+                    "kind": "t1",
+                    "data": {
+                      "subreddit_id": "t5_39d8y",
+                      "approved_at_utc": null,
+                      "author_is_blocked": false,
+                      "comment_type": null,
+                      "awarders": [],
+                      "mod_reason_by": null,
+                      "banned_by": null,
+                      "author_flair_type": "richtext",
+                      "total_awards_received": 0,
+                      "subreddit": "AceAttorneyCirclejerk",
+                      "author_flair_template_id": "f1cff23c-692d-11e5-abdf-0e7311dec0a7",
+                      "likes": null,
+                      "replies": "",
+                      "user_reports": [],
+                      "saved": false,
+                      "id": "j4c68va",
+                      "banned_at_utc": null,
+                      "mod_reason_title": null,
+                      "gilded": 0,
+                      "archived": false,
+                      "collapsed_reason_code": null,
+                      "no_follow": false,
+                      "author": "burakalp34",
+                      "can_mod_post": false,
+                      "created_utc": 1673718762.0,
+                      "send_replies": true,
+                      "parent_id": "t1_j4c5ag5",
+                      "score": 18,
+                      "author_fullname": "t2_64yyo81g",
+                      "removal_reason": null,
+                      "approved_by": null,
+                      "mod_note": null,
+                      "all_awardings": [],
+                      "body": "https://preview.redd.it/v79s3m3793ca1.jpeg?width=236&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s=e4617392d1aa42a96d590b99b0ad0bf41f7e680d",
+                      "edited": false,
+                      "top_awarded_type": null,
+                      "author_flair_css_class": "timber-step-ladder",
+                      "name": "t1_j4c68va",
+                      "is_submitter": false,
+                      "downs": 0,
+                      "author_flair_richtext": [
+                        {
+                          "a": ":timber-step-ladder:",
+                          "u": "https://emoji.redditmedia.com/g7dne4em96a91_t5_39d8y/timber-step-ladder",
+                          "e": "emoji"
+                        }
+                      ],
+                      "author_patreon_flair": false,
+                      "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;&lt;a href=\"https://preview.redd.it/v79s3m3793ca1.jpeg?width=236&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;v=enabled&amp;amp;s=e4617392d1aa42a96d590b99b0ad0bf41f7e680d\"&gt;https://preview.redd.it/v79s3m3793ca1.jpeg?width=236&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;v=enabled&amp;amp;s=e4617392d1aa42a96d590b99b0ad0bf41f7e680d&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;",
+                      "gildings": {},
+                      "collapsed_reason": null,
+                      "distinguished": null,
+                      "associated_award": null,
+                      "stickied": false,
+                      "author_premium": false,
+                      "can_gild": true,
+                      "link_id": "t3_10bu04x",
+                      "unrepliable_reason": null,
+                      "author_flair_text_color": "dark",
+                      "score_hidden": false,
+                      "permalink": "/r/AceAttorneyCirclejerk/comments/10bu04x/what_a_cool_guy_hope_he_beats_the_nickel_samurai/j4c68va/",
+                      "subreddit_type": "public",
+                      "locked": false,
+                      "report_reasons": null,
+                      "created": 1673718762.0,
+                      "media_metadata": {
+                        "v79s3m3793ca1": {
+                          "status": "valid",
+                          "e": "Image",
+                          "m": "image/jpeg",
+                          "p": [
+                            {
+                              "y": 108,
+                              "x": 108,
+                              "u": "https://preview.redd.it/v79s3m3793ca1.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=e754ede1ce833e5622b41f4a5ac46a4735034ed5"
+                            },
+                            {
+                              "y": 216,
+                              "x": 216,
+                              "u": "https://preview.redd.it/v79s3m3793ca1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=076fa5a9ec90bf44f45ea433718ac246ae957a1e"
+                            }
+                          ],
+                          "s": {
+                            "y": 236,
+                            "x": 236,
+                            "u": "https://preview.redd.it/v79s3m3793ca1.jpeg?width=236&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s=e4617392d1aa42a96d590b99b0ad0bf41f7e680d"
+                          },
+                          "id": "v79s3m3793ca1"
+                        }
+                      },
+                      "author_flair_text": ":timber-step-ladder:",
+                      "treatment_tags": [],
+                      "collapsed": false,
+                      "subreddit_name_prefixed": "r/AceAttorneyCirclejerk",
+                      "controversiality": 0,
+                      "depth": 1,
+                      "author_flair_background_color": "transparent",
+                      "collapsed_because_crowd_control": null,
+                      "mod_reports": [],
+                      "num_reports": null,
+                      "ups": 18
+                    }
+                  }
+                ],
+                "before": null
+              }
+            },
+            "user_reports": [],
+            "saved": false,
+            "id": "j4c5ag5",
+            "banned_at_utc": null,
+            "mod_reason_title": null,
+            "gilded": 0,
+            "archived": false,
+            "collapsed_reason_code": null,
+            "no_follow": false,
+            "author": "otototototo",
+            "can_mod_post": false,
+            "created_utc": 1673718390.0,
+            "send_replies": true,
+            "parent_id": "t3_10bu04x",
+            "score": 19,
+            "author_fullname": "t2_2vlmbrew",
+            "approved_by": null,
+            "mod_note": null,
+            "all_awardings": [],
+            "collapsed": false,
+            "body": "https://preview.redd.it/u6k8d7b383ca1.jpeg?width=600&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s=039a57afc6934c026e999a64c833616ef1f063a2",
+            "edited": false,
+            "top_awarded_type": null,
+            "author_flair_css_class": "howardsus",
+            "name": "t1_j4c5ag5",
+            "is_submitter": false,
+            "downs": 0,
+            "author_flair_richtext": [
+              {
+                "a": ":howardsus:",
+                "u": "https://emoji.redditmedia.com/l538ezl5m6a91_t5_39d8y/howardsus",
+                "e": "emoji"
+              }
+            ],
+            "author_patreon_flair": false,
+            "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;&lt;a href=\"https://preview.redd.it/u6k8d7b383ca1.jpeg?width=600&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;v=enabled&amp;amp;s=039a57afc6934c026e999a64c833616ef1f063a2\"&gt;https://preview.redd.it/u6k8d7b383ca1.jpeg?width=600&amp;amp;format=pjpg&amp;amp;auto=webp&amp;amp;v=enabled&amp;amp;s=039a57afc6934c026e999a64c833616ef1f063a2&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;",
+            "removal_reason": null,
+            "collapsed_reason": null,
+            "distinguished": null,
+            "associated_award": null,
+            "stickied": false,
+            "author_premium": false,
+            "can_gild": true,
+            "gildings": {},
+            "unrepliable_reason": null,
+            "author_flair_text_color": "dark",
+            "score_hidden": false,
+            "permalink": "/r/AceAttorneyCirclejerk/comments/10bu04x/what_a_cool_guy_hope_he_beats_the_nickel_samurai/j4c5ag5/",
+            "subreddit_type": "public",
+            "locked": false,
+            "report_reasons": null,
+            "created": 1673718390.0,
+            "media_metadata": {
+              "u6k8d7b383ca1": {
+                "status": "valid",
+                "e": "Image",
+                "m": "image/jpeg",
+                "p": [
+                  {
+                    "y": 144,
+                    "x": 108,
+                    "u": "https://preview.redd.it/u6k8d7b383ca1.jpeg?width=108&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=385968794bde6e5c450b01221eb383677cac3218"
+                  },
+                  {
+                    "y": 289,
+                    "x": 216,
+                    "u": "https://preview.redd.it/u6k8d7b383ca1.jpeg?width=216&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=af540257d2858b96e5adf1458c09cb8bb3c8972d"
+                  },
+                  {
+                    "y": 428,
+                    "x": 320,
+                    "u": "https://preview.redd.it/u6k8d7b383ca1.jpeg?width=320&amp;crop=smart&amp;auto=webp&amp;v=enabled&amp;s=bafee455b428be68261ee0b7c85c2cc8efad72e0"
+                  }
+                ],
+                "s": {
+                  "y": 803,
+                  "x": 600,
+                  "u": "https://preview.redd.it/u6k8d7b383ca1.jpeg?width=600&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s=039a57afc6934c026e999a64c833616ef1f063a2"
+                },
+                "id": "u6k8d7b383ca1"
+              }
+            },
+            "author_flair_text": ":howardsus:",
+            "treatment_tags": [],
+            "link_id": "t3_10bu04x",
+            "subreddit_name_prefixed": "r/AceAttorneyCirclejerk",
+            "controversiality": 0,
+            "depth": 0,
+            "author_flair_background_color": "transparent",
+            "collapsed_because_crowd_control": null,
+            "mod_reports": [],
+            "num_reports": null,
+            "ups": 19
+          }
+        },
+        {
+          "kind": "t1",
+          "data": {
+            "subreddit_id": "t5_39d8y",
+            "approved_at_utc": null,
+            "author_is_blocked": false,
+            "comment_type": null,
+            "awarders": [],
+            "mod_reason_by": null,
+            "banned_by": null,
+            "author_flair_type": "richtext",
+            "total_awards_received": 0,
+            "subreddit": "AceAttorneyCirclejerk",
+            "author_flair_template_id": "f1cff23c-692d-11e5-abdf-0e7311dec0a7",
+            "likes": null,
+            "replies": "",
+            "user_reports": [],
+            "saved": false,
+            "id": "j4cqbd3",
+            "banned_at_utc": null,
+            "mod_reason_title": null,
+            "gilded": 0,
+            "archived": false,
+            "collapsed_reason_code": null,
+            "no_follow": false,
+            "author": "burakalp34",
+            "can_mod_post": false,
+            "created_utc": 1673726704.0,
+            "send_replies": true,
+            "parent_id": "t3_10bu04x",
+            "score": 5,
+            "author_fullname": "t2_64yyo81g",
+            "approved_by": null,
+            "mod_note": null,
+            "all_awardings": [],
+            "collapsed": false,
+            "body": "![gif](giphy|PgIH5iRfHJN1PfYpfA|downsized)",
+            "edited": false,
+            "top_awarded_type": null,
+            "author_flair_css_class": "timber-step-ladder",
+            "name": "t1_j4cqbd3",
+            "is_submitter": false,
+            "downs": 0,
+            "author_flair_richtext": [
+              {
+                "a": ":timber-step-ladder:",
+                "u": "https://emoji.redditmedia.com/g7dne4em96a91_t5_39d8y/timber-step-ladder",
+                "e": "emoji"
+              }
+            ],
+            "author_patreon_flair": false,
+            "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;&lt;a href=\"https://giphy.com/gifs/PgIH5iRfHJN1PfYpfA\" target=\"_blank\"&gt;&lt;img src=\"https://external-preview.redd.it/z5tEoj69PYUVIpq7w3Qfb2a32c6LP0NlXCjJxh9UWJg.gif?width=480&amp;height=270&amp;v=enabled&amp;s=4c18bd24f3ea8b82b89123cd42435eb0213cce24\" width=\"480\" height=\"270\"&gt;&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;",
+            "removal_reason": null,
+            "collapsed_reason": null,
+            "distinguished": null,
+            "associated_award": null,
+            "stickied": false,
+            "author_premium": false,
+            "can_gild": true,
+            "gildings": {},
+            "unrepliable_reason": null,
+            "author_flair_text_color": "dark",
+            "score_hidden": false,
+            "permalink": "/r/AceAttorneyCirclejerk/comments/10bu04x/what_a_cool_guy_hope_he_beats_the_nickel_samurai/j4cqbd3/",
+            "subreddit_type": "public",
+            "locked": false,
+            "report_reasons": null,
+            "created": 1673726704.0,
+            "media_metadata": {
+              "giphy|PgIH5iRfHJN1PfYpfA|downsized": {
+                "status": "valid",
+                "e": "AnimatedImage",
+                "m": "image/gif",
+                "ext": "https://giphy.com/gifs/PgIH5iRfHJN1PfYpfA",
+                "p": [
+                  {
+                    "y": 78,
+                    "x": 140,
+                    "u": "https://b.thumbs.redditmedia.com/i5KHr2V8H_RnXaDeZwR9HZKK0s1IS56gSgVTztpa79A.jpg"
+                  }
+                ],
+                "s": {
+                  "y": 270,
+                  "gif": "https://external-preview.redd.it/z5tEoj69PYUVIpq7w3Qfb2a32c6LP0NlXCjJxh9UWJg.gif?width=480&amp;height=270&amp;v=enabled&amp;s=4c18bd24f3ea8b82b89123cd42435eb0213cce24",
+                  "mp4": "https://external-preview.redd.it/z5tEoj69PYUVIpq7w3Qfb2a32c6LP0NlXCjJxh9UWJg.gif?width=480&amp;height=270&amp;format=mp4&amp;v=enabled&amp;s=de021dc52e0b94bfa3cd230ca0b5954db80b5dee",
+                  "x": 480
+                },
+                "t": "giphy",
+                "id": "giphy|PgIH5iRfHJN1PfYpfA|downsized"
+              }
+            },
+            "author_flair_text": ":timber-step-ladder:",
+            "treatment_tags": [],
+            "link_id": "t3_10bu04x",
+            "subreddit_name_prefixed": "r/AceAttorneyCirclejerk",
+            "controversiality": 0,
+            "depth": 0,
+            "author_flair_background_color": "transparent",
+            "collapsed_because_crowd_control": null,
+            "mod_reports": [],
+            "num_reports": null,
+            "ups": 5
+          }
+        }
+      ],
+      "before": null
+    }
+  }
+]

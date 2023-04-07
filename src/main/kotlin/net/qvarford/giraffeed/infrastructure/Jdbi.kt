@@ -13,8 +13,8 @@ import org.sqlite.JDBC
 import java.sql.DriverManager
 
 @ApplicationScoped
-class JdbiContext(@ConfigProperty(name = "quarkus.datasource.jdbc.url") connectionString: String) {
-    private val jdbi = Jdbi.create(connectionString)
+class JdbiContext {
+    private val jdbi = Jdbi.create("jdbc:sqlite:db.db")
         .installPlugin(KotlinPlugin())
 
     init {

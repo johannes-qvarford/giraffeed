@@ -23,8 +23,8 @@ fun cachingFeedType(jdbiContext: JdbiContext, objectMapper: ObjectMapper, feedTy
 }
 
 @ApplicationScoped
-class DelegatingFeedTypeFactory(jdbiContext: JdbiContext, objectMapper: ObjectMapper, nitterVideoUrlFactory: NitterVideoUrlFactory) : FeedTypeFactory {
-    val feedTypes = arrayListOf(LibredditFeedType, NitterFeedType(nitterVideoUrlFactory))
+class DelegatingFeedTypeFactory(jdbiContext: JdbiContext, objectMapper: ObjectMapper, nitterVideoUrlFactory: NitterVideoUrlFactory, libredditMetadataProvider: LibredditMetadataProvider) : FeedTypeFactory {
+    val feedTypes = arrayListOf(LibredditFeedType(libredditMetadataProvider), NitterFeedType(nitterVideoUrlFactory))
         .map { cachingFeedType(jdbiContext, objectMapper, it) }
         .toList()
 

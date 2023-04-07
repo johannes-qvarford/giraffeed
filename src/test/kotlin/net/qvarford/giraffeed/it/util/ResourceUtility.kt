@@ -10,7 +10,7 @@ class Resources {
         }
 
         private fun resource(s: String): InputStream {
-            return Resources::class.java.classLoader.getResourceAsStream(s)!!
+            return Resources::class.java.classLoader.getResourceAsStream(s) ?: throw RuntimeException("Could not find resource: $s")
         }
     }
 }

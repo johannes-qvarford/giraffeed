@@ -17,7 +17,11 @@ class EnhancementResource(private val service: EnhancementService, private val c
     @Path("{name}/{resource}")
     @Produces("application/atom+xml; charset=UTF-8")
     fun enhance(@PathParam("name") name: String, @PathParam("resource") resource: String): InputStream {
-        val feed = service.enhance(feedTypeFactory.ofName(name), FeedResource(resource))
-        return converter.feedToXmlStream(feed)
+        try {
+            val feed = service.enhance(feedTypeFactory.ofName(name), FeedResource(resource))
+            return converter.feedToXmlStream(feed)
+        } catch (e: Exception) {
+            throw e;
+        }
     }
 }

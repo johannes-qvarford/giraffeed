@@ -25,7 +25,11 @@ private val sourceUrlRegex: Regex = Regex("^(?:https://)?(?:libreddit\\.privacy.
 //   This may not be the case for non-imgur links
 //   0.data.children.0.data.url can probably be queried
 
-object LibredditFeedType : FeedType {
+// TODO: create classes for different kinds of urls, RedditPreviewUrl, RedditImageUrl, RedditExternalPreviewUrl, LibredditPreviewUrl etc. and some good ways to turn libreddit to reddit url and vice-versa.
+
+// TODO: use visitors / selector iterators to avoid repeating traversal code.
+
+class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider) : FeedType {
     override val name: String
         get() = "libreddit"
 
@@ -35,19 +39,21 @@ object LibredditFeedType : FeedType {
         return FeedResource(sourceUrlRegex.matchEntire(url.value.toString())!!.groupValues[1])
     }
 
-    override fun feedUriForResource(resource: FeedResource): URI = URI.create("https://www.reddit.com/r/${resource.value}/hot.rss")
+    override fun feedUriForResource(resource: FeedResource): URI =
+        URI.create("https://www.reddit.com/r/${resource.value}/hot.rss")
 
     override fun enhanceEntry(entry: FeedEntry): FeedEntry {
         return entry.copy(
             link = URI.create("https://libreddit.privacy.qvarford.net").resolve(entry.link.path),
-            content = replaceContent(entry.content)
+            content = replaceContent(link = LibredditEntryUrl(entry.link), content = entry.content)
         )
     }
 
-    private fun replaceContent(content: String): String {
+    private fun replaceContent(content: String, link: LibredditEntryUrl): String {
         val document: Document = Jsoup.parse(content)
 
         addMissingImageIfContainsImageLink(document)
+        enhanceImagesWithMetadata(link = link, document = document)
         replaceRedditLinks(document)
         unwrapPotentialImageInTable(document)
 
@@ -137,8 +143,8 @@ object LibredditFeedType : FeedType {
                     img?.let {
                         it.attr("style", "width: 740px;")
                         node.parent()!!.prependChild(it)
-                        node.remove()
                     }
+                    node.remove()
                     return
                 }
 
@@ -149,6 +155,46 @@ object LibredditFeedType : FeedType {
         }
         findTable(document)
     }
+
+    private fun enhanceImagesWithMetadata(document: Document, link: LibredditEntryUrl) {
+        val metadata = metadataProvider.lookup(link.reddit)
+        if (metadata.imageUrls.isNotEmpty()) {
+            val imgElements = mutableListOf<Element>()
+            fun recurse(element: Element) {
+                if (element.tagName() == "img") {
+                    imgElements.add(element)
+                }
+                for (child in element.children()) {
+                    recurse(child)
+                }
+            }
+            recurse(document)
+
+            val alt = imgElements.firstOrNull()?.attr("alt")
+            val title = imgElements.firstOrNull()?.attr("title")
+            for (img in imgElements) {
+                img.remove()
+            }
+
+            for (image in metadata.imageUrls) {
+                val img = document.createElement("img")
+                img.attr("src", image.toString())
+                alt?.let {
+                    if (it.isNotEmpty()) {
+                        img.attr("alt", it)
+                    }
+
+                }
+                title?.let {
+                    if (it.isNotEmpty()) {
+                        img.attr("title", it)
+                    }
+                }
+                img.attr("style", "width: 740px;")
+                document.body().prependChild(img)
+            }
+        }
+    }
 }
 
 private fun String.replaceLink(regex: String, pathPrefix: String): String {
@@ -157,4 +203,19 @@ private fun String.replaceLink(regex: String, pathPrefix: String): String {
         "libreddit.privacy.qvarford.net${pathPrefix}${capture}"
     }
     return r
+}
+
+data class LibredditMetadata(val imageUrls: List<URI> = emptyList(), val videoUrl: URI? = null, val content: String? = null)
+
+data class LibredditEntryUrl(val value: URI) {
+    val reddit: RedditEntryUrl
+        get() = RedditEntryUrl(URI.create(value.toString().replace("libreddit.privacy.qvarford.net", "wwww.reddit.com")))
+}
+
+data class RedditEntryUrl(val value: URI)
+
+
+
+interface LibredditMetadataProvider {
+    fun lookup(entryUrl: RedditEntryUrl): LibredditMetadata
 }
