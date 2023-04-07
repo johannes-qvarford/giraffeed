@@ -22,7 +22,7 @@ class HttpClientLibredditMetadataProvider(private val httpClient: HttpClient, pr
         val root = wrapper[0].data.children[0].data
 
         return if (root.isVideo) {
-            LibredditMetadata(videoUrl = HlsUrl(URI.create(root.media!!.redditVideo.hlsUrl)).mp4Url)
+            LibredditMetadata(videoUrl = HlsUrl(URI.create(root.media!!.redditVideo!!.hlsUrl)).mp4Url)
         } else if (root.isGallery == true) {
             val images = root.galleryData!!.items.map { URI.create("https://i.redd.it/${it.mediaId}") }.toList()
             LibredditMetadata(imageUrls = images)
@@ -56,7 +56,7 @@ data class ListingChild(val data: T3)
 
 data class T3(val isVideo: Boolean, val isGallery: Boolean?, val media: Media?, val galleryData: GalleryData?, val url: String?, val selftext: String?, val selftextHtml: String?)
 
-data class Media(val redditVideo: RedditVideo)
+data class Media(val redditVideo: RedditVideo?)
 
 data class RedditVideo(val hlsUrl: String)
 
