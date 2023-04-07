@@ -35,7 +35,6 @@ class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider)
 
         enhanceImagesWithMetadata(link = link, document = document)
         replaceRedditLinks(document)
-        unwrapPotentialImageInTable(document)
 
         return document.outerHtml()
     }
@@ -100,42 +99,6 @@ class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider)
             .replace(Regex("/preview/pre/(.*)\\?.*"), "/img/$1")
     }
 
-    private fun unwrapPotentialImageInTable(document: Document) {
-        fun findImg(node: Node): Element? {
-            if (node is Element) {
-                if (node.tagName() == "img") {
-                    return node
-                }
-                for (child in node.childNodes()) {
-                    val img = findImg(child)
-                    if (img != null) {
-                        return img
-                    }
-                }
-            }
-            return null
-        }
-
-        fun findTable(node: Node) {
-            if (node is Element) {
-                if (node.tagName() == "table") {
-                    val img = findImg(node)
-                    img?.let {
-                        it.attr("style", "width: 740px;")
-                        node.parent()!!.prependChild(it)
-                    }
-                    node.remove()
-                    return
-                }
-
-                for (child in node.childNodes()) {
-                    findTable(child)
-                }
-            }
-        }
-        findTable(document)
-    }
-
     private fun enhanceImagesWithMetadata(document: Document, link: LibredditEntryUrl) {
         val metadata = metadataProvider.lookup(link.reddit)
         if (metadata.imageUrls.isNotEmpty()) {
@@ -180,6 +143,19 @@ class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider)
                 node.remove()
             }
             document.body().append(Entities.unescape(metadata.content))
+
+            fun removeComments(node: Node) {
+                if (node is Comment) {
+                    node.remove()
+                }
+
+                if (node is Element) {
+                    for (child in node.childNodes()) {
+                        removeComments(child)
+                    }
+                }
+            }
+            removeComments(document)
         }
 
         if (metadata.videoUrl != null) {

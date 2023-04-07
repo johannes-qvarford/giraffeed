@@ -12,18 +12,16 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsAreFetchedFromReddi
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/bb8vaf/yall_fuckers_better_jerk_it_good/"/>
         <atom:published>2019-04-09T14:52:59Z</atom:published>
         <atom:title>Y'all fuckers better jerk it good.</atom:title>
-        <atom:content type="html">&lt;!-- SC_OFF --&gt;
-&lt;html&gt;
+        <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;!-- SC_OFF --&gt;
   &lt;div class="md"&gt;
    &lt;p&gt;As the Ace Attorney HD Trilogy has just been released in the West, I'm expecting that a lot of people will make their way to &lt;a href="/r/AceAttorney"&gt;r/AceAttorney&lt;/a&gt;, and through them, this subreddit. So, newcomers, let's get some shit straight right out the door.&lt;/p&gt;
    &lt;p&gt;Firstly, I understand that your consoles/PC allow you to easily and quickly screenshot many "haha funny moments" in the games. That's great, and I'm so happy for you. Don't post them here. This is not the place for random screenshots of "lol autopsy report xd" or "haha parrot amirite guys" or anything else from the game -- at the very least, your posts should be humorous on their own merit because of something that &lt;em&gt;you&lt;/em&gt; have created or done that causes them to be humorous, not because they merely exist in the game and you're just sharing these moments. We've played the games already, so get those outta here.&lt;/p&gt;
    &lt;p&gt;The ideal jerk post is funny, meta, and completely independent of levels of effort. Whether you're making original content mocking that which already exists, directly linking to the main subreddit, or straight up shitposting like an imbecile (ironically, of course), these jerks are the type of goal that this subreddit ought to be aiming for. I appreciate any new members of the subreddit, but please ensure that you're sticking to these very vague guidelines.&lt;/p&gt;
    &lt;p&gt;And you'll know if you're not, because I'll gladly remove any posts that are stupid unfunny bullshit.&lt;/p&gt;
    &lt;p&gt;With that said, welcome to AACJ, where we're all the type of guy that enjoys series as a whole, and we avidly read Agatha Christie novels all the time -- and oh man you'll be constantly remembered about it. Enjoy.&lt;/p&gt;
-  &lt;/div&gt;&lt;!-- SC_ON --&gt;
+  &lt;/div&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -305,15 +303,13 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsAreFetchedFromReddi
         <atom:link href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/10a64nd/describe_a_character_in_your_favorite_case_as_a/"/>
         <atom:published>2023-01-12T18:03:28Z</atom:published>
         <atom:title>Describe a character in your favorite case as a Florida man headline</atom:title>
-        <atom:content type="html">&lt;!-- SC_OFF --&gt;
-&lt;html&gt;
+        <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;!-- SC_OFF --&gt;
   &lt;div class="md"&gt;
    &lt;p&gt;Example: Rookie Florida attorney solves a 12 year old case.&lt;/p&gt;
    &lt;p&gt;My example: Florida teen gets chess pieces thrown at him which gives him the strength to put his own father in jail.&lt;/p&gt;
-  &lt;/div&gt;&lt;!-- SC_ON --&gt;
+  &lt;/div&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
