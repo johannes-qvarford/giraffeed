@@ -26,11 +26,11 @@ class HttpClientLibredditMetadataProvider(private val httpClient: HttpClient, pr
         } else if (root.isGallery == true) {
             val images = root.galleryData!!.items.map { URI.create("https://i.redd.it/${it.mediaId}") }.toList()
             LibredditMetadata(imageUrls = images)
-        } else if (root.selftext != null) {
+        } else if (root.thumbnail == "self") {
             // NOTE: root.selftext_html may be null for text posts with no content (only a title).
             // We therefor need to check selftext instead, and have a fallback for null selftext_html
             // TODO: Check if some links need to be replaced.
-            LibredditMetadata(content = root.selftextHtml ?: "<div>[EMPTY]</div>")
+            LibredditMetadata(content = root.selftextHtml ?: "<p>[empty]</p>")
         }
         else {
             LibredditMetadata(imageUrls = listOf(URI.create(root.url!!)), videoUrl = null)
@@ -54,7 +54,7 @@ data class Listing(val children: List<ListingChild>)
 
 data class ListingChild(val data: T3)
 
-data class T3(val isVideo: Boolean, val isGallery: Boolean?, val media: Media?, val galleryData: GalleryData?, val url: String?, val selftext: String?, val selftextHtml: String?)
+data class T3(val isVideo: Boolean, val isGallery: Boolean?, val media: Media?, val galleryData: GalleryData?, val url: String?, val selftext: String?, val selftextHtml: String?, val thumbnail: String?)
 
 data class Media(val redditVideo: RedditVideo?)
 

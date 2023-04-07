@@ -2,28 +2,9 @@ package net.qvarford.giraffeed.domain
 
 import java.net.URI
 import org.jsoup.Jsoup
-import org.jsoup.nodes.Document
-import org.jsoup.nodes.Element
-import org.jsoup.nodes.TextNode
-import org.jsoup.nodes.Node
+import org.jsoup.nodes.*
 
 private val sourceUrlRegex: Regex = Regex("^(?:https://)?(?:libreddit\\.privacy.qvarford\\.net|(?:www\\.)?reddit\\.com)/r/([^/]+).*$")
-
-// TODO: Pick up metadata for galleries: https://www.reddit.com/r/linuxhardware/comments/idarg1/mutantc_modular_and_open_source_handheld_pc_more.json
-//  data.children[0].data.url includes /gallery if it is a gallery
-//  detect gallery by <img src="https://b.thumbs.redditmedia.com/...> in the feed
-//  data.children[0].data.media_metadata.[image_id] for the images
-//  external-preview links are dereferenced, e.g. to imgur in the url property
-//  run gallery fetches in parallel, replace single thumbnail with .
-
-// TODO: Serve underlying videos instead of gifs
-//  Sometimes Libreddit serves gifs like https://libreddit.privacy.qvarford.net/preview/external-pre/abc.gif?width=640&crop=smart&s=6dab0fdd15cc8912cfaf64fd40eae080fec3a441
-//  When you can find the underlying video on the libreddit page like /vid/XYZ/1080.mp4.
-//  Need to investigate if it's always this way with gifs, and whether or not it just happens on /preview/external-pre/
-//  Also need to verify if an mp4 is always an available source, or if we need to be able handle /hls/XYZ/HLSPlaylist.m3u8 as a fallback.
-//  ALSO: The [image] gif seems to retain the quality, so maybe just replace the preview img src?
-//   This may not be the case for non-imgur links
-//   0.data.children.0.data.url can probably be queried
 
 // TODO: create classes for different kinds of urls, RedditPreviewUrl, RedditImageUrl, RedditExternalPreviewUrl, LibredditPreviewUrl etc. and some good ways to turn libreddit to reddit url and vice-versa.
 
@@ -52,7 +33,6 @@ class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider)
     private fun replaceContent(content: String, link: LibredditEntryUrl): String {
         val document: Document = Jsoup.parse(content)
 
-        addMissingImageIfContainsImageLink(document)
         enhanceImagesWithMetadata(link = link, document = document)
         replaceRedditLinks(document)
         unwrapPotentialImageInTable(document)
@@ -172,8 +152,9 @@ class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider)
 
             val alt = imgElements.firstOrNull()?.attr("alt")
             val title = imgElements.firstOrNull()?.attr("title")
-            for (img in imgElements) {
-                img.remove()
+
+            for (node in document.body().childNodes()) {
+                node.remove()
             }
 
             for (image in metadata.imageUrls) {
@@ -183,7 +164,6 @@ class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider)
                     if (it.isNotEmpty()) {
                         img.attr("alt", it)
                     }
-
                 }
                 title?.let {
                     if (it.isNotEmpty()) {
@@ -196,11 +176,16 @@ class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider)
         }
 
         if (metadata.content != null) {
-            // Nothing to do for now...
+            for (node in document.body().childNodes()) {
+                node.remove()
+            }
+            document.body().append(Entities.unescape(metadata.content))
         }
 
         if (metadata.videoUrl != null) {
-            document.body().children().forEach { it.remove() }
+            for (node in document.body().childNodes()) {
+                node.remove()
+            }
 
             // TODO: Standardize creation of video elements across feed types.
             val video = document.createElement("video")

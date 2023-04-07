@@ -286,7 +286,7 @@
             "discussion_type": null,
             "num_comments": 13,
             "send_replies": true,
-            "media": null,
+            "media": {},
             "contest_mode": false,
             "author_patreon_flair": false,
             "author_flair_text_color": "dark",
