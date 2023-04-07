@@ -2,10 +2,25 @@ package net.qvarford.giraffeed.domain
 
 import java.net.URI
 
-sealed interface FeedType {
+interface FeedEnhancer {
+    fun enhance(feed: Feed): Feed {
+        return feed.copy(
+            entries = enhanceEntries(feed.entries)
+        )
+    }
+
+    fun enhanceEntries(entries: List<FeedEntry>): List<FeedEntry> {
+        return entries.filter { shouldIncludeEntry(it) }.map { enhanceEntry(it) }.toList()
+    }
+
+    fun shouldIncludeEntry(entry: FeedEntry) = true
+
+    fun enhanceEntry(entry: FeedEntry) = entry
+}
+
+interface FeedType : FeedEnhancer {
     val name: String
     fun understandsSourceUrl(url: SourceUrl): Boolean
-    fun enhance(feed: Feed): Feed
     fun extractResource(url: SourceUrl): FeedResource
     fun feedUriForResource(resource: FeedResource): URI
 

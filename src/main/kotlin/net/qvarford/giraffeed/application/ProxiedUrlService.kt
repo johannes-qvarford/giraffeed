@@ -1,10 +1,10 @@
 package net.qvarford.giraffeed.application
 
+import jakarta.enterprise.context.ApplicationScoped
 import net.qvarford.giraffeed.domain.FeedTypeFactory
 import net.qvarford.giraffeed.domain.FeedUrl
 import net.qvarford.giraffeed.domain.ProxyUrl
 import net.qvarford.giraffeed.domain.SourceUrl
-import javax.enterprise.context.ApplicationScoped
 
 @ApplicationScoped
 class ProxiedUrlService(val feedTypeFactory: FeedTypeFactory) {

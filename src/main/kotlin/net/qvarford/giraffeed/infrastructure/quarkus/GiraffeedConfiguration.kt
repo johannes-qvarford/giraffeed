@@ -1,12 +1,10 @@
 package net.qvarford.giraffeed.infrastructure.quarkus
 
-import net.qvarford.giraffeed.domain.NitterVideoUrlFactory
-import net.qvarford.giraffeed.infrastructure.CachingNitterVideoUrlFactory
-import net.qvarford.giraffeed.infrastructure.HttpClientNitterVideoUrlFactory
 import java.net.http.HttpClient
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
-import javax.enterprise.context.ApplicationScoped
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Named
 import javax.xml.parsers.DocumentBuilder
 import javax.xml.parsers.DocumentBuilderFactory
 
@@ -27,16 +25,11 @@ class GiraffeedConfiguration {
     }
 
     @ApplicationScoped
+    @Named("multiThreadExecutorService")
     fun executorService(): ExecutorService {
         // We may be running on systems with a single core, but I want to be able to run downloads concurrently.
         // In the future, let's just use an executor that spawns virtual threads, or cut out the middleman
         // and use virtual threads directly.
         return Executors.newFixedThreadPool(8)
-    }
-
-    @ApplicationScoped
-    fun nitterVideoUrlFactory(httpClient: HttpClient): NitterVideoUrlFactory {
-        val inner = HttpClientNitterVideoUrlFactory(httpClient)
-        return CachingNitterVideoUrlFactory(inner)
     }
 }

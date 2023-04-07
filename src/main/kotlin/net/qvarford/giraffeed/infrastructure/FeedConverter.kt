@@ -12,7 +12,7 @@ import java.net.URI
 import java.nio.charset.Charset
 import java.time.OffsetDateTime
 import java.time.format.DateTimeFormatter
-import javax.enterprise.context.ApplicationScoped
+import jakarta.enterprise.context.ApplicationScoped
 import javax.xml.namespace.NamespaceContext
 import javax.xml.parsers.DocumentBuilder
 import javax.xml.transform.OutputKeys

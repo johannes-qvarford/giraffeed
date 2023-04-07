@@ -2,9 +2,9 @@ package net.qvarford.giraffeed.resources
 
 import net.qvarford.giraffeed.application.ProxiedUrlService
 import net.qvarford.giraffeed.domain.SourceUrl
-import javax.ws.rs.Path
-import javax.ws.rs.GET
-import javax.ws.rs.QueryParam
+import jakarta.ws.rs.Path
+import jakarta.ws.rs.GET
+import jakarta.ws.rs.QueryParam
 import java.net.URI
 
 @Path("/proxied-url")

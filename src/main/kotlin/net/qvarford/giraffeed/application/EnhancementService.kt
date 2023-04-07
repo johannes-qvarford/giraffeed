@@ -1,7 +1,7 @@
 package net.qvarford.giraffeed.application
 
 import net.qvarford.giraffeed.domain.*
-import javax.enterprise.context.ApplicationScoped
+import jakarta.enterprise.context.ApplicationScoped
 
 interface EnhancementService {
     fun enhance(type: FeedType, resource: FeedResource): Feed

@@ -13,10 +13,11 @@ import java.net.http.HttpResponse
 import java.time.OffsetDateTime
 import java.util.concurrent.Callable
 import java.util.concurrent.ExecutorService
-import javax.enterprise.context.ApplicationScoped
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Named
 
 @ApplicationScoped
-class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private val objectMapper: ObjectMapper, private val executorService: ExecutorService) : TwitchFeedDownloader {
+class HttpClientTwitchFeedDownloader(private val httpClient: HttpClient, private val objectMapper: ObjectMapper, @Named("multiThreadExecutorService") private val executorService: ExecutorService) : TwitchFeedDownloader {
     override fun downloadLatestVideosFeed(token: TwitchUserAccessToken): Feed {
         val users = followedBy(token, UserId("29943195"))
 

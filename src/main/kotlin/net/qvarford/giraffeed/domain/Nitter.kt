@@ -21,16 +21,13 @@ class NitterFeedType(private val videoUrlFactory: NitterVideoUrlFactory) : FeedT
 
     override fun feedUriForResource(resource: FeedResource): URI = URI.create("https://nitter.privacy.qvarford.net/${resource.value}/rss")
 
-    override fun enhance(feed: Feed): Feed {
-        // expand the content html/xml and rewrite it.
-        return feed.copy(
-            entries = feed.entries
-                .filter { entry -> entry.content.contains("<video") || entry.content.contains("<img") }
-                .map { entry ->
-                    entry.copy(
-                        content = replaceContent(id = entry.id, content = entry.content)
-                )}
-                .toList()
+    override fun shouldIncludeEntry(entry: FeedEntry): Boolean {
+        return entry.content.contains("<video") || entry.content.contains("<img")
+    }
+
+    override fun enhanceEntry(entry: FeedEntry): FeedEntry {
+        return entry.copy(
+            content = replaceContent(id = entry.id, content = entry.content)
         )
     }
 

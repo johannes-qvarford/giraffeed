@@ -1,5 +1,6 @@
 package net.qvarford.giraffeed.infrastructure
 
+import org.eclipse.microprofile.config.inject.ConfigProperty
 import org.jdbi.v3.core.Jdbi
 import org.jdbi.v3.core.kotlin.KotlinPlugin
 import org.jdbi.v3.core.kotlin.mapTo
@@ -7,18 +8,26 @@ import org.jdbi.v3.core.kotlin.useHandleUnchecked
 import org.jdbi.v3.core.kotlin.withHandleUnchecked
 import java.time.Duration
 import java.time.Instant
+import jakarta.enterprise.context.ApplicationScoped
+import org.sqlite.JDBC
+import java.sql.DriverManager
 
-// TODO: Try this out.
-class JdbiContext(private val connectionString: String) {
+@ApplicationScoped
+class JdbiContext(@ConfigProperty(name = "quarkus.datasource.jdbc.url") connectionString: String) {
     private val jdbi = Jdbi.create(connectionString)
         .installPlugin(KotlinPlugin())
 
-    fun initializeSchema() {
+    init {
+        initializeSchema()
+        evictSuitableEntries()
+    }
+
+    private fun initializeSchema() {
         jdbi.useHandle<Exception> {
             it.execute("""
                 create table if not exists cache_entries (
                     cache_name text not null,
-                    lru_timestamp int not null
+                    lru_timestamp int not null,
                     key text not null,
                     value text not null
                 );
@@ -28,10 +37,17 @@ class JdbiContext(private val connectionString: String) {
         }
     }
 
-    fun evictSuitableEntries() {
+    private fun evictSuitableEntries() {
         jdbi.useHandleUnchecked  {
             it.createUpdate("delete from cache_entries where lru_timestamp < :earliest_timestamp")
-                .bind("earliest_timestamp", Instant.now().minus(Duration.ofDays(2)))
+                .bind("earliest_timestamp", Instant.now().minus(Duration.ofDays(2)).epochSecond)
+                .execute()
+        }
+    }
+
+    fun evictAllEntries() {
+        jdbi.useHandleUnchecked  {
+            it.createUpdate("delete from cache_entries")
                 .execute()
         }
     }
@@ -42,9 +58,9 @@ class JdbiContext(private val connectionString: String) {
 }
 
 private class JdbiMetadataCache(private val jdbi: Jdbi, private val name: String) : MetadataCache {
-    override fun get(key: String): String {
+    override fun get(key: String): String? {
         return jdbi.withHandleUnchecked {
-            it.createUpdate("update cache_entries set lru_timstamp = unixepoch() where cache_name = :cache_name and key = :key")
+            it.createUpdate("update cache_entries set lru_timestamp = unixepoch() where cache_name = :cache_name and key = :key")
                 .bind("cache_name", name)
                 .bind("key", key)
                 .execute()
@@ -52,7 +68,7 @@ private class JdbiMetadataCache(private val jdbi: Jdbi, private val name: String
                 .bind("cache_name", name)
                 .bind("key", key)
                 .mapTo<String>()
-                .one()
+                .firstOrNull()
         }
     }
 

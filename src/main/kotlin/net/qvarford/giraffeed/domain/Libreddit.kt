@@ -37,15 +37,10 @@ object LibredditFeedType : FeedType {
 
     override fun feedUriForResource(resource: FeedResource): URI = URI.create("https://www.reddit.com/r/${resource.value}/hot.rss")
 
-    override fun enhance(feed: Feed): Feed {
-        // expand the content html/xml and rewrite it. Let's keep it simple with regex to replace www.reddit.com and image hosts.
-        return feed.copy(
-            entries = feed.entries.map { entry ->
-                entry.copy(
-                    link = URI.create("https://libreddit.privacy.qvarford.net").resolve(entry.link.path),
-                    content = replaceContent(entry.content)
-                )
-            }.toList()
+    override fun enhanceEntry(entry: FeedEntry): FeedEntry {
+        return entry.copy(
+            link = URI.create("https://libreddit.privacy.qvarford.net").resolve(entry.link.path),
+            content = replaceContent(entry.content)
         )
     }
 

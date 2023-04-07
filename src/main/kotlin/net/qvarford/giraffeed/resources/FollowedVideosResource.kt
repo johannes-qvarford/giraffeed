@@ -7,11 +7,11 @@ import net.qvarford.giraffeed.domain.TwitchUserAccessToken
 import net.qvarford.giraffeed.infrastructure.FeedConverter
 import java.io.InputStream
 import java.util.*
-import javax.ws.rs.GET
-import javax.ws.rs.HeaderParam
-import javax.ws.rs.Path
-import javax.ws.rs.Produces
-import javax.ws.rs.core.MediaType
+import jakarta.ws.rs.GET
+import jakarta.ws.rs.HeaderParam
+import jakarta.ws.rs.Path
+import jakarta.ws.rs.Produces
+import jakarta.ws.rs.core.MediaType
 
 @Path("/followed-videos")
 class FollowedVideosResource(private val twitchService: TwitchService, private val feedConverter: FeedConverter) {

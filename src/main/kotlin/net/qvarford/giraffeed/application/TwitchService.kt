@@ -3,7 +3,7 @@ package net.qvarford.giraffeed.application
 import net.qvarford.giraffeed.domain.Feed
 import net.qvarford.giraffeed.domain.TwitchFeedDownloader
 import net.qvarford.giraffeed.domain.TwitchUserAccessToken
-import javax.enterprise.context.ApplicationScoped
+import jakarta.enterprise.context.ApplicationScoped
 
 interface TwitchService {
     fun downloadLatestVideosFeed(token: TwitchUserAccessToken): Feed

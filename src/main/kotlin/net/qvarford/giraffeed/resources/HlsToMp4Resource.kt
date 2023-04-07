@@ -6,9 +6,9 @@ import net.qvarford.giraffeed.domain.Mp4
 import java.net.URI
 import java.security.MessageDigest
 import java.util.*
-import javax.ws.rs.*
-import javax.ws.rs.core.HttpHeaders
-import javax.ws.rs.core.Response
+import jakarta.ws.rs.*
+import jakarta.ws.rs.core.HttpHeaders
+import jakarta.ws.rs.core.Response
 
 // Example request : curl --verbose http://localhost:4567/hls-to-mp4/aHR0cHM6Ly9uaXR0ZXIucHJpdmFjeS5xdmFyZm9yZC5uZXQvdmlkZW8vQjE0NTMyOEI2MEFGNi9odHRwcyUzQSUyRiUyRnZpZGVvLnR3aW1nLmNvbSUyRmFtcGxpZnlfdmlkZW8lMkYxNjM1Nzc4NDkzNjg1NDIwMDM4JTJGcGwlMkYzckxxcFZXa2dCSnNTRWM0Lm0zdTglM0Z0YWclM0QxNiUyNmNvbnRhaW5lciUzRGZtcDQ=.mp4 >file.mp4
 

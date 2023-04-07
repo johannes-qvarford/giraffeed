@@ -1,6 +1,6 @@
 package net.qvarford.giraffeed.infrastructure
 
-import javax.enterprise.context.ApplicationScoped
+import jakarta.enterprise.context.ApplicationScoped
 
 // Only cache the thing that requires network access to save memory.
 // Use Sqlite as backing storage.
@@ -11,6 +11,6 @@ import javax.enterprise.context.ApplicationScoped
 // Amount of feeds * Entries in each feed * cache count * row size (200 bytes seems like a reasonable upper bound)
 
 interface MetadataCache {
-    fun get(key: String): String
+    fun get(key: String): String?
     fun put(key: String, value: String)
 }

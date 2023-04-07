@@ -1,4 +1,4 @@
-net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromReddit=[
+net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsAreFetchedFromReddit=[
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
     <atom:updated>2023-01-14T18:19:38Z</atom:updated>
@@ -451,7 +451,7 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.libredditFeedsAreFetchedFromRe
 ]
 
 
-net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitter=[
+net.qvarford.giraffeed.it.SnapshotResourceTest.nitterFeedsAreFetchedFromNitter=[
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
     <atom:icon>https://nitter.privacy.qvarford.net/pic/pbs.twimg.com%2Fprofile_images%2F1611832494382276608%2F337e3FQZ_400x400.jpg</atom:icon>
@@ -644,7 +644,7 @@ net.qvarford.giraffeed.it.EnhancementResourceTest.nitterFeedsAreFetchedFromNitte
 ]
 
 
-net.qvarford.giraffeed.it.EnhancementResourceTest.twitchVideosAreMergedFromFollowedBroadcasters=[
+net.qvarford.giraffeed.it.SnapshotResourceTest.twitchVideosAreMergedFromFollowedBroadcasters=[
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
     <atom:icon>https://www.twitch.tv/favicon.ico</atom:icon>

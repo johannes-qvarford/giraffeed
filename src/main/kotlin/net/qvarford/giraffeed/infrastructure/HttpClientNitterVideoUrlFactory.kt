@@ -8,7 +8,9 @@ import org.jsoup.nodes.Document
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
 import java.net.http.HttpResponse
+import jakarta.enterprise.context.ApplicationScoped
 
+@ApplicationScoped
 class HttpClientNitterVideoUrlFactory(private val httpClient: HttpClient): NitterVideoUrlFactory {
     override fun lookup(id: NitterEntryUrl): HlsUrl {
         val request = HttpRequest.newBuilder(id.value).GET().build()

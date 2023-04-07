@@ -6,8 +6,8 @@ import net.qvarford.giraffeed.domain.FeedUrl
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
 import java.net.http.HttpResponse
-import javax.enterprise.context.ApplicationScoped
-import javax.ws.rs.InternalServerErrorException
+import jakarta.enterprise.context.ApplicationScoped
+import jakarta.ws.rs.InternalServerErrorException
 
 
 @ApplicationScoped
