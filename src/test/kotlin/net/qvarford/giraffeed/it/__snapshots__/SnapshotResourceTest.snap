@@ -194,7 +194,9 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsAreFetchedFromReddi
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://libreddit.privacy.qvarford.net/preview/external-pre/QVSvxpERO6O5C7uRaT0T20SX6-H2fKx6enwRK-mJScI.png?width=640&amp;amp;crop=smart&amp;amp;auto=webp&amp;amp;s=5a3a3af810dd73ff9ed8c299d10e84278102d49a" alt="Damn girl" title="Damn girl" style="width: 740px;"&gt;
+  &lt;video controls="" width="740"&gt;
+   &lt;source src="https://giraffeed.privacy.qvarford.net/hls-to-mp4/aHR0cHM6Ly92LnJlZGQuaXQvcjYzcDF3ZDdjdWJhMS9ITFNQbGF5bGlzdC5tM3U4P2E9MTY4MzQ3NTk3OSUyQ01qVmtOV016WVRGaVptSXpORGRtWmpnNE9HVXpZakJrTkdJMllqVXpZakl6TWprNE1XSTVNbUkwWm1FeU5qZG1ZVE15TkdGbU1HRmpNVGxsTWpsaU13JTNEJTNEJmFtcDt2PTEmYW1wO2Y9c2Q=.mp4"&gt;
+  &lt;/video&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -228,7 +230,9 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsAreFetchedFromReddi
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://libreddit.privacy.qvarford.net/preview/external-pre/B6ZrsLh56woFiWOiifH2A2DDfiSJuYSeoXTFGwQhXmM.png?width=640&amp;amp;crop=smart&amp;amp;auto=webp&amp;amp;s=34e8ae4db5c5b6e438a9a3aa7fea97d30067ac5c" alt="apoollo juice test shimeji" title="apoollo juice test shimeji" style="width: 740px;"&gt;
+  &lt;video controls="" width="740"&gt;
+   &lt;source src="https://giraffeed.privacy.qvarford.net/hls-to-mp4/aHR0cHM6Ly92LnJlZGQuaXQvMXE3bXBnZnVydGJhMS9ITFNQbGF5bGlzdC5tM3U4P2E9MTY4MzQ3NTk4MCUyQ01EZGhOVFV5WkRGbVpqQXdNR1UwTmpjMU1XRmlOR0l6TW1FM05EVTJZakUyTTJNMk1UYzVaRE5oT0RKa01XTXhOR1l4WldNeE5qUTVZek0wWlRjMFlnJTNEJTNEJmFtcDt2PTEmYW1wO2Y9c2Q=.mp4"&gt;
+  &lt;/video&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>

@@ -67,6 +67,11 @@
       <version>3.37.1</version>
     </dependency>
     <dependency>
+      <groupId>io.quarkiverse.jdbi</groupId>
+      <artifactId>quarkus-jdbi</artifactId>
+      <version>0.5.0</version>
+    </dependency>
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-reactive-qute</artifactId>
     </dependency>

@@ -194,6 +194,23 @@ class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider)
                 document.body().prependChild(img)
             }
         }
+
+        if (metadata.content != null) {
+            // Nothing to do for now...
+        }
+
+        if (metadata.videoUrl != null) {
+            document.body().children().forEach { it.remove() }
+
+            // TODO: Standardize creation of video elements across feed types.
+            val video = document.createElement("video")
+            document.body().prependChild(video)
+            video.attr("controls", "")
+            video.attr("width", "740")
+            val source = document.createElement("source")
+            video.appendChild(source)
+            source.attr("src", metadata.videoUrl.value.toString())
+        }
     }
 }
 
@@ -205,7 +222,7 @@ private fun String.replaceLink(regex: String, pathPrefix: String): String {
     return r
 }
 
-data class LibredditMetadata(val imageUrls: List<URI> = emptyList(), val videoUrl: URI? = null, val content: String? = null)
+data class LibredditMetadata(val imageUrls: List<URI> = emptyList(), val videoUrl: Mp4Url? = null, val content: String? = null)
 
 data class LibredditEntryUrl(val value: URI) {
     val reddit: RedditEntryUrl
