@@ -24,7 +24,13 @@ class HttpClientLibredditMetadataProvider(private val httpClient: HttpClient, pr
         return if (root.isVideo) {
             LibredditMetadata(videoUrl = HlsUrl(URI.create(root.media!!.redditVideo!!.hlsUrl)).mp4Url)
         } else if (root.isGallery == true) {
-            val images = root.galleryData!!.items.map { URI.create("https://i.redd.it/${it.mediaId}") }.toList()
+            // We can't know for sure that we can use i.redd.it links.
+            // We need to look up the best quality link in the metadata.
+
+            val keys = root.galleryData!!.items.map { it.mediaId }.toList()
+            val map = root.mediaMetadata!!
+
+            val images = keys.map { URI.create(map[it]!!.s.u!!) }.toList()
             LibredditMetadata(imageUrls = images)
         } else if (root.thumbnail == "self") {
             // NOTE: root.selftext_html may be null for text posts with no content (only a title).
@@ -54,7 +60,7 @@ data class Listing(val children: List<ListingChild>)
 
 data class ListingChild(val data: T3)
 
-data class T3(val isVideo: Boolean, val isGallery: Boolean?, val media: Media?, val galleryData: GalleryData?, val url: String?, val selftext: String?, val selftextHtml: String?, val thumbnail: String?)
+data class T3(val isVideo: Boolean, val isGallery: Boolean?, val media: Media?, val galleryData: GalleryData?, val mediaMetadata: Map<String, MediaMetaDataEntry>?, val url: String?, val selftext: String?, val selftextHtml: String?, val thumbnail: String?)
 
 data class Media(val redditVideo: RedditVideo?)
 
@@ -63,3 +69,7 @@ data class RedditVideo(val hlsUrl: String)
 data class GalleryData(val items: List<GalleryMedia>)
 
 data class GalleryMedia(val mediaId: String)
+
+data class MediaMetaDataEntry(val s: MediaMetaDataSize)
+
+data class MediaMetaDataSize(val u: String?)
