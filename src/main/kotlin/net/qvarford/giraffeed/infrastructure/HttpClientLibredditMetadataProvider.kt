@@ -13,8 +13,9 @@ import java.net.http.HttpResponse
 class HttpClientLibredditMetadataProvider(private val httpClient: HttpClient, private val objectMapper: ObjectMapper, jdbiContext: JdbiContext) : LibredditMetadataProvider {
     private val cache = jdbiContext.createCache("HttpClientLibredditMetadataProvider")
 
+    // TODO: Consider using the json feed directly, instead of first fetching the rss.
     override fun lookup(entryUrl: RedditEntryUrl): LibredditMetadata {
-        val root = determineT3(entryUrl);
+        val root = determineT3(entryUrl)
 
         return if (root.isVideo) {
             LibredditMetadata(videoUrl = HlsUrl(URI.create(root.media!!.redditVideo!!.hlsUrl)).mp4Url)
@@ -39,38 +40,39 @@ class HttpClientLibredditMetadataProvider(private val httpClient: HttpClient, pr
     }
 
     // TODO: Better naming: what does T3 even mean?
-    fun determineT3(entryUrl: RedditEntryUrl): T3 {
+    private fun determineT3(entryUrl: RedditEntryUrl): T3 {
 
+        val key = entryT3Key(entryUrl)
         // TODO: Better separation of concerns: don't mix caching with fetching
-        if (cache.has(entryT3Key(entryUrl))) {
-            return objectMapper.readValue(cache.get(entryT3Key(entryUrl))!!)
-        }
+        if (!cache.has(key)) {
 
-        val subredditUrl = entryUrl.subredditUrl
-        val t3s: List<T3> = if (cache.has(subredditT3sKey(subredditUrl))) {
-            objectMapper.readValue(cache.get(subredditT3sKey(subredditUrl))!!)
-        } else {
+            val subredditUrl = entryUrl.subredditUrl
             val t3s = lookupSubredditT3s(subredditUrl)
-            cache.put(subredditT3sKey(subredditUrl), objectMapper.writeValueAsString(t3s))
-            t3s
+            t3s.forEach {
+                val t3key = entryT3Key(RedditEntryUrl(URI.create("https://www.reddit.com${it.permalink}")))
+                if (!cache.has(t3key)) {
+                    cache.put(t3key, objectMapper.writeValueAsString(it))
+                }
+            }
+
+            if (!cache.has(key)) {
+                val t3 = lookupEntryT3(entryUrl)
+                cache.put(key, objectMapper.writeValueAsString(t3))
+            }
         }
 
-        val entryUrlString = entryUrl.value.toString()
-        val t3 = t3s.firstOrNull { entryUrlString.endsWith(it.permalink) } ?: lookupEntryT3(entryUrl)
-
-        cache.put(entryT3Key(entryUrl), objectMapper.writeValueAsString(t3))
-        return t3
+        return objectMapper.readValue(cache.get(entryT3Key(entryUrl))!!)
     }
 
-    fun lookupSubredditT3s(subredditUrl: SubredditUrl): List<T3> {
-        val request = HttpRequest.newBuilder(URI.create(String.format("%s.json", subredditUrl.value))).GET().build()
+    private fun lookupSubredditT3s(subredditUrl: SubredditUrl): List<T3> {
+        val request = HttpRequest.newBuilder(URI.create(String.format("%s/hot.json", subredditUrl.value))).GET().build()
         val response = httpClient.send(request, HttpResponse.BodyHandlers.ofInputStream())
 
         val wrapper: TypeWrapper = objectMapper.readValue(response.body())
         return wrapper.data.children.map { it.data }
     }
 
-    fun lookupEntryT3(entryUrl: RedditEntryUrl): T3 {
+    private fun lookupEntryT3(entryUrl: RedditEntryUrl): T3 {
         // Only used during a race condition - when the hot.rss feed contains an entry that is ejected before hot.json is called.
         // By this point, the entry should already have been cached by Miniflux, but just to be sure, we use this fallback.
         val request = HttpRequest.newBuilder(URI.create(String.format("%s.json", entryUrl.value))).GET().build()
@@ -80,9 +82,7 @@ class HttpClientLibredditMetadataProvider(private val httpClient: HttpClient, pr
         return wrapper[0].data.children[0].data
     }
 
-    fun entryT3Key(entryUrl: RedditEntryUrl): String = "EntryT3:${entryUrl.value}"
-
-    fun subredditT3sKey(subredditUrl: SubredditUrl): String = "SubredditT3s:${subredditUrl.value}"
+    private fun entryT3Key(entryUrl: RedditEntryUrl): String = "EntryT3:${entryUrl.value}"
 }
 
 // Should we trust the metadata completely?

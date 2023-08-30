@@ -18,10 +18,10 @@ import java.nio.file.Path
 class SnapshotResourceTest {
     val map = mapOf(
         "https://www.reddit.com/r/AceAttorneyCirclejerk/hot.rss" to "libreddit_success.xml",
-        "https://www.reddit.com/r/AceAttorneyCirclejerk.json" to "libreddit/502581563.json",
+        "https://www.reddit.com/r/AceAttorneyCirclejerk/hot.json" to "libreddit/554398941.json",
 
         "https://www.reddit.com/r/chess/hot.rss" to "libreddit/951314221.json",
-        "https://www.reddit.com/r/chess.json" to "libreddit/-1061465254.json",
+        "https://www.reddit.com/r/chess/hot.json" to "libreddit/-1061465254.json",
         "https://www.reddit.com/r/chess/comments/164vj8k/nepo_on_not_being_able_to_play_in_chesscoms_speed/.json" to "libreddit/-1680146383.json",
         "https://www.reddit.com/r/chess/comments/1658pra/fabiano_caruana_my_generation_is_probably_the/.json" to "libreddit/-210112066.json",
         "https://www.reddit.com/r/chess/comments/164jsw7/white_to_move_mate_in_6/.json" to "libreddit/1608259782.json",

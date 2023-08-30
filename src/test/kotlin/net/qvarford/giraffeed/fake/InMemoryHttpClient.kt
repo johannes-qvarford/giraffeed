@@ -17,24 +17,26 @@ import java.util.*
 
 class InMemoryHttpClient {
     companion object {
-        fun create(client: HttpClient, urlToContent: Map<String, InputStream>): HttpClient {
+
+        fun create(client: HttpClient, urlToContent: MutableMap<String, ByteArray>): HttpClient {
             Mockito.`when`(client.send(any(), any(BodyHandler::class.java)))
                 .thenAnswer {
                     val request = it.arguments[0] as HttpRequest
                     val responseContent = urlToContent[request.uri().toString()]
-                        ?: fallbackToRealResource(request.uri()) //throw RuntimeException("No content mapping for: ${request.uri()}")
+                        ?: fallbackToRealResource(request.uri())
+                    urlToContent[request.uri().toString()] = responseContent
                     val response = Mockito.mock(HttpResponse::class.java) as HttpResponse<*>
 
                     Mockito.`when`(response.statusCode())
                         .thenReturn(200)
                     Mockito.`when`(response.body())
-                        .thenReturn(responseContent)
+                        .thenAnswer { ByteArrayInputStream(responseContent) }
                     return@thenAnswer response
                 }
             return client
         }
 
-        fun fallbackToRealResource(uri: URI): InputStream {
+        fun fallbackToRealResource(uri: URI): ByteArray {
             try {
                 val httpClient = HttpClient.newHttpClient()
                 val request = HttpRequest.newBuilder(uri).build()
@@ -50,7 +52,7 @@ class InMemoryHttpClient {
                 println("\"$uri\" to \"$filename\"")
                 Files.write(Path.of(filename), content.toByteArray())
 
-                return ByteArrayInputStream(content.toByteArray())
+                return content.toByteArray()
             } catch (e: Exception) {
                 throw RuntimeException("Something went wrong", e)
             }
