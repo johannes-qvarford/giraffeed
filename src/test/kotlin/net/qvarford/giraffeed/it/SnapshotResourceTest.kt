@@ -18,6 +18,30 @@ import java.nio.file.Path
 class SnapshotResourceTest {
     val map = mapOf(
         "https://www.reddit.com/r/AceAttorneyCirclejerk/hot.rss" to "libreddit_success.xml",
+        "https://www.reddit.com/r/AceAttorneyCirclejerk.json" to "libreddit/502581563.json",
+
+        "https://www.reddit.com/r/chess/hot.rss" to "libreddit/951314221.json",
+        "https://www.reddit.com/r/chess.json" to "libreddit/-1061465254.json",
+        "https://www.reddit.com/r/chess/comments/164vj8k/nepo_on_not_being_able_to_play_in_chesscoms_speed/.json" to "libreddit/-1680146383.json",
+        "https://www.reddit.com/r/chess/comments/1658pra/fabiano_caruana_my_generation_is_probably_the/.json" to "libreddit/-210112066.json",
+        "https://www.reddit.com/r/chess/comments/164jsw7/white_to_move_mate_in_6/.json" to "libreddit/1608259782.json",
+        "https://www.reddit.com/r/chess/comments/164dx2o/was_pretty_happy_to_see_there_were_public/.json" to "libreddit/185445733.json",
+        "https://www.reddit.com/r/chess/comments/164kuji/hans_niemann_makes_a_new_video_statement_on/.json" to "libreddit/-1779468970.json",
+        "https://www.reddit.com/r/chess/comments/16593oq/what_is_this_game/.json" to "libreddit/-1621948422.json",
+        "https://www.reddit.com/r/chess/comments/164ou38/chess_players_on_tsvetnoy_boulevard_in_moscow/.json" to "libreddit/1830894410.json",
+        "https://www.reddit.com/r/chess/comments/164qmlr/vitiugov_joins_england_and_becomes_new_nr_1/.json" to "libreddit/-2088369376.json",
+        "https://www.reddit.com/r/chess/comments/164eapy/this_should_be_fun/.json" to "libreddit/-626756976.json",
+        "https://www.reddit.com/r/chess/comments/164gso8/praggnanandhaas_performance_in_rapid_over_the/.json" to "libreddit/-1100550207.json",
+        "https://www.reddit.com/r/chess/comments/1644xw6/this_just_won_a_fide_prize_for_chess_composition/.json" to "libreddit/212466096.json",
+        "https://www.reddit.com/r/chess/comments/164p18o/can_you_find_the_move_hans_niemann_missed_against/.json" to "libreddit/-1678696015.json",
+        "https://www.reddit.com/r/chess/comments/165btk9/rare_quadrupled_pawns_that_occurred_in_my_game/.json" to "libreddit/1411239811.json",
+        "https://www.reddit.com/r/chess/comments/165b33h/white_to_play_m4/.json" to "libreddit/-239945884.json",
+        "https://www.reddit.com/r/chess/comments/1654u2s/the_periphials_tv_show/.json" to "libreddit/-1162449394.json",
+        "https://www.reddit.com/r/chess/comments/165cg5h/black_to_play_trap_whites_queen/.json" to "libreddit/820580748.json",
+        "https://www.reddit.com/r/chess/comments/165cfis/black_to_play_trap_whites_queen/.json" to "libreddit/-1701199796.json",
+        "https://www.reddit.com/r/chess/comments/165c0wt/black_to_play_trap_whites_queen/.json" to "libreddit/370369856.json",
+        "https://www.reddit.com/r/chess/comments/165c0jz/chesscom_tries_to_find_out_who_the_greatest_of/.json" to "libreddit/2095700588.json",
+        "https://www.reddit.com/r/chess/comments/164iz4u/chessbase_india_interview_caruana_wins_gold_on/.json" to "libreddit/94368179.json",
 
         "https://www.reddit.com/r/AceAttorneyCirclejerk/comments/bb8vaf/yall_fuckers_better_jerk_it_good/.json" to "libreddit/-47181450.json",
         "https://www.reddit.com/r/AceAttorneyCirclejerk/comments/10036qp/haapynewyear/.json" to "libreddit/-1627760256.json",
@@ -83,6 +107,21 @@ class SnapshotResourceTest {
 
         expect.toMatchSnapshot(content)
     }
+
+    @Test
+    fun libredditFeedsWillUseBulkMetadataIfAvailable(testInfo: TestInfo) {
+        val expect = verifier.expect(testInfo)
+        val content = RestAssured.given()
+            .`when`().get("/enhancement/libreddit/chess")
+            .then()
+            .statusCode(200)
+            .extract()
+            .body()
+            .asString()
+
+        expect.toMatchSnapshot(content)
+    }
+
 
     @Test
     fun nitterFeedsAreFetchedFromNitter(testInfo: TestInfo) {

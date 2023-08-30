@@ -13,4 +13,6 @@ import jakarta.enterprise.context.ApplicationScoped
 interface MetadataCache {
     fun get(key: String): String?
     fun put(key: String, value: String)
+
+    fun has(key: String) = get(key) != null
 }

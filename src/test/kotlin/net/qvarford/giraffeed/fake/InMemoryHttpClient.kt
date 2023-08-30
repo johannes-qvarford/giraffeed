@@ -46,8 +46,8 @@ class InMemoryHttpClient {
 
                 val content = String(response.body().readAllBytes())
 
-                val filename = "${Random().nextInt()}.content"
-                println("$filename contains content for $uri")
+                val filename = "${Random().nextInt()}.json"
+                println("\"$uri\" to \"$filename\"")
                 Files.write(Path.of(filename), content.toByteArray())
 
                 return ByteArrayInputStream(content.toByteArray())

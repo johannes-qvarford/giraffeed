@@ -190,9 +190,14 @@ data class LibredditEntryUrl(val value: URI) {
         get() = RedditEntryUrl(URI.create(value.toString().replace("libreddit.privacy.qvarford.net", "wwww.reddit.com")))
 }
 
-data class RedditEntryUrl(val value: URI)
+data class SubredditUrl(val value: URI)
 
+private val subredditExtratorRegex = Regex("(.*/r/[^./]+).*")
 
+data class RedditEntryUrl(val value: URI) {
+    val subredditUrl: SubredditUrl
+        get() = SubredditUrl(URI.create(subredditExtratorRegex.find(value.toString())!!.groupValues[1]))
+}
 
 interface LibredditMetadataProvider {
     fun lookup(entryUrl: RedditEntryUrl): LibredditMetadata

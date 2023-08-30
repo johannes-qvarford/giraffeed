@@ -457,6 +457,610 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsAreFetchedFromReddi
 ]
 
 
+net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadataIfAvailable=[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
+    <atom:updated>2023-08-30T12:08:46Z</atom:updated>
+    <atom:icon>https://www.redditstatic.com/icon.png/</atom:icon>
+    <atom:title>r/Chess</atom:title>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/ChessBotMod</atom:name>
+        </atom:author>
+        <atom:id>t3_161m3i2</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/161m3i2/event_fide_word_rapid_team_championship/"/>
+        <atom:published>2023-08-26T05:22:01Z</atom:published>
+        <atom:title>EVENT: FIDE Word Rapid Team Championship</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/r/chess/comments/161m3i2/event_fide_word_rapid_team_championship/" alt="EVENT: FIDE Word Rapid Team Championship" title="EVENT: FIDE Word Rapid Team Championship" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/ChessBotMod</atom:name>
+        </atom:author>
+        <atom:id>t3_165ctys</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/165ctys/event_julius_baer_generation_cup_ft_carlsen_fabi/"/>
+        <atom:published>2023-08-30T12:05:15Z</atom:published>
+        <atom:title>Event: Julius Baer Generation Cup ft Carlsen, Fabi, Firo, So, and Nodirbek.</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;h1&gt;&lt;a href="https://championschesstour.com/"&gt;Official Website&lt;/a&gt;&lt;/h1&gt;
+   &lt;p&gt;Watch games on: &lt;a href="https://www.chess.com/events/info/2023-champions-chess-tour-julius-baer-generation-cup"&gt;Chess.com&lt;/a&gt; | Chess24 (Winners: &lt;a href="https://chess24.com/en/watch/live-tournaments/champions-chess-tour-julius-baer-generation-cup-2023-division-1-winner-bracket#live"&gt;Div 1&lt;/a&gt;, &lt;a href="https://chess24.com/en/watch/live-tournaments/champions-chess-tour-julius-baer-generation-cup-2023-division-2-winner-bracket/1/1/1"&gt;Div 2&lt;/a&gt;, &lt;a href="https://chess24.com/en/watch/live-tournaments/champions-chess-tour-julius-baer-generation-cup-2023-division-3-winner-bracket/1/1/1"&gt;Div 3&lt;/a&gt;)|Lichess (Div 1, Div 2, Div 3)&lt;/p&gt;
+   &lt;p&gt;[Note: Links will be added when the sites make the respective pages]&lt;/p&gt;
+   &lt;p&gt;The Julius Baer Generation Cup, the 5th event on the $2 million 2023 Champions Chess Tour, features three Divisions of 8, 16 and 32 players. Each division is a double-elimination knockout where if you lose one match you drop down to a Losers bracket and can still win the tournament.&lt;/p&gt;
+   &lt;p&gt;In the Grand Final if the player from the Winners bracket loses, there's a rematch. The total prize fund is $235,000, with a top prize of $30,000 (150 Tour points) in Division I, $10,000 in Division II (50 points) and $5,000 (20 points) in Division III. The top 3 in Division I and the winner of Division II qualify straight to Division I of the next event on the Tour.&lt;/p&gt;
+   &lt;h1&gt;Division 1 Winners:&lt;/h1&gt;
+   &lt;table&gt;
+    &lt;thead&gt;
+     &lt;tr&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;#&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Title&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;FED&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Elo&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Age&lt;/strong&gt;&lt;/th&gt;
+     &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;GM&lt;/td&gt;
+      &lt;td align="left"&gt;Magnus Carlsen&lt;/td&gt;
+      &lt;td align="left"&gt;&#127475;&#127476; NOR&lt;/td&gt;
+      &lt;td align="left"&gt;2825&lt;/td&gt;
+      &lt;td align="left"&gt;32&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;2&lt;/td&gt;
+      &lt;td align="left"&gt;GM&lt;/td&gt;
+      &lt;td align="left"&gt;Amin Tabatabaei&lt;/td&gt;
+      &lt;td align="left"&gt;&#127470;&#127479; IRN&lt;/td&gt;
+      &lt;td align="left"&gt;2577&lt;/td&gt;
+      &lt;td align="left"&gt;22&lt;/td&gt;
+     &lt;/tr&gt;
+    &lt;/tbody&gt;
+   &lt;/table&gt;
+   &lt;p&gt;&lt;/p&gt;
+   &lt;table&gt;
+    &lt;thead&gt;
+     &lt;tr&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;#&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Title&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;FED&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Elo&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Age&lt;/strong&gt;&lt;/th&gt;
+     &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;GM&lt;/td&gt;
+      &lt;td align="left"&gt;Fabiano Caruana&lt;/td&gt;
+      &lt;td align="left"&gt;&#127482;&#127480; USA&lt;/td&gt;
+      &lt;td align="left"&gt;2763&lt;/td&gt;
+      &lt;td align="left"&gt;31&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;2&lt;/td&gt;
+      &lt;td align="left"&gt;GM&lt;/td&gt;
+      &lt;td align="left"&gt;Denis Lazavik&lt;/td&gt;
+      &lt;td align="left"&gt;FIDE&lt;/td&gt;
+      &lt;td align="left"&gt;2495&lt;/td&gt;
+      &lt;td align="left"&gt;17&lt;/td&gt;
+     &lt;/tr&gt;
+    &lt;/tbody&gt;
+   &lt;/table&gt;
+   &lt;p&gt;&lt;/p&gt;
+   &lt;table&gt;
+    &lt;thead&gt;
+     &lt;tr&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;#&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Title&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;FED&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Elo&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Age&lt;/strong&gt;&lt;/th&gt;
+     &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;GM&lt;/td&gt;
+      &lt;td align="left"&gt;Pavel Eljanov&lt;/td&gt;
+      &lt;td align="left"&gt;&#127482;&#127462; UKR&lt;/td&gt;
+      &lt;td align="left"&gt;2641&lt;/td&gt;
+      &lt;td align="left"&gt;40&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;2&lt;/td&gt;
+      &lt;td align="left"&gt;GM&lt;/td&gt;
+      &lt;td align="left"&gt;Wesley So&lt;/td&gt;
+      &lt;td align="left"&gt;&#127482;&#127480; USA&lt;/td&gt;
+      &lt;td align="left"&gt;2789&lt;/td&gt;
+      &lt;td align="left"&gt;29&lt;/td&gt;
+     &lt;/tr&gt;
+    &lt;/tbody&gt;
+   &lt;/table&gt;
+   &lt;p&gt;&lt;/p&gt;
+   &lt;table&gt;
+    &lt;thead&gt;
+     &lt;tr&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;#&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Title&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;FED&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Elo&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Age&lt;/strong&gt;&lt;/th&gt;
+     &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;GM&lt;/td&gt;
+      &lt;td align="left"&gt;Alireza Firouzja&lt;/td&gt;
+      &lt;td align="left"&gt;&#127467;&#127479; FRA&lt;/td&gt;
+      &lt;td align="left"&gt;2742&lt;/td&gt;
+      &lt;td align="left"&gt;20&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;2&lt;/td&gt;
+      &lt;td align="left"&gt;GM&lt;/td&gt;
+      &lt;td align="left"&gt;Nodirbek Abdusattarov&lt;/td&gt;
+      &lt;td align="left"&gt;&#127482;&#127487; UZB&lt;/td&gt;
+      &lt;td align="left"&gt;2724&lt;/td&gt;
+      &lt;td align="left"&gt;18&lt;/td&gt;
+     &lt;/tr&gt;
+    &lt;/tbody&gt;
+   &lt;/table&gt;
+   &lt;h1&gt;Format/Time Controls:&lt;/h1&gt;
+   &lt;p&gt;The time control for normal games is 15 minutes per player for all moves, with a 3-second increment each move. In Division I and II the Winners bracket matches are played over four games, while in the Losers bracket there are two games. In Division III all matches are over two games except the 4-game Grand Final.&lt;/p&gt;
+   &lt;p&gt;A tie in a match is decided by an Armageddon game with no increment, where the players bid for time they are willing to play with. The lowest bidder gets that time and can pick colour, while the opponent gets 15 minutes. Black only needs a draw to win the match.&lt;/p&gt;
+   &lt;h1&gt;Schedule&lt;/h1&gt;
+   &lt;table&gt;
+    &lt;thead&gt;
+     &lt;tr&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Event&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Date&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Time (UTC)&lt;/strong&gt;&lt;/th&gt;
+     &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;Day 1&lt;/td&gt;
+      &lt;td align="left"&gt;Aug 30&lt;/td&gt;
+      &lt;td align="left"&gt;3 pm&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;Day 2&lt;/td&gt;
+      &lt;td align="left"&gt;Aug 31&lt;/td&gt;
+      &lt;td align="left"&gt;3 pm&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;Day 3&lt;/td&gt;
+      &lt;td align="left"&gt;Sept 1&lt;/td&gt;
+      &lt;td align="left"&gt;3 pm&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;Day 4&lt;/td&gt;
+      &lt;td align="left"&gt;Sept 2&lt;/td&gt;
+      &lt;td align="left"&gt;3 pm&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;Day 5&lt;/td&gt;
+      &lt;td align="left"&gt;Sept 3&lt;/td&gt;
+      &lt;td align="left"&gt;3 pm&lt;/td&gt;
+     &lt;/tr&gt;
+    &lt;/tbody&gt;
+   &lt;/table&gt;
+   &lt;h2&gt;Live Coverage&lt;/h2&gt;
+   &lt;ul&gt;
+    &lt;li&gt;You can keep up with all the Champions Chess Tour action live on &lt;a href="https://www.chess.com/tv"&gt;Chess.com/TV&lt;/a&gt; or Chess.com's &lt;a href="https://www.twitch.tv/chess"&gt;Twitch&lt;/a&gt; and &lt;a href="https://www.youtube.com/@chess"&gt;YouTube&lt;/a&gt; channels.&lt;/li&gt;
+   &lt;/ul&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/rederer07</atom:name>
+        </atom:author>
+        <atom:id>t3_164vj8k</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164vj8k/nepo_on_not_being_able_to_play_in_chesscoms_speed/"/>
+        <atom:published>2023-08-29T21:48:04Z</atom:published>
+        <atom:title>Nepo on not being able to play in Chess.com's Speed Chess Championship</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/awsa9nv3e4lb1.png" alt="Nepo on not being able to play in Chess.com's Speed Chess Championship" title="Nepo on not being able to play in Chess.com's Speed Chess Championship" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Old_Specialist7892</atom:name>
+        </atom:author>
+        <atom:id>t3_1658pra</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/1658pra/fabiano_caruana_my_generation_is_probably_the/"/>
+        <atom:published>2023-08-30T08:20:49Z</atom:published>
+        <atom:title>Fabiano Caruana: "My generation is probably the strongest in history"</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://youtu.be/d-cmHuMRC6A?si=ET1umjwS4JHHGyWp" alt="Fabiano Caruana: &amp;quot;My generation is probably the strongest in history&amp;quot;" title="Fabiano Caruana: &amp;quot;My generation is probably the strongest in history&amp;quot;" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/GoliathGamer</atom:name>
+        </atom:author>
+        <atom:id>t3_164jsw7</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164jsw7/white_to_move_mate_in_6/"/>
+        <atom:published>2023-08-29T14:20:39Z</atom:published>
+        <atom:title>White to move, mate in 6</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/j3ezvxq962lb1.png" alt="White to move, mate in 6" title="White to move, mate in 6" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/OvidPerl</atom:name>
+        </atom:author>
+        <atom:id>t3_164dx2o</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164dx2o/was_pretty_happy_to_see_there_were_public/"/>
+        <atom:published>2023-08-29T09:45:37Z</atom:published>
+        <atom:title>Was pretty happy to see there were public chessboards in a village near my house. Until I saw them.</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/73scdpiys0lb1.png" alt="Was pretty happy to see there were public chessboards in a village near my house. Until I saw them." title="Was pretty happy to see there were public chessboards in a village near my house. Until I saw them." style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/DrunkLad</atom:name>
+        </atom:author>
+        <atom:id>t3_164kuji</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164kuji/hans_niemann_makes_a_new_video_statement_on/"/>
+        <atom:published>2023-08-29T15:02:02Z</atom:published>
+        <atom:title>Hans Niemann makes a new video statement on Twitter</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://twitter.com/HansMokeNiemann/status/1696537826786173272" alt="Hans Niemann makes a new video statement on Twitter" title="Hans Niemann makes a new video statement on Twitter" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/FinnTheHumanMC</atom:name>
+        </atom:author>
+        <atom:id>t3_16593oq</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/16593oq/what_is_this_game/"/>
+        <atom:published>2023-08-30T08:44:09Z</atom:published>
+        <atom:title>What is this game?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/7j7abor5n7lb1.png" alt="What is this game?" title="What is this game?" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/ovbt</atom:name>
+        </atom:author>
+        <atom:id>t3_164ou38</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164ou38/chess_players_on_tsvetnoy_boulevard_in_moscow/"/>
+        <atom:published>2023-08-29T17:34:34Z</atom:published>
+        <atom:title>Chess players on Tsvetnoy Boulevard in Moscow during the 1950s</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/nob6adkv43lb1.jpg" alt="Chess players on Tsvetnoy Boulevard in Moscow during the 1950s" title="Chess players on Tsvetnoy Boulevard in Moscow during the 1950s" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/DON7fan</atom:name>
+        </atom:author>
+        <atom:id>t3_164qmlr</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164qmlr/vitiugov_joins_england_and_becomes_new_nr_1/"/>
+        <atom:published>2023-08-29T18:43:56Z</atom:published>
+        <atom:title>Vitiugov joins England and becomes new Nr 1</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/ou8r8i49h3lb1.png" alt="Vitiugov joins England and becomes new Nr 1" title="Vitiugov joins England and becomes new Nr 1" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Ambitious-Natural904</atom:name>
+        </atom:author>
+        <atom:id>t3_164eapy</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164eapy/this_should_be_fun/"/>
+        <atom:published>2023-08-29T10:06:57Z</atom:published>
+        <atom:title>This should be fun!</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/y1fhp9j0x0lb1.png" alt="This should be fun!" title="This should be fun!" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/JustRecognition4237</atom:name>
+        </atom:author>
+        <atom:id>t3_164os2u</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164os2u/psilocybin_and_its_effect_on_chess_play/"/>
+        <atom:published>2023-08-29T17:32:26Z</atom:published>
+        <atom:title>Psilocybin and it’s effect on Chess play?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Psilocybin mushrooms were decriminalized to the point of otc sale in the city that I live. I decided to try microdosing. I noticed a very noticeable profound effect on my gameplay. I felt as if I was a lot more tactically aware and able to play much better. So I decided to experiment with a full 5 gram dose to see how I played. After dosing I played two games, three hours into my trip. Both games were played perfectly. Has anyone else noticed a difference in their game play while on shrooms or LSD? I’ve played perfect games before, but usually they are short games that end quickly. Or my opponent played terribly.&lt;/p&gt;
+   &lt;p&gt;The first game was 56 moves. I played as black. Played on Lichess. 3 inaccuracies, 0 mistakes, 0 blunders, 7 avg centipawn loss. While my opponent didn’t play terribly. They had 6 inaccuracies, 0 mistakes, 2 blunders but also with a low avg centipawn loss of only 24. Game link: &lt;a href="https://lichess.org/gNXHfxsq/black"&gt;https://lichess.org/gNXHfxsq/black&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;The second game was a quick 16 moves. I played again as black. 2 inaccuracies, 0 mistakes, 0 blunders and 18 avg centipawn loss. This in itself wasn’t too unusual because my opener played terribly and lost to two quick blunders but decided I’d post the game anyways for reference. My opponent had 1 inaccuracy, 0 mistakes, 2 blunders and 52 avg centipawn loss. Game link: &lt;a href="https://lichess.org/uSZNIP6x/black"&gt;https://lichess.org/uSZNIP6x/black&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;I think it’s also worth noting that since I started microdosing my gameplay ability has still been increasing dramatically. There are other games I’ve recently played where I’ve crushed my opponents and have gotten near perfect accuracy. But usually as white with the London system. But there are still games that I play very terribly. They’re just fewer and further in between than usual.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/xtr44</atom:name>
+        </atom:author>
+        <atom:id>t3_164gso8</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164gso8/praggnanandhaas_performance_in_rapid_over_the/"/>
+        <atom:published>2023-08-29T12:12:59Z</atom:published>
+        <atom:title>Praggnanandhaas performance in rapid over the last month</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/5fu4ea2bj1lb1.png" alt="Praggnanandhaas performance in rapid over the last month" title="Praggnanandhaas performance in rapid over the last month" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/ECviews</atom:name>
+        </atom:author>
+        <atom:id>t3_164nriz</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164nriz/what_has_been_the_most_helpful_tiptactic_you_have/"/>
+        <atom:published>2023-08-29T16:54:10Z</atom:published>
+        <atom:title>What has been the most helpful tip/tactic you have learned since playing chess?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;For me it’s pretty simple and straight forward but it helped me bump my elo up pretty early on.&lt;/p&gt;
+   &lt;p&gt;Constantly thinking about what your opponent wants with each move and how to attack/defend within the position. Can I give a check, can I capture or can I attack a piece? Just reminding myself of these 3 basic ideas really helped break down the game for me.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/External_Tangelo</atom:name>
+        </atom:author>
+        <atom:id>t3_1644xw6</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/1644xw6/this_just_won_a_fide_prize_for_chess_composition/"/>
+        <atom:published>2023-08-29T01:45:35Z</atom:published>
+        <atom:title>This just won a Fide prize for chess composition. Can anyone tell what’s going on here?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/606ytxlkfykb1.jpg" alt="This just won a Fide prize for chess composition. Can anyone tell what’s going on here?" title="This just won a Fide prize for chess composition. Can anyone tell what’s going on here?" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/WilsonRS</atom:name>
+        </atom:author>
+        <atom:id>t3_165c8ar</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/165c8ar/how_prepared_are_you_against_the_sicilian/"/>
+        <atom:published>2023-08-30T11:37:01Z</atom:published>
+        <atom:title>How prepared are you against the sicilian?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;With 1. e4 being so popular and the sicilian also being one of the most common responses, how prepared are you to face the sicilian? Do you know all the common variations of the sicilian? Do you know the general plans? Do you know what to do when your opponent plays an offbeat/uncommon sicilian variation?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/RapidBestJujuReforge</atom:name>
+        </atom:author>
+        <atom:id>t3_164p18o</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164p18o/can_you_find_the_move_hans_niemann_missed_against/"/>
+        <atom:published>2023-08-29T17:42:12Z</atom:published>
+        <atom:title>Can you find the move Hans Niemann missed against Daniel Naroditsky? (Black to move)</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/ce1doo2263lb1.png" alt="Can you find the move Hans Niemann missed against Daniel Naroditsky? (Black to move)" title="Can you find the move Hans Niemann missed against Daniel Naroditsky? (Black to move)" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Euphoric_Seat_1564</atom:name>
+        </atom:author>
+        <atom:id>t3_165btk9</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/165btk9/rare_quadrupled_pawns_that_occurred_in_my_game/"/>
+        <atom:published>2023-08-30T11:16:26Z</atom:published>
+        <atom:title>Rare quadrupled pawns that occurred in my game</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/ohz7oavbe8lb1.jpg" alt="Rare quadrupled pawns that occurred in my game" title="Rare quadrupled pawns that occurred in my game" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/CharityActual</atom:name>
+        </atom:author>
+        <atom:id>t3_165b33h</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/165b33h/white_to_play_m4/"/>
+        <atom:published>2023-08-30T10:37:35Z</atom:published>
+        <atom:title>White to play, M4</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/o2rycdae78lb1.jpg" alt="White to play, M4" title="White to play, M4" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/1moresheep</atom:name>
+        </atom:author>
+        <atom:id>t3_1654u2s</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/1654u2s/the_periphials_tv_show/"/>
+        <atom:published>2023-08-30T04:32:54Z</atom:published>
+        <atom:title>The Periphials TV show</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/mp1o5k6ce6lb1.jpg" alt="The Periphials TV show" title="The Periphials TV show" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/BinomialAmorFati</atom:name>
+        </atom:author>
+        <atom:id>t3_165cg5h</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/165cg5h/black_to_play_trap_whites_queen/"/>
+        <atom:published>2023-08-30T11:47:30Z</atom:published>
+        <atom:title>Black to Play Trap White's Queen</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/cnlhouevj8lb1.jpg" alt="Black to Play Trap White's Queen" title="Black to Play Trap White's Queen" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/BinomialAmorFati</atom:name>
+        </atom:author>
+        <atom:id>t3_165cfis</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/165cfis/black_to_play_trap_whites_queen/"/>
+        <atom:published>2023-08-30T11:46:38Z</atom:published>
+        <atom:title>Black to Play Trap White's Queen</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/zz3uaespj8lb1.jpg" alt="Black to Play Trap White's Queen" title="Black to Play Trap White's Queen" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/BinomialAmorFati</atom:name>
+        </atom:author>
+        <atom:id>t3_165c0wt</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/165c0wt/black_to_play_trap_whites_queen/"/>
+        <atom:published>2023-08-30T11:26:41Z</atom:published>
+        <atom:title>Black to play Trap White's Queen</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/rum13bo5g8lb1.jpg" alt="Black to play Trap White's Queen" title="Black to play Trap White's Queen" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/LowLevel-</atom:name>
+        </atom:author>
+        <atom:id>t3_165c0jz</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/165c0jz/chesscom_tries_to_find_out_who_the_greatest_of/"/>
+        <atom:published>2023-08-30T11:26:11Z</atom:published>
+        <atom:title>Chess.com tries to find out who the "Greatest Of All Time" is by comparing the accuracy and ratings of players from different chess eras.</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://www.chess.com/article/view/chess-accuracy-ratings-goat" alt="Chess.com tries to find out who the &amp;quot;Greatest Of All Time&amp;quot; is by comparing the accuracy and ratings of players from different chess eras." title="Chess.com tries to find out who the &amp;quot;Greatest Of All Time&amp;quot; is by comparing the accuracy and ratings of players from different chess eras." style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Greatone198</atom:name>
+        </atom:author>
+        <atom:id>t3_165bxa4</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/165bxa4/is_1200_a_bad_chesscom_rating/"/>
+        <atom:published>2023-08-30T11:21:37Z</atom:published>
+        <atom:title>Is 1200 a bad chess.com rating</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;I play for 5 and a half months. But I played quite a lot I have a bit more than 1000 rapid games&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/BrightLeg69</atom:name>
+        </atom:author>
+        <atom:id>t3_165bt02</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/165bt02/where_can_i_practice_puzzles_for_free/"/>
+        <atom:published>2023-08-30T11:15:42Z</atom:published>
+        <atom:title>Where can i practice puzzles for free?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Looking for apps or sites whete i can practice unlimited puzzles for free.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/mambo91</atom:name>
+        </atom:author>
+        <atom:id>t3_164iz4u</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/chess/comments/164iz4u/chessbase_india_interview_caruana_wins_gold_on/"/>
+        <atom:published>2023-08-29T13:46:31Z</atom:published>
+        <atom:title>[Chessbase India Interview] Caruana wins Gold on board 1 at FIDE World Rapid Teams</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://www.youtube.com/watch?v=J2RkJUlLD3o" alt="[Chessbase India Interview] Caruana wins Gold on board 1 at FIDE World Rapid Teams" title="[Chessbase India Interview] Caruana wins Gold on board 1 at FIDE World Rapid Teams" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+</atom:feed>
+
+]
+
+
 net.qvarford.giraffeed.it.SnapshotResourceTest.nitterFeedsAreFetchedFromNitter=[
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
