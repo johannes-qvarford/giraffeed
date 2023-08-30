@@ -154,13 +154,13 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsAreFetchedFromReddi
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://libreddit.privacy.qvarford.net/img/95u9n9ec6tba1.png" alt="Carcinisation (or carcinization) is an example of convergent evolution in which an Ace Attorney
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/vfvi5s5c6tba1.jpg" alt="Carcinisation (or carcinization) is an example of convergent evolution in which an Ace Attorney
             character evolves into a crab-like form from a non-crab-like form" title="Carcinisation (or
             carcinization) is an example of convergent evolution in which an Ace Attorney character evolves into a
             crab-like form from a non-crab-like form" style="width: 740px;"&gt;&lt;img src="https://libreddit.privacy.qvarford.net/img/modri39c6tba1.png" alt="Carcinisation (or carcinization) is an example of convergent evolution in which an Ace Attorney
             character evolves into a crab-like form from a non-crab-like form" title="Carcinisation (or
             carcinization) is an example of convergent evolution in which an Ace Attorney character evolves into a
-            crab-like form from a non-crab-like form" style="width: 740px;"&gt;&lt;img src="https://libreddit.privacy.qvarford.net/img/vfvi5s5c6tba1.jpg" alt="Carcinisation (or carcinization) is an example of convergent evolution in which an Ace Attorney
+            crab-like form from a non-crab-like form" style="width: 740px;"&gt;&lt;img src="https://libreddit.privacy.qvarford.net/img/95u9n9ec6tba1.png" alt="Carcinisation (or carcinization) is an example of convergent evolution in which an Ace Attorney
             character evolves into a crab-like form from a non-crab-like form" title="Carcinisation (or
             carcinization) is an example of convergent evolution in which an Ace Attorney character evolves into a
             crab-like form from a non-crab-like form" style="width: 740px;"&gt;
@@ -457,6 +457,545 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsAreFetchedFromReddi
 ]
 
 
+net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsExtraTextFromTextPosts=[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
+    <atom:updated>2023-08-30T13:35:43Z</atom:updated>
+    <atom:icon>https://www.redditstatic.com/icon.png/</atom:icon>
+    <atom:title>On r/Writing (don't post your writing here)</atom:title>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/AutoModerator</atom:name>
+        </atom:author>
+        <atom:id>t3_163lgql</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163lgql/weekly_outofcharacter_thread/"/>
+        <atom:published>2023-08-28T13:00:29Z</atom:published>
+        <atom:title>Weekly out-of-character thread</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Talk about writing unironically, vent about other writing forums, or discuss whatever you like here.&lt;/p&gt;
+   &lt;p&gt;New to the community? &lt;a href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/wiki/index"&gt;Start with the wiki.&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;Also, you can post links to your writing here, if you really want to. But only here! This is the only place in the subreddit where self-promotion is permitted.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/awkisopen</atom:name>
+        </atom:author>
+        <atom:id>t3_163obzp</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163obzp/congratulations_to_rbookscirclejerk_for_losing/"/>
+        <atom:published>2023-08-28T14:56:48Z</atom:published>
+        <atom:title>Congratulations to r/bookscirclejerk for losing the race to 100k</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  submitted by &lt;a href="https://libreddit.privacy.qvarford.net/user/awkisopen"&gt; /u/awkisopen &lt;/a&gt; &lt;br&gt;&lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163obzp/congratulations_to_rbookscirclejerk_for_losing/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163obzp/congratulations_to_rbookscirclejerk_for_losing/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/ExoZilla</atom:name>
+        </atom:author>
+        <atom:id>t3_164pv0u</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/164pv0u/how_do_i_be_more_original/"/>
+        <atom:published>2023-08-29T18:14:36Z</atom:published>
+        <atom:title>How do I be more original?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/dqxfthkwb3lb1.png" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/pseuderim</atom:name>
+        </atom:author>
+        <atom:id>t3_164l3g9</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/164l3g9/what_hair_color_would_you_give_to_a_sexualized/"/>
+        <atom:published>2023-08-29T15:11:21Z</atom:published>
+        <atom:title>What hair color would you give to a (sexualized) female elf character in a fantasy novel?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writers/comments/164cdw1/what_hair_color_would_you_give_to_a_sexualized/?utm_source=share&amp;amp;utm_medium=web2x&amp;amp;context=3"&gt;Word for word&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Atticus-Black</atom:name>
+        </atom:author>
+        <atom:id>t3_164oyoh</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/164oyoh/i_daresay_and_do_declare_it_is_quite_wonderful_to/"/>
+        <atom:published>2023-08-29T17:39:30Z</atom:published>
+        <atom:title>I daresay and do declare, it is quite wonderful to have all my e-muses in one spot!</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;img src="https://libreddit.privacy.qvarford.net/img/r7ix9ndr53lb1.jpg" style="width: 740px;"&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/AccomplishedBig7666</atom:name>
+        </atom:author>
+        <atom:id>t3_165azza</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/165azza/my_writing_routine_for_best_authors/"/>
+        <atom:published>2023-08-30T10:32:22Z</atom:published>
+        <atom:title>My Writing Routine for Best Authors</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;☕ 4:00 AM: Begin with a pre-dawn ritual of drinking pure espresso shots. You should feel a fire in your stomach.&lt;/p&gt;
+   &lt;p&gt;&#129496;‍♂️ 5:00 AM: Brain storm and post five tweets about writing.&lt;/p&gt;
+   &lt;p&gt;&#127947;️ 6:00 AM: Hit the gym. Deadlift your writer's block away. You're not lifting weights; you're lifting the weight of the literary world on your shoulders.&lt;/p&gt;
+   &lt;p&gt;&#128214; 7:00 AM: Read the entire works of Shakespeare, backwards, in Old English.&lt;/p&gt;
+   &lt;p&gt;&#128692;‍♀️ 8:00 AM: Bike uphill, against the wind. Real writers embrace the challenge of physical and grammatical uphill battles.&lt;/p&gt;
+   &lt;p&gt;&#127783;️ 10:00 AM: Stand under a shower for an hour to soak up "natural inspiration."&lt;/p&gt;
+   &lt;p&gt;&#127811; 11:00 AM: Start writing. Write 10k words just there!&lt;/p&gt;
+   &lt;p&gt;&#128293; 12:00 PM: Lunchtime!&lt;/p&gt;
+   &lt;p&gt;&#129683; 1:00 PM: Write your first masterpiece of the day. Make it a flash fiction piece, but if it's not the length of a novella, are you even trying?&lt;/p&gt;
+   &lt;p&gt;&#127917; 2:00 PM: Attend an improv acting class. You are now every character in your book simultaneously. Multitasking is for those who fear true artistry.&lt;/p&gt;
+   &lt;p&gt;&#128009; 3:00 PM: Five Facebook Posts - 1 per hour&lt;/p&gt;
+   &lt;p&gt;&#127931; 5:00 PM: Learn to play the violin. Compose a symphony for your book's climactic scene.&lt;/p&gt;
+   &lt;p&gt;&#129497; 6:00 PM: LinkedIn post&lt;/p&gt;
+   &lt;p&gt;This is just the basics. Let me know if I missed something&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/worrallj</atom:name>
+        </atom:author>
+        <atom:id>t3_1651p0x</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/1651p0x/how_can_i_make_a_character_like_the_joker/"/>
+        <atom:published>2023-08-30T02:03:14Z</atom:published>
+        <atom:title>How can I make a character like the Joker?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;I think the Joker was really cool and how everyone dressed up as him for helloween. I think he's the best villain cuz of how he foils the Batman and something about his lines are really good, like scary but also like he's telling jokes (which I guess is why he's the joker!). I tried to make my villain the same as him with a purple suit and makeup, but I'm worried if I make him black people will think he's a pimp and I need a BIPOC in my story, unless that would be fetishization which is also something I need to know about. So how can I make him like the Joker without fetishizing?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/ribbitrowbuht</atom:name>
+        </atom:author>
+        <atom:id>t3_164jdd6</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/164jdd6/please_give_me_feedback_on_the_first_sentence_of/"/>
+        <atom:published>2023-08-29T14:03:17Z</atom:published>
+        <atom:title>please give me feedback on the first sentence of my book (first 18 words)</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;hey y’all! i’ve been writing a book for awhile now (finally down to 150,000 words after seven and a half drafts &#128541;) and am working up the courage to find beta readers now. could someone give me feedback on the first sentence of my story and tell me if this gives a good idea of what happens? thanks!&lt;/p&gt;
+   &lt;p&gt;without further ado, here it goes.&lt;/p&gt;
+   &lt;p&gt;okay here.&lt;/p&gt;
+   &lt;p&gt;ooh i’m nervous~&lt;/p&gt;
+   &lt;p&gt;“The planet of Galoaxia crawled with hundred-legged beings known as centipedes, all of whom wore high-heeled shoes.”&lt;/p&gt;
+   &lt;p&gt;what do you think?! is there anything i should change here? thank you and let me know if i should post the second sentence next &#128522;&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Educational-Let-1027</atom:name>
+        </atom:author>
+        <atom:id>t3_16554qw</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/16554qw/who_should_do_what_in_a_threesome_situation/"/>
+        <atom:published>2023-08-30T04:48:49Z</atom:published>
+        <atom:title>Who should do what in a threesome situation?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Main character POV: I have olive skin, wavy black hair, and brown eyes. I have a nice hourglass figure and stand about 5’3”. I’m a very socially awkward and shy. I’ve never had a boyfriend before.&lt;/p&gt;
+   &lt;p&gt;“Pete” is 5’9”, and a skinny nerdy guy with glasses. He had brown hair, light brown eyes, and fair skin. He’s very mature for his age. There’s been times where I’ve gotten hurt or humiliated, and he was so kind and gentle with me. He’s had one girlfriend.&lt;/p&gt;
+   &lt;p&gt;‘Fernando” is 5,5”, and from Latin America. Blonde hair, green eyes. He likes partying, and even has a talent for mixology (I once got so drunk hanging out with him that I passed out). He’s also only had one girlfriend, but he clearly loves hooking up with other women.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/conrad_400</atom:name>
+        </atom:author>
+        <atom:id>t3_164npjf</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/164npjf/how_do_i_convince_my_characters_to_make_better/"/>
+        <atom:published>2023-08-29T16:52:01Z</atom:published>
+        <atom:title>How do I convince my characters to make better stories?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;When I write, I don't plan or direct the story at all. I think that's inauthentic. Instead, I like to listen to my characters and let them direct everything. That's how they really come alive. I just sit and listen to their interactions. It's really entertaining! I barely have to do any work that way. I just allow my characters to be themselves as I document their journey.&lt;/p&gt;
+   &lt;p&gt;The problem is, their journeys keep being really shitty. They keep going on these really light, shallow adventures with barely any thematic cohesion, and I feel like they're just goofing off the whole time. Plus, they're forcing me to document them with bad writing. Like, really bad. It makes me sound like a writer who hasn't progressed past middle school.&lt;/p&gt;
+   &lt;p&gt;I refuse to &lt;em&gt;make&lt;/em&gt; them do anything, because they're not my slaves. They're real people! So, I can't tell them what the story is. But also, I need them to make a better story for me. Help! How do I convince my characters to make me write a better story about them?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/quartz_koala</atom:name>
+        </atom:author>
+        <atom:id>t3_16484ye</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/16484ye/someone_else_it_writing_a_movie_to_my_book/"/>
+        <atom:published>2023-08-29T04:15:50Z</atom:published>
+        <atom:title>Someone else it writing a movie to my book</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;I'd like to keep it anonymous, but I'm the author of a fairly popular romance novel. Trust me. I'm currently in the process of writing a movie to my book, but it has been brought to my attention that somebody on tiktok (a very small creator at the moment) has been documenting their journey on making my book a movie. I’m worried that this small creator is going to the pitch the screenplay to various studios, get picked up by Greta Gerwig, and spin out a cinematic universe using my book.&lt;/p&gt;
+   &lt;p&gt;My question is: What happens if they finish before me? Can they call dibs? Since it's my book, I assume I will have to approved and/or be alerted of this in someway, but I really have no idea how any film making and script writing things go? Obviously I am flattered somebody else wants to make my book a movie, but it'd like for my script to be used if and when there is a movie.&lt;/p&gt;
+   &lt;p&gt;I would talk to my agent or publisher about all of these concerns, but they live in a different state you’ve probably never heard of.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Unlikely_Obsession</atom:name>
+        </atom:author>
+        <atom:id>t3_164njf2</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/164njf2/i_went_awol_for_this_probably_going_to_get_court/"/>
+        <atom:published>2023-08-29T16:45:41Z</atom:published>
+        <atom:title>I went awol for this probably going to get court martialed later idk</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Hi I need to write a choose your own adventure book because I am a Major Pantser &lt;del&gt;in the army&lt;/del&gt; and my &lt;del&gt;Sargeant&lt;/del&gt; agent wants it by 0900 sir yes sir&lt;/p&gt;
+   &lt;p&gt;Ok so do I&lt;/p&gt;
+   &lt;p&gt;a) weep obstreperously over the brilliance of my own luminescent prose turn to literally any page and behold&lt;/p&gt;
+   &lt;p&gt;2)make it like a spy book like I have an idea for a guy called Thames Blonde the secret agent of the majesty’s bureaus he’s rlly Best of British and has a double decker bus pass turn to page [for British eyes only]&lt;/p&gt;
+   &lt;p&gt;me)selfie insert(it’s a picture book I look exactly like Hemingway if Hemingway looked like me) turn to pg. it’s on every page the whole thing is just me I’m giving the reader what they want here which is ME me&lt;/p&gt;
+   &lt;p&gt;DD) make this book about the ephemeral fripperous concerns of the jet setting class of the ladies who luncheonette- this one would be served a la carte&lt;/p&gt;
+   &lt;p&gt;;) turn to pg.69&lt;/p&gt;
+   &lt;p&gt;♾) this is vague but there may be a way to open a hole in space time with a choose your own adventure book so that the reader gets stuck in an infinite loop of turn to page 600k then divide that by the square root of turn to page 9000 then count to pg. 456096 maybe it’ll lead back to 600k idk I amma writer notta mathematical&lt;/p&gt;
+   &lt;p&gt;8-ball) I’m going to need a lot of &lt;del&gt;cocaine&lt;/del&gt;&lt;em&gt;inspiration&lt;/em&gt; for this &lt;del&gt;violent self-hatred&lt;/del&gt;&lt;em&gt;project&lt;/em&gt; turn to pg. overdraft -75k&lt;/p&gt;
+   &lt;p&gt;Please help quick ok, cause I’m about to do another dishonourable discharge&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/PorkloinMaster</atom:name>
+        </atom:author>
+        <atom:id>t3_164b37v</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/164b37v/somebody_else_it_writing_a_movie_to_my_book/"/>
+        <atom:published>2023-08-29T06:59:51Z</atom:published>
+        <atom:title>Somebody else it writing a movie to my book</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;I'd like to keep it anonymous, but I'm the author of a fairly popular daddy-dom erotic pirate novel. I'm currently in the process of writing a movie to my book (sic), but it has been brought to my attention that somebody on tiktok (a very small creator at the moment) has been documenting their journey on making my book a movie because all of this makes perfect sense so far and someone with not skills or resources will definitely be able to make a movie to my book.&lt;/p&gt;
+   &lt;p&gt;My question is: What happens if they finish before me? Since it's my book, I assume I will have to approved and/or be alerted of this in someway, but I really have no idea how any film making and script writing things go? Obviously I am flattered somebody else wants to make my book a movie, but it'd like for my script to be used if and when there is a movie. Will I become their butler if they finish the movie first? Will I have to live with them and their family and enjoy a number of exciting and comical follies? I’m very worried because i don’t have a butler suit.&lt;/p&gt;
+   &lt;p&gt;UPDATE: Hello again!! Not much of an update, but here’s more implausible shit that makes no sense I'm here to answer some questions. - I have emailed my agent. They are mostly going to reach out to this creator, explaining the legalities. I don't want to burst this person's bubble, but there's many reason that I have to. - Unfortunately, I can't just tell the tiktok that I'm in the process of writing a movie!! - I won't take legal action until this creator does something illegal, like claim my work as theirs. - I cannot just work with this person in writing the movie for many reasons. For starters, I believe they are under 18. I am also quite far in this project and I've always got the whole thing planned out, so as much as I'd love to hear their ideas, it's too late to add a writer. - This tiktok account, as I said, is veryyy small. I don't believe they make any money off of these videos, I only found the account through a close friend, but I doubt any fans have even seen the account yet.&lt;/p&gt;
+   &lt;p&gt;SECOND UPDATE: I will destroy this girl.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Paramortal</atom:name>
+        </atom:author>
+        <atom:id>t3_164d9ol</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/164d9ol/how_to_write_getting_kicked_in_the_groin/"/>
+        <atom:published>2023-08-29T09:07:44Z</atom:published>
+        <atom:title>How to write getting kicked in the groin?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Hey!&lt;br&gt;
+     So I'm a man, and while I feel like I have a decent grip on writing male on female PIV there's just one thing I dont' feel like I can do at the moment: writing a third person POV scene from the girls's perspective where she gets kicked in the groin (specifically the foot making contact, a cunt punt per se, if that makes a difference). That is something I need for this scene I'm working on, though, so I was hoping to maybe get some pointers and tips? Thank you!&lt;/p&gt;
+   &lt;p&gt;My original understanding was that if a woman is kicked in the groin and has had more than two sexual partners, her vagina will "eat" said foot and the person it's attached to, absorbing their power.&lt;/p&gt;
+   &lt;p&gt;Not sure if this needs NSFW tag, but I don't know how to add one, and I wouldn't if I did.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/BayonettaBasher</atom:name>
+        </atom:author>
+        <atom:id>t3_163p4dh</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163p4dh/is_writing_1_letter_per_day_a_good_amount/"/>
+        <atom:published>2023-08-28T15:26:42Z</atom:published>
+        <atom:title>Is writing 1 letter per day a good amount?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Right now I write 1 letter per day on my book. This should give me a finished draft in about 1,400 years, which is well in line with my desired timeline for publishing it. But what do you think? Is this too much? Am I taking it too fast? I really don't want to rush it.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Kindar42</atom:name>
+        </atom:author>
+        <atom:id>t3_164ebjf</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/164ebjf/do_my_novel_opening_rock_or_suck/"/>
+        <atom:published>2023-08-29T10:08:04Z</atom:published>
+        <atom:title>Do my novel opening rock or suck?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;"its so big" she thought. The woman was the typical rap guy's girlfriend. So black, and her butt just out there. "She obviously understands rap guys though, looking exactly like prostitute. That's one way to make them talk".&lt;/p&gt;
+   &lt;p&gt;"oh my god becky!"&lt;/p&gt;
+   &lt;p&gt;Her friend gasped and pointed, and Becky knew exactly what she would say next. Almost like a song...&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Kevin_Wolf</atom:name>
+        </atom:author>
+        <atom:id>t3_1640sor</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/1640sor/how_can_i_get_my_work_adapted_into_a_netflix/"/>
+        <atom:published>2023-08-28T22:50:40Z</atom:published>
+        <atom:title>How can I get my work adapted into a Netflix series without showing anyone?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Title. I have an idea that I'm afraid Netflix is going to steal, see, I have some stuff written, but I refuse to send it anywhere for editing or beta reading because they'll just steal it, and I was going to self-publish on Kindle, but I read that people can pirate it??! I thought about printing it myself and sneaking some copies into Barnes and Noble, but then a lawyer on Youtube said that it wouldn't count, so idk: I told my mom an idea once, then I saw &lt;em&gt;The Cosby Show&lt;/em&gt; on TV and knew that she had stolen it and given it to the TV station, and I vowed that would never happen again, and my question is thus; How do I Publish my Works and get them adapted into a Netflix series without showing anyone?&lt;/p&gt;
+   &lt;p&gt;Edit: spelling&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/JebBushier</atom:name>
+        </atom:author>
+        <atom:id>t3_163vzve</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163vzve/breaks_while_writing_your_novel_how_many_how_long/"/>
+        <atom:published>2023-08-28T19:48:32Z</atom:published>
+        <atom:title>Breaks while writing your novel? How many? How long?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Hello All&lt;/p&gt;
+   &lt;p&gt;So I am finally doing it. I have my novel pretty much all outlined out and am at around 6-7 words in now (Been working on it diligently for 63 years now). I love my story but the last couple of decades I just can't get into it. Since it is all outlined I tried jumping around but that too doesn't draw me in to start writing.&lt;/p&gt;
+   &lt;p&gt;I just want to know from the community if you guys take breaks from your manuscript and if you do, how long?&lt;/p&gt;
+   &lt;p&gt;Thanks all!!&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Mr_Rekshun</atom:name>
+        </atom:author>
+        <atom:id>t3_163k345</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163k345/i_dont_really_care_about_your_opinion_but_ill/"/>
+        <atom:published>2023-08-28T11:55:25Z</atom:published>
+        <atom:title>I don’t really care about your opinion, but I’ll phrase a question that lets me show off my awesome description of a monkey’s asshole.</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;I’m trying to describe my character in a way that lets the reader know they are spider monkeys, without using the word “spider monkey” since it’s a high fantasy world where monkeys aren’t a thing. Wanting some feedback to see if this description works:&lt;/p&gt;
+   &lt;p&gt;“She was so devastatingly beautiful from up close. She had an ass as smooth as porcelain, with a distinctly olive hue about it, and her gluteus maximum were upturned almonds with a cheeky bit of extra skin that gently rested over them, entirely doing away with that crease above the eye.”&lt;/p&gt;
+   &lt;p&gt;Like if you saw that description would you envision the character as being a spider monkey? I wasn’t sure if my attempt at describing her having mono crack was coming across the way I intended it to. I just wanted to see if you guys thought this description made sense for a character who is speciesially ambiguous but mostly takes on the likeness of a race of primates whose features resemble “North Sumatran Spider Monkey” features &#129312;&#128517;&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Sufficient-Form4529</atom:name>
+        </atom:author>
+        <atom:id>t3_163w2l5</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163w2l5/how_does_the_writing_of_netfixs_death_note_have/"/>
+        <atom:published>2023-08-28T19:51:29Z</atom:published>
+        <atom:title>How does the writing of Netfix's Death Note have so much depth?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;I keep seeing hundreds of video essays that praise different aspects of Death Note's story, many saying it's far better than the source material. Even each individual character can have an entire video dedicated just to them. Not to mention the themes and overall message of the story.&lt;/p&gt;
+   &lt;p&gt;I can’t comprehend how the writers plan this all out. What is the process for making a story with so many layers like that?&lt;/p&gt;
+   &lt;p&gt;P.S. What is a book? is it something you eat?&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writing/comments/163ajqg/how_does_the_writing_of_across_the_spiderverse/"&gt;Sauce&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Birchwood_Goddess</atom:name>
+        </atom:author>
+        <atom:id>t3_16454cz</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/16454cz/can_i_discuss_writing_in_a_writing_subreddit/"/>
+        <atom:published>2023-08-29T01:53:50Z</atom:published>
+        <atom:title>Can I discuss writing in a writing subreddit?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;So, I wanted to discuss ways to improve your, my, our writing. Is that even allowed?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Sam_Guydude</atom:name>
+        </atom:author>
+        <atom:id>t3_163g7fw</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163g7fw/alcohol_a_writers_best_friend/"/>
+        <atom:published>2023-08-28T08:19:39Z</atom:published>
+        <atom:title>Alcohol – A Writer’s Best Friend</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;&lt;strong&gt;&lt;em&gt;Does alcohol make you a better writer? Last December, I decided to test the idea and see if whisky boosted my skills. This is your chance to get ready for an awesome and productive Christmas.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+   &lt;p&gt;Let us be honest. Being a writer is tough. It requires a great amount of discipline, a great understanding of language, and a serious amount of stamina. Additionally, it demands focus, reflective capacity, and mental clarity.&lt;/p&gt;
+   &lt;p&gt;We all know there is only one thing that can boost all these qualities at once: alcohol. That sweet friend who makes us more and more awesome the better we get to know him. A guy who makes us sure of ourselves, helps us communicate with greater confidence and see the world more clearly. Until he suddenly retreats and makes us puke all over ourselves, leaving us in the ditch with a feeling of embarrassment. But is that not what being a writer is all about?&lt;/p&gt;
+   &lt;p&gt;Writers share another secret: We like to reward ourselves when we do great. And what defines greatness? To me, it emerges after crafting a new sentence or altering a comma. I am usually damned exhausted after that and need moral support. Again, the best gift for myself, the gift that makes me concentrate better, become a better boyfriend, and stronger too: alcohol.&lt;/p&gt;
+   &lt;p&gt;There was no way out of it. I decided last December to award myself with whisky (as in whisky stamped with an original Scottish “y”). I love a good whisky, but I love two good whiskies better. As the count increases, my joy and writing improve vastly. At least that is the theory. Up until last December, it had merely been a theory, I have to admit that. But initially, all the crap above did sound promising.&lt;/p&gt;
+   &lt;h2&gt;There Are Good Whiskies And Lovely Whiskies&lt;/h2&gt;
+   &lt;p&gt;It stopped being a theory by the end of 2022, though. My good friend Chris discovered that someone had made a whisky Advent calendar with samples of all the whisky genres you could imagine: good whisky, nice whisky, friendly whisky, enjoyable whisky, lovely whisky, and nice whisky… or did I say that already?&lt;/p&gt;
+   &lt;p&gt;For once, I had something to look forward to in December, aside from constipation and drunk dads sending rockets through my window on New Year’s Eve.&lt;/p&gt;
+   &lt;p&gt;I love the idea of an Advent calendar where you get a present each day for almost a month. A little reward for being such a patient and good boy. I was waiting excitedly for the shop to send me a new package each day (I guess I would get two on Saturdays because the mailman is too lazy to bring out packages on Sundays).&lt;/p&gt;
+   &lt;p&gt;However, I was astonished when the first delivery arrived. The package was substantial, containing 24 small bottles. What a funny idea to have me taste different samples already on the first day of December. This was surely promising, but also quite a load of alcohol. I figured around 48 cl. In total (16.23 oz.). This promised to be quite a night.&lt;/p&gt;
+   &lt;h2&gt;How I Destroyed My Computer While Untangling the Universe&lt;/h2&gt;
+   &lt;p&gt;It was late evening and my girlfriend had gone to sleep. I had put all of the sample bottles on the table and was getting ready to unleash the holy writer within me. It had been a rough year and finally, I would get a much-needed boost.&lt;/p&gt;
+   &lt;p&gt;After the first whisky, I felt great. It carried a beautiful dark color, a walnut flavor, was sweet to the tongue, and warmed my body. I started writing and found myself feeling very concentrated.&lt;/p&gt;
+   &lt;p&gt;The second one was just as good. It was a Glen Spey 17 with a honey flavor that made me forget all my worries. I actually finished the sentence I had started after the first whisky. Man, this was going well. I could get most of the paragraph done if this continued.&lt;/p&gt;
+   &lt;p&gt;After the next five, I kept getting more awesome. The Bruichladdich 20 even made me forget about writing for a while and just enjoy life. The sweet woody taste and the stronger 52.2 % made me realize that writing is not about writing at all. It is not about retreating to some fantasy kingdom either. It is about drinking.&lt;/p&gt;
+   &lt;p&gt;So far so good, but let me tell you, the next seven were tougher. It became harder to read the labels on the bottles and I destroyed the keyboard on my laptop with a Hazelburn 8. I think it was a Hazelburn 8. But heck, the text on the screen was pure crap anyway. I suddenly realized that being a writer was not for me at all. Why did I keep lying to myself? Writing was just my attempt to escape that unfair planet that broke the catalytic converter on my Toyota Aygo. But if people wanted me to be unhappy, then FINE. Fuck them!&lt;/p&gt;
+   &lt;p&gt;The next four whiskies were a bit more positive. I regretted shouting at myself and waking up the neighbors. I even apologized to the old handicapped woman downstairs for trying to dig out the catalytic converter on her mobility scooter. Like I knew what a catalytic converter was anyway. Perhaps I was not a bad writer after all. I mean, we all have ups and downs. A text is not a static thing. I could change it. Make it better. I deleted everything I had written, all the hard work, the whole goddamn sentence, and started over. But there was a problem. I was not seeing very well anymore The letters were jumping around on the screen and half of the keys were not working because of the Hazelburn 8. It was actually quite funny. I started tap-dancing the letters and made a pretty melody. Soon I had written half a page and it was awesome.&lt;/p&gt;
+   &lt;p&gt;The next three bottles were hazy. I did not care about the subtleties of tasting anymore. The whiskies were all the same. I realized through my daze that half the page I had written was pure nonsense. Like “Fuck this… bfjeid, fkdkk.” But I was feeling too bad to change it. I figured there would be an audience for that crap somewhere. I was a poet now. It took me 21 whiskies to realize my true objective. Who wants to write long texts? Only idiots.&lt;/p&gt;
+   &lt;p&gt;The final three…. Well, I hardly remember them. I drank them in the bedroom while trying to explain the universe to my sleeping girlfriend. Wild stuff like: if Earth were a sand grain on a beach, then the entire universe would be like really, really many sand grains. Stuff like space being just like air, except that it is always black, whereas air is white during the day and black during the night.&lt;/p&gt;
+   &lt;p&gt;Then I passed out.&lt;/p&gt;
+   &lt;h2&gt;Waking up to Chaos&lt;/h2&gt;
+   &lt;p&gt;The next day was demanding. I was hungover like hell. I puked all over my first draft and pooped on the sofa. There was a side-effect to being awesome. It had been a decent night, but man, there had been casualties. My laptop for instance. And half my book. It seemed that I had started deleting documents from Dropbox, too. The living room was full of broken glass and my girlfriend said she needed to go for a walk. “WITHOUT YOU, IDIOT,” she exclaimed, though I really needed fresh air.&lt;/p&gt;
+   &lt;p&gt;The worst part was obvious. I knew this was going to be one heck of a December. This hangover was only after opening the first whisky door. Some calendar I had ordered. I waited anxiously for the second delivery. The December 2 package with another 24 small bottles.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/the_tonez</atom:name>
+        </atom:author>
+        <atom:id>t3_1630r2f</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/1630r2f/if_you_wrote_a_story_would_you_put_female/"/>
+        <atom:published>2023-08-27T20:17:20Z</atom:published>
+        <atom:title>If you wrote a story, would you put female characters in it?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  submitted by &lt;a href="https://libreddit.privacy.qvarford.net/user/the_tonez"&gt; /u/the_tonez &lt;/a&gt; &lt;br&gt;&lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/1630r2f/if_you_wrote_a_story_would_you_put_female/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/1630r2f/if_you_wrote_a_story_would_you_put_female/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/SeaworthinessFit2580</atom:name>
+        </atom:author>
+        <atom:id>t3_1632l2h</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/1632l2h/how_to_write_male_friends_without_it_being/"/>
+        <atom:published>2023-08-27T21:25:55Z</atom:published>
+        <atom:title>How to write male friends without it being perceived as romantic</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;My story has two supporting characters, Dick and Caulk, whose deeply real — but platonic — affection for each other is important for the story. Caulk fled their home to escape his extremist family, and Dick came with him to help him. Part of my story hinges on my narrator Mary Sue realizing that Caulk will stay piously devoted to Dick even if Dick kills the Queen &#128079; they swore to serve, &#128133; meaning that Dick’s the only one who can lead his military coup and be charismatic, unique, nervous, and talented while doing it. It’s thus important for the story to convert they have an impenetrable bond as bosom friends.&lt;/p&gt;
+   &lt;p&gt;However, I don’t want them to be romantically involved, and I don’t see them as a couple. But my writing group made comments about “shipping” them, and one expressed disappointment when reading the 50-page hot hetero sex scene between Dick and Virginia because she assumed Dick and Caulk were already an item. How do you write two men as friends without the homoerotic subtext of their inexorably tight bond making anyone think they’re something more?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Eastern-Shift5569</atom:name>
+        </atom:author>
+        <atom:id>t3_1633gni</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/1633gni/just_finished_my_first_novel/"/>
+        <atom:published>2023-08-27T21:59:14Z</atom:published>
+        <atom:title>Just finished my first novel!!!</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;First novel done...no it's not a series, it's a single novel. 739 hours and 438,000 words later and my masterpiece is ready for your eyes to be blessed. I'm already busy working on the my next masterpiece, so hurry up and DM me to beta read. Before you ask, no, I won't respond to comments here (I'm busy people, writing the next 400K+ word novel) and I won't be editing down the word count of this one either. What do publishers know anyway? They haven't read MY masterpiece yet.&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writers/comments/162w78g/i_have_finally_finished_my_first_novel/"&gt;Sauce&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Mr_B_Gone</atom:name>
+        </atom:author>
+        <atom:id>t3_162vhjk</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/162vhjk/is_its_ok_to_feel_jealous_as_an_young_writer/"/>
+        <atom:published>2023-08-27T16:49:40Z</atom:published>
+        <atom:title>Is it's ok to feel jealous as an young writer</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Hey so I am a want to be a writer but some times I feel that my story are not good. Like there is a show called over the garden wall I want it but the other side of me know if I watch it I feel more bad about my story being not good as the show and that negative voice in my head telling me that it ture and I feel jealous why I can't write story, characters, plot like that so is it ok&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writing/comments/162tqzy/is_its_ok_to_feel_jealous_as_an_young_writer/?utm_source=share&amp;amp;utm_medium=android_app&amp;amp;utm_name=androidcss&amp;amp;utm_term=1&amp;amp;utm_content=1"&gt;Word for word sauce&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/boondoggle_orange</atom:name>
+        </atom:author>
+        <atom:id>t3_16341nj</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/16341nj/what_sucky_powers_can_i_give_my_main_characters/"/>
+        <atom:published>2023-08-27T22:21:33Z</atom:published>
+        <atom:title>What sucky powers can I give my main characters?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Yeah superpowers are really cool. But what about giving my MC a supermalus. For example one of them just fails at everything spectacularly. He wants to be a supervillain but ends up saving the world because he sucks so bad. What other supermalus is OP?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+</atom:feed>
+
+]
+
+
 net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadataIfAvailable=[
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
@@ -474,7 +1013,110 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://libreddit.privacy.qvarford.net/r/chess/comments/161m3i2/event_fide_word_rapid_team_championship/" alt="EVENT: FIDE Word Rapid Team Championship" title="EVENT: FIDE Word Rapid Team Championship" style="width: 740px;"&gt;
+  &lt;div class="md"&gt;
+   &lt;h2&gt;&lt;a href="https://worldrapidteams2023.fide.com/"&gt;Official Website&lt;/a&gt;&lt;/h2&gt;
+   &lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=QNIi-yq6FYk"&gt;Official FIDE Stream for DAY 3&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;Follow the move relay here: &lt;a href="https://www.chess.com/events/2023-world-rapid-team-championship"&gt;Chess.com&lt;/a&gt; | &lt;a href="https://chess24.com/en/watch/live-tournaments/world-rapid-team-championship-2023/1/1/1"&gt;Chess24&lt;/a&gt; | &lt;a href="https://lichess.org/broadcast/world-rapid-team-championship-2023/round-1/2z9mKi8h#:%7E:text=The%20World%20Rapid%20Team%20Championship,seconds%20from%20the%20first%20move"&gt;Lichess&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://libreddit.privacy.qvarford.net/img/zodjeqcd3ekb1.png"&gt;https://libreddit.privacy.qvarford.net/img/zodjeqcd3ekb1.png&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;About 300 participants and 43 teams from all over the world will compete for a record prize fund of 250,000 euros, with 100,000 euros going to the best team. The star line-ups will feature world champions &lt;strong&gt;Viswanathan Anand&lt;/strong&gt;, &lt;strong&gt;Vladimir Kramnik&lt;/strong&gt;, &lt;strong&gt;Hou Yifan&lt;/strong&gt;, &lt;strong&gt;Alexandra Kosteniuk&lt;/strong&gt;, world #5 &lt;strong&gt;Ian Nepomniachtchi&lt;/strong&gt;, world #8 &lt;strong&gt;Wesley So&lt;/strong&gt;, World #10 &lt;strong&gt;Richard Rapport&lt;/strong&gt;, and many others.&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://libreddit.privacy.qvarford.net/img/pdd8v1pe3ekb1.png"&gt;https://libreddit.privacy.qvarford.net/img/pdd8v1pe3ekb1.png&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://worldrapidteams2023.fide.com/registered-teams"&gt;REGISTERED TEAMS&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;Each team is composed of at least six and not more than nine players, and it must include at least one female and one recreational player, who never achieved FIDE rating of 2000. Each match is played on six boards, with at least one female and one recreational player in every match.&lt;/p&gt;
+   &lt;h1&gt;Format&lt;/h1&gt;
+   &lt;p&gt;Matches are scored by match points, with 2 points for a win, 1 point for a draw, and 0 points for a loss. The team with the most match points will become the champion.&lt;/p&gt;
+   &lt;h2&gt;Schedule&lt;/h2&gt;
+   &lt;p&gt;Time zone in Düsseldorf, Germany (GMT+2)&lt;/p&gt;
+   &lt;table&gt;
+    &lt;thead&gt;
+     &lt;tr&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Date&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Time&lt;/strong&gt;&lt;/th&gt;
+      &lt;th align="left"&gt;&lt;strong&gt;Round&lt;/strong&gt;&lt;/th&gt;
+     &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;26 Aug (Day 1)&lt;/td&gt;
+      &lt;td align="left"&gt;13:00 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Opening Ceremony&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;13:30 CEST (7:30 EST)&lt;/td&gt;
+      &lt;td align="left"&gt;Round 1&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;15:30 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Round 2&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;17:30 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Round 3&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;19:30 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Round 4&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;27 Aug (Day 2)&lt;/td&gt;
+      &lt;td align="left"&gt;13:30 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Round 5&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;15:30 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Round 6&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;17:30 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Round 7&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;19:30 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Round 8&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;28 Aug (Day 3)&lt;/td&gt;
+      &lt;td align="left"&gt;13:30 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Round 9&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;15:30 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Round 10&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;17:30 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Round 11&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;19:30 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Round 12&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td align="left"&gt;&lt;/td&gt;
+      &lt;td align="left"&gt;21:00 CEST&lt;/td&gt;
+      &lt;td align="left"&gt;Closing Ceremonies&lt;/td&gt;
+     &lt;/tr&gt;
+    &lt;/tbody&gt;
+   &lt;/table&gt;
+   &lt;h1&gt;Live Coverage&lt;/h1&gt;
+   &lt;ul&gt;
+    &lt;li&gt;The event will be broadcast live on &lt;a href="https://www.youtube.com/@FIDE_chess"&gt;FIDE Youtube&lt;/a&gt; with commentary of one of the most popular chess commentators today GM Yasser Seirawan, a famous chess ambassador and promoter GM Maurice Ashley, and European Women's Individual Chess Champion WGM Almira Skripchenko.&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;p&gt;____________________________________________________________________________________________________________________&lt;/p&gt;
+   &lt;h1&gt;Day 2 Recap&lt;/h1&gt;
+   &lt;p&gt;&lt;a href="https://chess-results.com/tnr802387.aspx?lan=1&amp;amp;art=0&amp;amp;rd=8&amp;amp;turdet=YES&amp;amp;flag=30"&gt;&lt;strong&gt;Team Standings&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;&lt;/p&gt;
+  &lt;/div&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -708,7 +1350,9 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://libreddit.privacy.qvarford.net/img/j3ezvxq962lb1.png" alt="White to move, mate in 6" title="White to move, mate in 6" style="width: 740px;"&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;I was trying to make a specific kind of composition and Chess.com 3200 engine didn't see this at first, only gave a big advantage to white but after i played the first move it said M6. I'm quite new to making puzzles/compositions and don't really share them so idk if this is even right because of the engine thing.&lt;/p&gt;
+  &lt;/div&gt;&lt;br&gt;&lt;img src="https://libreddit.privacy.qvarford.net/img/j3ezvxq962lb1.png" alt="White to move, mate in 6" title="White to move, mate in 6" style="width: 740px;"&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -753,7 +1397,9 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://libreddit.privacy.qvarford.net/img/7j7abor5n7lb1.png" alt="What is this game?" title="What is this game?" style="width: 740px;"&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;The black and white pieces need to swap, who ever swap first wins. What's it called?&lt;/p&gt;
+  &lt;/div&gt;&lt;br&gt;&lt;img src="https://libreddit.privacy.qvarford.net/img/7j7abor5n7lb1.png" alt="What is this game?" title="What is this game?" style="width: 740px;"&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -943,7 +1589,9 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://libreddit.privacy.qvarford.net/img/mp1o5k6ce6lb1.jpg" alt="The Periphials TV show" title="The Periphials TV show" style="width: 740px;"&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Saw this on the TV show . Must be a new way to play&lt;/p&gt;
+  &lt;/div&gt;&lt;br&gt;&lt;img src="https://libreddit.privacy.qvarford.net/img/mp1o5k6ce6lb1.jpg" alt="The Periphials TV show" title="The Periphials TV show" style="width: 740px;"&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -988,7 +1636,9 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://libreddit.privacy.qvarford.net/img/rum13bo5g8lb1.jpg" alt="Black to play Trap White's Queen" title="Black to play Trap White's Queen" style="width: 740px;"&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Not sure about difficulty, but felt that the construction was nice&lt;/p&gt;
+  &lt;/div&gt;&lt;br&gt;&lt;img src="https://libreddit.privacy.qvarford.net/img/rum13bo5g8lb1.jpg" alt="Black to play Trap White's Queen" title="Black to play Trap White's Queen" style="width: 740px;"&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>

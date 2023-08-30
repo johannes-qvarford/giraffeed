@@ -28,14 +28,15 @@ class HttpClientLibredditMetadataProvider(private val httpClient: HttpClient, pr
 
             val images = keys.map { URI.create(map[it]!!.s.u!!) }.toList()
             LibredditMetadata(imageUrls = images)
-        } else if (root.thumbnail == "self") {
-            // NOTE: root.selftext_html may be null for text posts with no content (only a title).
-            // We therefor need to check selftext instead, and have a fallback for null selftext_html
-            // TODO: Check if some links need to be replaced.
-            LibredditMetadata(content = root.selftextHtml ?: "<p>[empty]</p>")
-        }
-        else {
-            LibredditMetadata(imageUrls = listOf(URI.create(root.url!!)), videoUrl = null)
+        } else {
+            val content = if (root.selftext != "" || root.thumbnail == "self") {
+                root.selftextHtml ?: "<p>[empty]</p>"
+            } else { null }
+
+            val urlIsSelf = root.url?.endsWith(root.permalink) ?: false
+            val imageUrls = if (urlIsSelf) { listOf() } else { listOf(URI.create(root.url!!)) }
+
+            LibredditMetadata(imageUrls = imageUrls, videoUrl = null, html = content)
         }
     }
 

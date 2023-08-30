@@ -11,16 +11,12 @@ import net.qvarford.giraffeed.it.util.Resources
 import net.qvarford.giraffeed.it.util.Verifier
 import org.junit.jupiter.api.*
 import java.net.http.HttpClient
-import java.nio.file.Files
-import java.nio.file.Path
 
 @QuarkusTest
 class SnapshotResourceTest {
     val map = mapOf(
-        "https://www.reddit.com/r/AceAttorneyCirclejerk/hot.rss" to "libreddit_success.xml",
-        "https://www.reddit.com/r/AceAttorneyCirclejerk/hot.json" to "libreddit/554398941.json",
 
-        "https://www.reddit.com/r/chess/hot.rss" to "libreddit/951314221.json",
+        "https://www.reddit.com/r/chess/hot.rss" to "libreddit/951314221.xml",
         "https://www.reddit.com/r/chess/hot.json" to "libreddit/-1061465254.json",
         "https://www.reddit.com/r/chess/comments/164vj8k/nepo_on_not_being_able_to_play_in_chesscoms_speed/.json" to "libreddit/-1680146383.json",
         "https://www.reddit.com/r/chess/comments/1658pra/fabiano_caruana_my_generation_is_probably_the/.json" to "libreddit/-210112066.json",
@@ -43,6 +39,8 @@ class SnapshotResourceTest {
         "https://www.reddit.com/r/chess/comments/165c0jz/chesscom_tries_to_find_out_who_the_greatest_of/.json" to "libreddit/2095700588.json",
         "https://www.reddit.com/r/chess/comments/164iz4u/chessbase_india_interview_caruana_wins_gold_on/.json" to "libreddit/94368179.json",
 
+        "https://www.reddit.com/r/AceAttorneyCirclejerk/hot.rss" to "libreddit_success.xml",
+        "https://www.reddit.com/r/AceAttorneyCirclejerk/hot.json" to "libreddit/554398941.json",
         "https://www.reddit.com/r/AceAttorneyCirclejerk/comments/bb8vaf/yall_fuckers_better_jerk_it_good/.json" to "libreddit/-47181450.json",
         "https://www.reddit.com/r/AceAttorneyCirclejerk/comments/10036qp/haapynewyear/.json" to "libreddit/-1627760256.json",
         "https://www.reddit.com/r/AceAttorneyCirclejerk/comments/10bu04x/what_a_cool_guy_hope_he_beats_the_nickel_samurai/.json" to "libreddit/-1755671897.json",
@@ -70,6 +68,9 @@ class SnapshotResourceTest {
         "https://www.reddit.com/r/AceAttorneyCirclejerk/comments/1092zix/valentines_be_like/.json" to "libreddit/-651421054.json",
         "https://www.reddit.com/r/AceAttorneyCirclejerk/comments/1099cdu/ok_then_he_likes_to_be_stepped_on_apparently/.json" to "libreddit/-406580547.json",
         "https://www.reddit.com/r/AceAttorneyCirclejerk/comments/109eo96/okay_something_thats_been_bothering_me_for_a/.json" to "libreddit/47401351.json",
+
+        "https://www.reddit.com/r/writingcirclejerk/hot.rss" to "libreddit/-1393696310.xml",
+        "https://www.reddit.com/r/writingcirclejerk/hot.json" to "libreddit/1616797478.json",
 
         "https://nitter.privacy.qvarford.net/slowbeef/rss" to "nitter_success.xml",
         "https://nitter.privacy.qvarford.net/InternetHippo/status/1635996454983548931#m" to "nitter_page_with_hls_video.html",
@@ -122,6 +123,19 @@ class SnapshotResourceTest {
         expect.toMatchSnapshot(content)
     }
 
+    @Test
+    fun libredditFeedsExtraTextFromTextPosts(testInfo: TestInfo) {
+        val expect = verifier.expect(testInfo)
+        val content = RestAssured.given()
+            .`when`().get("/enhancement/libreddit/writingcirclejerk")
+            .then()
+            .statusCode(200)
+            .extract()
+            .body()
+            .asString()
+
+        expect.toMatchSnapshot(content)
+    }
 
     @Test
     fun nitterFeedsAreFetchedFromNitter(testInfo: TestInfo) {

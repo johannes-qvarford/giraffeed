@@ -39,41 +39,6 @@ class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider)
         return document.outerHtml()
     }
 
-    private fun addMissingImageIfContainsImageLink(document: Document) {
-        var imageUrl: String? = null
-        var hasImage = false
-
-        fun recurse(node: Node) {
-            if (node is Element) {
-                if (node.tagName() == "img") {
-                    hasImage = true
-                }
-
-                if (node.tagName() == "a" && node.attr("href").startsWith("https://i.redd.it")) {
-                    imageUrl = node.attr("href")
-                }
-
-                for (attribute in node.attributes()) {
-                    node.attr(attribute.key, replaceRedditLinksInText(attribute.value))
-                }
-                for (child in node.childNodes()) {
-                    recurse(child)
-                }
-            }
-        }
-        recurse(document)
-
-        imageUrl?.let {
-            if (hasImage) return
-            val img = document.createElement("img")
-            img.attr("src", it)
-            val br = document.createElement("br")
-            val body = document.body()
-            body.prependChild(br)
-            body.prependChild(img)
-        }
-    }
-
     private fun replaceRedditLinks(document: Document) {
         fun recurse(node: Node) {
             if (node is TextNode) {
@@ -101,23 +66,54 @@ class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider)
 
     private fun enhanceImagesWithMetadata(document: Document, link: LibredditEntryUrl) {
         val metadata = metadataProvider.lookup(link.reddit)
-        if (metadata.imageUrls.isNotEmpty()) {
-            val imgElements = mutableListOf<Element>()
-            fun recurse(element: Element) {
-                if (element.tagName() == "img") {
-                    imgElements.add(element)
+
+        // Need to store imgElements early, in case they get wiped out when the html is replaced.
+        val imgElements = mutableListOf<Element>()
+        fun recurse(element: Element) {
+            if (element.tagName() == "img") {
+                imgElements.add(element)
+            }
+            for (child in element.children()) {
+                recurse(child)
+            }
+        }
+        recurse(document)
+
+
+        // Need to wipe the content first if necessary, before inserting other media into it.
+        if (metadata.html != null) {
+            for (node in document.body().childNodes()) {
+                node.remove()
+            }
+            document.body().append(Entities.unescape(metadata.html))
+
+            fun removeComments(node: Node) {
+                if (node is Comment) {
+                    node.remove()
                 }
-                for (child in element.children()) {
-                    recurse(child)
+
+                if (node is Element) {
+                    for (child in node.childNodes()) {
+                        removeComments(child)
+                    }
                 }
             }
-            recurse(document)
+            removeComments(document)
+        }
 
+        if (metadata.imageUrls.isNotEmpty()) {
             val alt = imgElements.firstOrNull()?.attr("alt")
             val title = imgElements.firstOrNull()?.attr("title")
 
-            for (node in document.body().childNodes()) {
-                node.remove()
+            // We don't want to wipe everything, if there is important html to use.
+            if (metadata.html == null) {
+                for (node in document.body().childNodes()) {
+                    node.remove()
+                }
+            } else {
+                // Create some room between the html and the images
+                val br = document.createElement("br");
+                document.body().appendChild(br)
             }
 
             for (image in metadata.imageUrls) {
@@ -134,28 +130,8 @@ class LibredditFeedType(private val metadataProvider: LibredditMetadataProvider)
                     }
                 }
                 img.attr("style", "width: 740px;")
-                document.body().prependChild(img)
+                document.body().appendChild(img)
             }
-        }
-
-        if (metadata.content != null) {
-            for (node in document.body().childNodes()) {
-                node.remove()
-            }
-            document.body().append(Entities.unescape(metadata.content))
-
-            fun removeComments(node: Node) {
-                if (node is Comment) {
-                    node.remove()
-                }
-
-                if (node is Element) {
-                    for (child in node.childNodes()) {
-                        removeComments(child)
-                    }
-                }
-            }
-            removeComments(document)
         }
 
         if (metadata.videoUrl != null) {
@@ -183,7 +159,7 @@ private fun String.replaceLink(regex: String, pathPrefix: String): String {
     return r
 }
 
-data class LibredditMetadata(val imageUrls: List<URI> = emptyList(), val videoUrl: Mp4Url? = null, val content: String? = null)
+data class LibredditMetadata(val imageUrls: List<URI> = emptyList(), val videoUrl: Mp4Url? = null, val html: String? = null)
 
 data class LibredditEntryUrl(val value: URI) {
     val reddit: RedditEntryUrl
