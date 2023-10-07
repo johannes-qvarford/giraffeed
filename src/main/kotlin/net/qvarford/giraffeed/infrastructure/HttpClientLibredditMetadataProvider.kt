@@ -39,7 +39,7 @@ class HttpClientLibredditMetadataProvider(private val httpClient: HttpClient, pr
                 if (isCrossPost) {
                     "<a href=\"${root.url}\">Cross Post</a>"
                 } else if (root.selftext != "" || root.thumbnail == "self" || !urlIsMedia) {
-                    (root.selftextHtml ?: root.url) ?: "<p>[empty]</p>"
+                    (root.selftextHtml ?: "<a href=\"${root.url}\">Link</a>") ?: "<p>[empty]</p>"
                 } else { null }
 
             val imageUrls = if (urlIsSelf || !urlIsMedia) { listOf() } else { listOf(URI.create(root.url!!)) }

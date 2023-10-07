@@ -448,7 +448,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsAreFetchedFromReddi
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109eo96/okay_something_thats_been_bothering_me_for_a/
+  &lt;a href="https://libreddit.privacy.qvarford.net/r/AceAttorneyCirclejerk/comments/109eo96/okay_something_thats_been_bothering_me_for_a/"&gt;Link&lt;/a&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -879,7 +879,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsExtraTextFromTextPo
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163obzp/congratulations_to_rbookscirclejerk_for_losing/
+  &lt;a href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163obzp/congratulations_to_rbookscirclejerk_for_losing/"&gt;Link&lt;/a&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -1302,7 +1302,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsExtraTextFromTextPo
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/1630r2f/if_you_wrote_a_story_would_you_put_female/
+  &lt;a href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/1630r2f/if_you_wrote_a_story_would_you_put_female/"&gt;Link&lt;/a&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -1721,7 +1721,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  https://youtu.be/d-cmHuMRC6A?si=ET1umjwS4JHHGyWp
+  &lt;a href="https://youtu.be/d-cmHuMRC6A?si=ET1umjwS4JHHGyWp"&gt;Link&lt;/a&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -1768,7 +1768,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  https://twitter.com/HansMokeNiemann/status/1696537826786173272
+  &lt;a href="https://twitter.com/HansMokeNiemann/status/1696537826786173272"&gt;Link&lt;/a&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -2039,7 +2039,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  https://www.chess.com/article/view/chess-accuracy-ratings-goat
+  &lt;a href="https://www.chess.com/article/view/chess-accuracy-ratings-goat"&gt;Link&lt;/a&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -2088,7 +2088,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  https://www.youtube.com/watch?v=J2RkJUlLD3o
+  &lt;a href="https://www.youtube.com/watch?v=J2RkJUlLD3o"&gt;Link&lt;/a&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
