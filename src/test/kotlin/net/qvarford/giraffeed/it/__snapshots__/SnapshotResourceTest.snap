@@ -493,7 +493,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsExtraTextFromTextPo
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  submitted by &lt;a href="https://libreddit.privacy.qvarford.net/user/awkisopen"&gt; /u/awkisopen &lt;/a&gt; &lt;br&gt;&lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163obzp/congratulations_to_rbookscirclejerk_for_losing/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/163obzp/congratulations_to_rbookscirclejerk_for_losing/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+  &lt;p&gt;[empty]&lt;/p&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -916,7 +916,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsExtraTextFromTextPo
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  submitted by &lt;a href="https://libreddit.privacy.qvarford.net/user/the_tonez"&gt; /u/the_tonez &lt;/a&gt; &lt;br&gt;&lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/1630r2f/if_you_wrote_a_story_would_you_put_female/"&gt;[link]&lt;/a&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="https://libreddit.privacy.qvarford.net/r/writingcirclejerk/comments/1630r2f/if_you_wrote_a_story_would_you_put_female/"&gt;[comments]&lt;/a&gt;&lt;/span&gt;
+  &lt;p&gt;[empty]&lt;/p&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -1335,7 +1335,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://youtu.be/d-cmHuMRC6A?si=ET1umjwS4JHHGyWp" alt="Fabiano Caruana: &amp;quot;My generation is probably the strongest in history&amp;quot;" title="Fabiano Caruana: &amp;quot;My generation is probably the strongest in history&amp;quot;" style="width: 740px;"&gt;
+  &lt;p&gt;[empty]&lt;/p&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -1382,7 +1382,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://twitter.com/HansMokeNiemann/status/1696537826786173272" alt="Hans Niemann makes a new video statement on Twitter" title="Hans Niemann makes a new video statement on Twitter" style="width: 740px;"&gt;
+  &lt;p&gt;[empty]&lt;/p&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -1653,7 +1653,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://www.chess.com/article/view/chess-accuracy-ratings-goat" alt="Chess.com tries to find out who the &amp;quot;Greatest Of All Time&amp;quot; is by comparing the accuracy and ratings of players from different chess eras." title="Chess.com tries to find out who the &amp;quot;Greatest Of All Time&amp;quot; is by comparing the accuracy and ratings of players from different chess eras." style="width: 740px;"&gt;
+  &lt;p&gt;[empty]&lt;/p&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>
@@ -1702,7 +1702,7 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadata
         <atom:content type="html">&lt;html&gt;
  &lt;head&gt;&lt;/head&gt;
  &lt;body&gt;
-  &lt;img src="https://www.youtube.com/watch?v=J2RkJUlLD3o" alt="[Chessbase India Interview] Caruana wins Gold on board 1 at FIDE World Rapid Teams" title="[Chessbase India Interview] Caruana wins Gold on board 1 at FIDE World Rapid Teams" style="width: 740px;"&gt;
+  &lt;p&gt;[empty]&lt;/p&gt;
  &lt;/body&gt;
 &lt;/html&gt;</atom:content>
     </atom:entry>

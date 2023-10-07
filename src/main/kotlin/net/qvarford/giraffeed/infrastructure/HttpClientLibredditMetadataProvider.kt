@@ -29,12 +29,16 @@ class HttpClientLibredditMetadataProvider(private val httpClient: HttpClient, pr
             val images = keys.map { URI.create(map[it]!!.s.u!!) }.toList()
             LibredditMetadata(imageUrls = images)
         } else {
-            val content = if (root.selftext != "" || root.thumbnail == "self") {
+            val urlIsMedia = root.url!!.contains("i.redd.it")
+                    || root.url.contains("external-preview.redd.it")
+                    || root.url.contains("preview.redd.it")
+            val urlIsSelf = root.url?.endsWith(root.permalink) ?: false
+
+            val content = if (root.selftext != "" || root.thumbnail == "self" || !urlIsMedia) {
                 root.selftextHtml ?: "<p>[empty]</p>"
             } else { null }
 
-            val urlIsSelf = root.url?.endsWith(root.permalink) ?: false
-            val imageUrls = if (urlIsSelf) { listOf() } else { listOf(URI.create(root.url!!)) }
+            val imageUrls = if (urlIsSelf || !urlIsMedia) { listOf() } else { listOf(URI.create(root.url!!)) }
 
             LibredditMetadata(imageUrls = imageUrls, videoUrl = null, html = content)
         }
