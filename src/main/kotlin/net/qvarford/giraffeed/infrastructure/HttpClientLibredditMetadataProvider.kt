@@ -32,16 +32,31 @@ class HttpClientLibredditMetadataProvider(private val httpClient: HttpClient, pr
             val urlIsMedia = root.url!!.contains("i.redd.it")
                     || root.url.contains("external-preview.redd.it")
                     || root.url.contains("preview.redd.it")
-            val urlIsSelf = root.url?.endsWith(root.permalink) ?: false
+            val urlIsSelf = root.url.endsWith(root.permalink) ?: false
+            val isCrossPost = isCrossPost(root)
 
-            val content = if (root.selftext != "" || root.thumbnail == "self" || !urlIsMedia) {
-                root.selftextHtml ?: "<p>[empty]</p>"
-            } else { null }
+            val content =
+                if (isCrossPost) {
+                    "<a href=\"${root.url}\">Cross Post</a>"
+                } else if (root.selftext != "" || root.thumbnail == "self" || !urlIsMedia) {
+                    (root.selftextHtml ?: root.url) ?: "<p>[empty]</p>"
+                } else { null }
 
             val imageUrls = if (urlIsSelf || !urlIsMedia) { listOf() } else { listOf(URI.create(root.url!!)) }
 
             LibredditMetadata(imageUrls = imageUrls, videoUrl = null, html = content)
         }
+    }
+
+    private val subredditRegex = Regex("/r/([^/]*)")
+
+    private fun isCrossPost(root: T3): Boolean {
+        val subreddit = subredditRegex.find(root.permalink)
+            ?.groupValues?.get(1)
+        val linkedSubreddit = subredditRegex.find(root.url!!)
+            ?.groupValues?.get(1)
+
+        return subreddit != null && linkedSubreddit != null && subreddit != linkedSubreddit
     }
 
     // TODO: Better naming: what does T3 even mean?
