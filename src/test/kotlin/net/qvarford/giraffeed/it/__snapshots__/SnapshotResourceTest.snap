@@ -1382,6 +1382,566 @@ net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsExtraTextFromTextPo
 ]
 
 
+net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsHandleVideoGalleries=[
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
+    <atom:updated>2023-10-12T16:08:41Z</atom:updated>
+    <atom:icon>https://www.redditstatic.com/icon.png/</atom:icon>
+    <atom:title>Software Architecture</atom:title>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/asdfdelta</atom:name>
+        </atom:author>
+        <atom:id>t3_16usw23</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/16usw23/megathread_software_architecture_books_resources/"/>
+        <atom:published>2023-09-28T21:52:24Z</atom:published>
+        <atom:title>[Megathread] Software Architecture Books &amp; Resources</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;This thread is dedicated to the often-asked question, 'what books or resources are out there that I can learn architecture from?' The list started from responses from others on the subreddit, so thank you all for your help.&lt;/p&gt;
+   &lt;p&gt;Feel free to add a comment with your recommendations! This will eventually be moved over to the sub's wiki page once we get a good enough list, so I apologize in advance for the suboptimal formatting.&lt;/p&gt;
+   &lt;p&gt;Please only post resources that you personally recommend (e.g., you've actually read/listened to it).&lt;/p&gt;
+   &lt;p&gt;&lt;em&gt;note: Amazon links are not affiliate links, don't worry&lt;/em&gt;&lt;/p&gt;
+   &lt;h1&gt;Roadmaps/Guides&lt;/h1&gt;
+   &lt;ul&gt;
+    &lt;li&gt;&lt;a href="https://roadmap.sh/software-architect"&gt;Roadmap.sh's Software Architect&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;h1&gt;Books&lt;/h1&gt;
+   &lt;ul&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/dq3PxSn"&gt;Domain-Driven Design&lt;/a&gt; &lt;sup&gt;by Eric Evans&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/359uhtV"&gt;Fundamentals of Software Architecture&lt;/a&gt; &lt;sup&gt;by Mark Richards &amp;amp; Neal Ford&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/eFzaLaz"&gt;Software Architecture: The Hard Parts&lt;/a&gt; &lt;sup&gt;by Neal Ford, Mark Richards, Pramod Sadalage &amp;amp; Zhamak Dehghani&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/gU7TjI1"&gt;Building Evolutionary Architectures&lt;/a&gt; &lt;sup&gt;by Neal Ford, Rebecca Parsons, Patrick Kua &amp;amp; Pramod Sadalage&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/4FmQ1hr"&gt;The Software Architect Elevator&lt;/a&gt; &lt;sup&gt;by Gregor Hohpe&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/8v3yYhq"&gt;Foundations of Scalable Systems&lt;/a&gt; &lt;sup&gt;by Ian Gorton&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/bNAoiya"&gt;Learning Domain-Driven Design&lt;/a&gt; &lt;sup&gt;by Vlad Khononov&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/4q14ieF"&gt;Software Architecture Metrics&lt;/a&gt; &lt;sup&gt;by Christian Ciceri, Dave Farley, Neal Ford, + 7 more&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/1epU4oE"&gt;Mastering API Architecture&lt;/a&gt; &lt;sup&gt;by James Gough, Daniel Bryant, Matthew Auburn&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/bEatOoD"&gt;Building Event-Driven Microservices&lt;/a&gt; &lt;sup&gt;by Adam Bellemare&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/01j6OVg"&gt;Microservices Up &amp;amp; Running&lt;/a&gt; &lt;sup&gt;by Ronnie Mitra, Irakli Nadareishvili&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/45dTOqv"&gt;The Art of Agile Development&lt;/a&gt; &lt;sup&gt;by James Shore, Shane Warden&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/gXtk3ix"&gt;Flow Architectures&lt;/a&gt; &lt;sup&gt;by James Urquhart&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/4ZWCt5c"&gt;Building Micro-frontends&lt;/a&gt; &lt;sup&gt;by Luca Mezzalira&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/48WBzNv"&gt;Monolith to Microservices&lt;/a&gt; &lt;sup&gt;by Sam Newman&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/3p5BiBI"&gt;Continuous API Management&lt;/a&gt; &lt;sup&gt;by Mehdi Medjaoui, Erik Wilde, Ronnie Mitra, &amp;amp; Mike Amundsen&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/ahe9ilE"&gt;Designing Data-Intensive Applications&lt;/a&gt; &lt;sup&gt;by Martin Kleppmann&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/gO4s792"&gt;Software Design&lt;/a&gt; &lt;sup&gt;by David Budgen&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/it9HZyn"&gt;Design Patterns&lt;/a&gt; &lt;sup&gt;by Eric Gamma, Richard Helm, Ralph Johnson, John Vlissides&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/4aptQyD"&gt;Refactoring&lt;/a&gt; &lt;sup&gt;by Martin Fowler&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/3Js1P9K"&gt;A Philosophy of Software Design&lt;/a&gt; &lt;sup&gt;by John Ousterhout&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/7ZbAZZt"&gt;The Pragmatic Programmer&lt;/a&gt; &lt;sup&gt;by David Thomas, Andrew Hunt&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/02LlGEI"&gt;Clean Architecture&lt;/a&gt; &lt;sup&gt;by Robert Martin&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/dKEsGit"&gt;Working Effectively with Legacy Code&lt;/a&gt; &lt;sup&gt;by Michael Feathers&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/gVhueCc"&gt;Your Code as a Crime Scene&lt;/a&gt; &lt;sup&gt;by Adam Tornhill&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://www.manning.com/books/architecture-modernization"&gt;Architecture Modernization: Socio-technical alignment of software, strategy, and structure&lt;/a&gt; &lt;sup&gt;by Nick Tune with Jean-Georges Perrin&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://a.co/d/6QfOgNJ"&gt;Building Microservices, 2nd Edition&lt;/a&gt; &lt;sup&gt;by Sam Newman&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://aosabook.org/en/"&gt;Architecture of Open Source Applications&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://github.com/mhadidg/software-architecture-books"&gt;mhadidg's Software Architecture Book list&lt;/a&gt; (curated algorithmically)&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;h1&gt;Blogs &amp;amp; Articles&lt;/h1&gt;
+   &lt;ul&gt;
+    &lt;li&gt;&lt;a href="https://www.developerdotstar.com/mag/articles/reeves_design_main.html"&gt;Code as Design: Three Essays by Jack W. Reeves&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://martinfowler.com/"&gt;MartinFowler.com&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;h1&gt;Podcasts&lt;/h1&gt;
+   &lt;ul&gt;
+    &lt;li&gt;Thoughtworks Technology Podcast&lt;/li&gt;
+    &lt;li&gt;GOTO - Today, Tomorrow and the Future&lt;/li&gt;
+   &lt;/ul&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/asdfdelta</atom:name>
+        </atom:author>
+        <atom:id>t3_174ojwx</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/174ojwx/software_architecture_discord/"/>
+        <atom:published>2023-10-10T15:51:18Z</atom:published>
+        <atom:title>Software Architecture Discord</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Someone requested a place to get feedback on diagrams, so I made us a Discord server! There we can talk about patterns, get feedback on designs, talk about careers, etc.&lt;/p&gt;
+   &lt;p&gt;Join using the link below:&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://discord.gg/EuX55ZGXa3"&gt;https://discord.gg/EuX55ZGXa3&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Adventurous-Salt8514</atom:name>
+        </atom:author>
+        <atom:id>t3_176akgw</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/176akgw/keep_your_streams_short_or_how_to_model/"/>
+        <atom:published>2023-10-12T16:07:05Z</atom:published>
+        <atom:title>Keep your streams short! Or how to model event-sourced systems efficiently</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;a href="https://m.youtube.com/watch?v=uODSwR2CIV4"&gt;Link&lt;/a&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Antique-human6894</atom:name>
+        </atom:author>
+        <atom:id>t3_1766wf0</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/1766wf0/building_green_software_code_efficiency/"/>
+        <atom:published>2023-10-12T13:23:21Z</atom:published>
+        <atom:title>Building Green Software: Code Efficiency</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;a href="https://youtu.be/zdI126LzaZQ?list=PLEx5khR4g7PJbSLmADahf0LOpTLifiCra"&gt;Link&lt;/a&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/alokpsharma</atom:name>
+        </atom:author>
+        <atom:id>t3_176014d</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/176014d/open_group_distinguished_architect/"/>
+        <atom:published>2023-10-12T06:17:19Z</atom:published>
+        <atom:title>Open Group Distinguished Architect</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Hello,&lt;/p&gt;
+   &lt;p&gt;Has anyone done Open Group Distinguished Architect Certification? I dont see a clear path in Opengroup website.&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://www.opengroup.org/certifications/certified-architect-open-ca"&gt;https://www.opengroup.org/certifications/certified-architect-open-ca&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;What is the value of this certification? How can we prepare for this?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/animesh371</atom:name>
+        </atom:author>
+        <atom:id>t3_17642uo</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/17642uo/how_quic_is_displacing_tcp_for_speed_and_security/"/>
+        <atom:published>2023-10-12T10:51:11Z</atom:published>
+        <atom:title>How QUIC Is Displacing TCP for Speed and Security ?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;a href="https://engineeringatscale.substack.com/p/how-quic-is-displacing-tcp-for-speed"&gt;Link&lt;/a&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/sdxyz42</atom:name>
+        </atom:author>
+        <atom:id>t3_1765yvy</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/1765yvy/how_giphy_delivers_10_billion_gifs_a_day_to_1/"/>
+        <atom:published>2023-10-12T12:36:43Z</atom:published>
+        <atom:title>How Giphy Delivers 10 Billion GIFs a Day to 1 Billion Users</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;a href="https://newsletter.systemdesign.one/p/cdn-explained"&gt;Link&lt;/a&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/davidebellone</atom:name>
+        </atom:author>
+        <atom:id>t3_17613i8</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/17613i8/davides_code_and_architecture_notes_pros_and_cons/"/>
+        <atom:published>2023-10-12T07:28:13Z</atom:published>
+        <atom:title>Davide's Code and Architecture Notes - Pros and Cons of API Gateways (with vendors comparison)</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;a href="https://www.code4it.dev/architecture-notes/api-gateway-pros-and-cons/"&gt;Link&lt;/a&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Antique-human6894</atom:name>
+        </atom:author>
+        <atom:id>t3_175edhx</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/175edhx/building_distributed_applications_with_event/"/>
+        <atom:published>2023-10-11T13:44:52Z</atom:published>
+        <atom:title>Building Distributed Applications with Event Driven Architecture</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;a href="https://youtu.be/9StQpMLC-5Q?list=PLEx5khR4g7PJlBM-JgWAAVhZmz5lIMTGY"&gt;Link&lt;/a&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Beneficial_End_6441</atom:name>
+        </atom:author>
+        <atom:id>t3_175ibez</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/175ibez/duckie_ai_interactive_ai_coding_agent/"/>
+        <atom:published>2023-10-11T16:29:58Z</atom:published>
+        <atom:title>Duckie AI - interactive AI coding agent&#128035;</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;heya! We've spent the past few months building Duckie AI - an interactive AI coding agent platform, and we just released our beta!&lt;br&gt;
+     We’d love some feedback from the developer's community. Give it a go and let us know what you think :) Any feedback and suggestions are appreciated!&lt;br&gt;&lt;a href="https://duckie.ai/"&gt;https://duckie.ai/&lt;/a&gt;&lt;br&gt;
+     Also, welcome to our discord: &lt;a href="https://discord.gg/JwQSRj9Wx2"&gt;https://discord.gg/JwQSRj9Wx2&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://reddit.com/link/175ibez/video/m5zea4nholtb1/player"&gt;https://reddit.com/link/175ibez/video/m5zea4nholtb1/player&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Emotional-Bit-6194</atom:name>
+        </atom:author>
+        <atom:id>t3_175agwx</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/175agwx/requesting_data_from_services_behind_gateway/"/>
+        <atom:published>2023-10-11T10:07:12Z</atom:published>
+        <atom:title>Requesting data from services behind gateway, which authorized an access.</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Hello.&lt;br&gt;
+     I have created modular monolith which is agnostic of any authorization or authentication.&lt;br&gt;
+     Authn/Authz happens in gateway/BFF.&lt;br&gt;
+     This worked fine as long as user wanted to hit specific API resource, such as &lt;strong&gt;api/objects/1&lt;/strong&gt;, as all authz had to do was to permit or deny the request.&lt;br&gt;
+     For example:&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://libreddit.privacy.qvarford.net/img/wk6hu6pdrjtb1.png"&gt;Singular request / specific resource&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;But now that I had to develop an endpoint that would return list of objects which user has access to it created a problem.&lt;/p&gt;
+   &lt;p&gt;If I hit API such as &lt;strong&gt;api/objects&lt;/strong&gt; how would I list all the resources user has access to?&lt;/p&gt;
+   &lt;p&gt;Would I need to ask Authz to retrieve list of IDs and then pass those in body of the request for backend to retrieve those from database?&lt;br&gt;
+     For example:&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://libreddit.privacy.qvarford.net/img/9fnytp2xrjtb1.png"&gt;Non-singular request / array return&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;Ofc, if no permissions exist I could short circuit the response and return empty array.&lt;/p&gt;
+   &lt;p&gt;Is this a valid approach?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/luke_rola</atom:name>
+        </atom:author>
+        <atom:id>t3_17593ds</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/17593ds/is_your_api_getting_too_complex/"/>
+        <atom:published>2023-10-11T08:28:13Z</atom:published>
+        <atom:title>&#128640; Is Your API Getting Too Complex? &#129300;</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;If you've been noticing signs that your API is becoming increasingly complicated, experiencing difficulties in maintenance, or hearing complaints from your integrators about the challenges of integration, it's time to take a closer look.&lt;/p&gt;
+   &lt;p&gt;In my article, I delve into the key factors that contribute to API complication and share insights on how to streamline and simplify your API development. Let's make your API experience smoother and more efficient! &#128736;️&lt;/p&gt;
+   &lt;p&gt;Read the full article &lt;a href="https://medium.com/softwaremill-tech/simplify-your-api-a-path-to-efficiency-and-ease-35d4ba98ac90"&gt;here&lt;/a&gt;.&lt;/p&gt;
+   &lt;p&gt;Your feedback and thoughts are always welcome!&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/thumbsdrivesmecrazy</atom:name>
+        </atom:author>
+        <atom:id>t3_174qz3e</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/174qz3e/top_software_testing_errors_to_look_out_for_guide/"/>
+        <atom:published>2023-10-10T17:32:52Z</atom:published>
+        <atom:title>Top Software Testing Errors to Look Out For - Guide</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;This article discusses and compares the common software testing errors developers face in the software development: &lt;a href="https://www.codium.ai/blog/top-software-testing-errors-to-look-out-for/"&gt;Top Software Testing Errors to Look Out For&lt;/a&gt;&lt;/p&gt;
+   &lt;ol&gt;
+    &lt;li&gt;Functionality Errors&lt;/li&gt;
+    &lt;li&gt;Control Flow Errors&lt;/li&gt;
+    &lt;li&gt;Logic Errors&lt;/li&gt;
+    &lt;li&gt;Integration Errors&lt;/li&gt;
+    &lt;li&gt;Boundary Condition Errors&lt;/li&gt;
+    &lt;li&gt;Performance Errors&lt;/li&gt;
+    &lt;li&gt;Usability and UX Errors&lt;/li&gt;
+    &lt;li&gt;Documentation Errors&lt;/li&gt;
+    &lt;li&gt;Error Handling Errors&lt;/li&gt;
+    &lt;li&gt;Syntactic Errors in Software GUI&lt;/li&gt;
+   &lt;/ol&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/westDrus</atom:name>
+        </atom:author>
+        <atom:id>t3_174kvwp</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/174kvwp/data_mapping_flow_doc/"/>
+        <atom:published>2023-10-10T13:13:36Z</atom:published>
+        <atom:title>Data mapping &amp; flow doc</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Hello everyone, I'm working in a company where basically all existing flows are documented via Word for business context and triggers, and Excels for mapping. I'd like to propose some changes on that as it is very limiting, but I'm clearly not sure of the good alternatives. Anyone has ideas of good practice, tools, etc. ? Or things to avoid ? Thanks in advance&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/i-make-robots</atom:name>
+        </atom:author>
+        <atom:id>t3_17490tu</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/17490tu/where_can_i_go_to_present_my_project_and_get_some/"/>
+        <atom:published>2023-10-10T01:29:32Z</atom:published>
+        <atom:title>Where can I go to present my project and get some feedback on the architecture?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;I've got several projects for which I'd love to get some fresh eyes on my work. Instead of promoting them here, I'd like to find a Discord or some other place where I can present my work and talk about the design elements that are vexing me.&lt;/p&gt;
+   &lt;p&gt;What do you suggest?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/asdfdelta</atom:name>
+        </atom:author>
+        <atom:id>t3_1748syw</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/1748syw/do_you_still_write_code/"/>
+        <atom:published>2023-10-10T01:18:48Z</atom:published>
+        <atom:title>Do you still write code?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Some architects get so wrapped up in the architecture that they stop writing code. We've all seen that senior level architect that is out of touch with the current state of technology and refuses to learn anything new. Best way to stay current is to continue to write current code!&lt;/p&gt;
+   &lt;p&gt;So, how often do you still write code?&lt;/p&gt;
+   &lt;p&gt;&lt;a href="https://libreddit.privacy.qvarford.net/poll/1748syw"&gt;View Poll&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/rgancarz</atom:name>
+        </atom:author>
+        <atom:id>t3_173q6u7</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/173q6u7/how_amazon_prime_video_delivers_99999/"/>
+        <atom:published>2023-10-09T12:09:43Z</atom:published>
+        <atom:title>How Amazon Prime Video Delivers 99.999% Availability While Reducing Costs</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;a href="https://www.infoq.com/news/2023/10/prime-video-availability-costs/"&gt;Link&lt;/a&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/CERIBES</atom:name>
+        </atom:author>
+        <atom:id>t3_173oea0</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/173oea0/fundamental_modeling_concepts_fmc/"/>
+        <atom:published>2023-10-09T10:22:57Z</atom:published>
+        <atom:title>Fundamental Modeling Concepts (FMC)</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Does anyone use these?&lt;/p&gt;
+   &lt;p&gt;Fundamental Modeling Concepts&lt;/p&gt;
+   &lt;p&gt;&lt;a href="http://www.fmc-modeling.org/"&gt;http://www.fmc-modeling.org/&lt;/a&gt;&lt;/p&gt;
+   &lt;p&gt;I am doing a course Intro System Analysis and Design. FMC is the primary tool we need to use to model a basic high level layout of a e commerce store.&lt;/p&gt;
+   &lt;p&gt;Is FMC relevant in the industry? Very hard to find information on. I see its used in SAP a bit and they adopted it in their TAM concept. But other than it seem everyone uses Visio?&lt;/p&gt;
+   &lt;p&gt;What tool do you all use?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Emotional-Bit-6194</atom:name>
+        </atom:author>
+        <atom:id>t3_173oxs2</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/173oxs2/custom_authz_and_auth_service_for_complex_usecase/"/>
+        <atom:published>2023-10-09T10:58:28Z</atom:published>
+        <atom:title>Custom authz and auth service for complex use-case?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Hello I have case where I have several services.&lt;/p&gt;
+   &lt;p&gt;User creates some resource &amp;amp; gets the permission as an owner.&lt;br&gt;
+     Event is created &amp;amp; the resource is created in several other services as needed for the context.&lt;/p&gt;
+   &lt;p&gt;How would i tackle such a problem, if i had an external user identity platform such as Auth0?&lt;br&gt;
+     Would i need to create internal user to keep his permissions? In that case i already found a pitfall where i would need to synchronize user with each authentication.&lt;/p&gt;
+   &lt;p&gt;User should be able to share the permissions with other users and groups. Groups are groups of users.&lt;/p&gt;
+   &lt;p&gt;How would i then list the users if i had external identity platform?&lt;/p&gt;
+   &lt;p&gt;Now, do people create custom services that include their own custom - fine grained authorization or do they use some other out of the box applications such as IdentityServer4?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Fredkamau18</atom:name>
+        </atom:author>
+        <atom:id>t3_173l90u</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/173l90u/decoding_the_cap_theorem_balancing_consistency/"/>
+        <atom:published>2023-10-09T06:46:33Z</atom:published>
+        <atom:title>Decoding the CAP Theorem: Balancing Consistency, Availability, and Partition Tolerance in Distributed Systems</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;a href="https://fredkamau.com/cap-theorem/"&gt;Link&lt;/a&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/chip_1992</atom:name>
+        </atom:author>
+        <atom:id>t3_173lrpq</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/173lrpq/improving_a_content_filtering_algorithm_by_using/"/>
+        <atom:published>2023-10-09T07:20:58Z</atom:published>
+        <atom:title>Improving a content filtering algorithm by using an indexing mechanism</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;"If you don't know the answer just throw an hashmap at it" &#128514;&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/Shinoken__</atom:name>
+        </atom:author>
+        <atom:id>t3_173jf72</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/173jf72/domain_driven_challenges_how_to_handle_exceptions/"/>
+        <atom:published>2023-10-09T04:50:07Z</atom:published>
+        <atom:title>Domain Driven Challenges: How to handle exceptions</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;a href="https://medium.com/@roccolangeweg/domain-driven-challenges-how-to-handle-exceptions-9c115a8cb1c9"&gt;Link&lt;/a&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/ahelord</atom:name>
+        </atom:author>
+        <atom:id>t3_1731zs2</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/1731zs2/how_to_learn_software_architecture_in_a_didactic/"/>
+        <atom:published>2023-10-08T15:29:42Z</atom:published>
+        <atom:title>How to learn software architecture in a didactic or interactive way?</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Hello everyone, I want to learn about software architecture but in an educational or interactive way I feel that the topic is extensive, there is a lot of theory and some tools would help make it easier to understand. Could you post help links or recommendations?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/HAMBoneConnection</atom:name>
+        </atom:author>
+        <atom:id>t3_173c1cn</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/173c1cn/dynamic_loading_of_code_functionality_modules_in/"/>
+        <atom:published>2023-10-08T22:33:54Z</atom:published>
+        <atom:title>Dynamic loading of code functionality / modules in a pre compiled exe.</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;I have an application, Go based which runs On Windows and Linux as a precompiled binary.&lt;/p&gt;
+   &lt;p&gt;I want that binary to have the capability to download additional application functions for modules that provide the code needed for mission based tasks deployed to only certain hosts running the application.&lt;/p&gt;
+   &lt;p&gt;I’m having a hard time understanding how to get this accomplished. Application is in Go but Go Plugins feature has no Windows support. Considered a go binary running A server side JavaScript engine like Next.js or Denovo which will then be able to download the modules and load them for use on specified deployments.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/HAMBoneConnection</atom:name>
+        </atom:author>
+        <atom:id>t3_173bx47</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/173bx47/simple_architecture_for_updating_files_on_remote/"/>
+        <atom:published>2023-10-08T22:28:57Z</atom:published>
+        <atom:title>Simple Architecture for updating files on remote Ubuntu based virtual machines that are deployed as virtual appliance.</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;So I’m developing a virtual appliance based off Ubuntu that’s deployed by customer as an OVA or Hyper-V image.&lt;/p&gt;
+   &lt;p&gt;They run several service based docker containers I’m currently managing with watcher which will pull a latest container image published to a repository. This is working and no real problems with it.&lt;/p&gt;
+   &lt;p&gt;The issue is we have several OS level scripts that orchestrate container usage and other tasks like system configuration.&lt;/p&gt;
+   &lt;p&gt;What’s the best, maybe even most cloud friendly way (big on AWS) to manage pushing updates to the virtual machine that acts as a base to the appliance?&lt;/p&gt;
+   &lt;p&gt;I thought about just creating a new host-side script that checks using cert-based authentication whether new script files are available and downloads them to replace - but this seems lacking and requires a lot of overhead I feel.&lt;/p&gt;
+   &lt;p&gt;Is there an opens source project that can manage updates to a fleet of virtual machines acting as appliances?&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/kara_sipahi</atom:name>
+        </atom:author>
+        <atom:id>t3_17387wc</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/17387wc/building_a_simplified_betting_platform/"/>
+        <atom:published>2023-10-08T19:53:13Z</atom:published>
+        <atom:title>Building a Simplified Betting Platform</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div class="md"&gt;
+   &lt;p&gt;Hello,&lt;/p&gt;
+   &lt;p&gt;I intend to build a simplified betting platform from scratch, but don’t have any experience in scalable, high performance computing and architectural design patterns. I have more than 10 years of software development experience, but I have worked mainly as freelancer and contractor in web, mobile and smart TV app development. I'd call myself back-end focused full-stack developer (who wants to be a fully backend engineer and software architect). I have built many applications in C#, Java, JavaScript and TypeScript. I intend to learn Go as well. I would like to hear any advice on where to start, books, courses, etc.&lt;/p&gt;
+   &lt;p&gt;The goal is to learn and build a platform to help me landing big contracts and/or getting a desirable job. I know it is not easy and will take a long time, but I like challenges.&lt;/p&gt;
+   &lt;p&gt;Thanks in advance!&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+    <atom:entry>
+        <atom:author>
+            <atom:name>/u/sdxyz42</atom:name>
+        </atom:author>
+        <atom:id>t3_173499z</atom:id>
+        <atom:link href="https://libreddit.privacy.qvarford.net/r/softwarearchitecture/comments/173499z/how_linkedin_adopted_protocol_buffers_to_reduce/"/>
+        <atom:published>2023-10-08T17:05:54Z</atom:published>
+        <atom:title>How LinkedIn Adopted Protocol Buffers to Reduce Latency by 60%</atom:title>
+        <atom:content type="html">&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;a href="https://newsletter.systemdesign.one/p/protocol-buffers-vs-json"&gt;Link&lt;/a&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</atom:content>
+    </atom:entry>
+</atom:feed>
+
+]
+
+
 net.qvarford.giraffeed.it.SnapshotResourceTest.libredditFeedsWillUseBulkMetadataIfAvailable=[
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <atom:feed xmlns:atom="http://www.w3.org/2005/Atom">

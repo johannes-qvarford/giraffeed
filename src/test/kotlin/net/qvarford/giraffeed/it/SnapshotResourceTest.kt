@@ -75,6 +75,9 @@ class SnapshotResourceTest {
         "https://www.reddit.com/r/bestoflegaladvice/hot.rss" to "libreddit/-1165492183.json",
         "https://www.reddit.com/r/bestoflegaladvice/hot.json" to "libreddit/1666526223.json",
 
+        "https://www.reddit.com/r/softwarearchitecture/hot.rss" to "libreddit/101027776.json",
+        "https://www.reddit.com/r/softwarearchitecture/hot.json" to "libreddit/-1357998290.json",
+
         "https://nitter.privacy.qvarford.net/slowbeef/rss" to "nitter_success.xml",
         "https://nitter.privacy.qvarford.net/InternetHippo/status/1635996454983548931#m" to "nitter_page_with_hls_video.html",
         "https://api.twitch.tv/helix/channels/followed?user_id=29943195" to "twitch_followed_success.json",
@@ -145,6 +148,20 @@ class SnapshotResourceTest {
         val expect = verifier.expect(testInfo)
         val content = RestAssured.given()
             .`when`().get("/enhancement/libreddit/bestoflegaladvice")
+            .then()
+            .statusCode(200)
+            .extract()
+            .body()
+            .asString()
+
+        expect.toMatchSnapshot(content)
+    }
+
+    @Test
+    fun libredditFeedsHandleVideoGalleries(testInfo: TestInfo) {
+        val expect = verifier.expect(testInfo)
+        val content = RestAssured.given()
+            .`when`().get("/enhancement/libreddit/softwarearchitecture")
             .then()
             .statusCode(200)
             .extract()

@@ -26,7 +26,11 @@ class HttpClientLibredditMetadataProvider(private val httpClient: HttpClient, pr
             val keys = root.galleryData!!.items.map { it.mediaId }.toList()
             val map = root.mediaMetadata!!
 
-            val images = keys.map { URI.create(map[it]!!.s.u!!) }.toList()
+            // TODO: Handle video
+            val images = keys.map { map[it]!!.s }
+                .filter { it != null }
+                .map { URI.create(it!!.u!!)}
+                .toList()
             LibredditMetadata(imageUrls = images)
         } else {
             val urlIsMedia = root.url!!.contains("i.redd.it")
@@ -131,6 +135,6 @@ data class GalleryData(val items: List<GalleryMedia>)
 
 data class GalleryMedia(val mediaId: String)
 
-data class MediaMetaDataEntry(val s: MediaMetaDataSize)
+data class MediaMetaDataEntry(val s: MediaMetaDataSize?)
 
 data class MediaMetaDataSize(val u: String?)
